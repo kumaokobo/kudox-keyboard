@@ -1,9 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:power
-LIBS:device
-LIBS:74xx
-LIBS:audio
-LIBS:interface
 LIBS:kudox_game-cache
 EELAYER 29 0
 EELAYER END
@@ -11,11 +6,11 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Kudox Game keyboard"
-Date "2019-06-30"
+Date "2019-07-01"
 Rev "1.0"
 Comp ""
-Comment1 "designed by Inken"
-Comment2 "https://github.com/x1-"
+Comment1 "designed by x1 and inken"
+Comment2 "https://github.com/kumaokobo/kudox-keyboard"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -31,36 +26,14 @@ F 3 "" V 3400 -350 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Audio-Jack-4 TRRS1
-U 1 1 5A8087E2
-P 1100 3200
-F 0 "TRRS1" H 1050 3280 50  0000 C CNN
-F 1 "Audio-Jack-4" H 1220 2830 50  0000 C CNN
-F 2 "Keebio-Parts:TRRS-PJ-320A-dual" H 1350 3300 50  0001 C CNN
-F 3 "" H 1350 3300 50  0001 C CNN
-	1    1100 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Conn_01x03 RGB_STRIP1
-U 1 1 5A8088A7
-P 1750 4200
-F 0 "RGB_STRIP1" H 1750 4400 50  0000 C CNN
-F 1 "Conn_01x03" H 1750 4000 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 1750 4200 50  0001 C CNN
-F 3 "" H 1750 4200 50  0001 C CNN
-	1    1750 4200
-	1    0    0    -1  
-$EndComp
-$Comp
 L SW_PUSH RST_SW1
 U 1 1 5A808917
-P 1450 4750
-F 0 "RST_SW1" H 1600 4860 50  0000 C CNN
-F 1 "SW_PUSH" H 1450 4670 50  0000 C CNN
-F 2 "Buttons_Switches_ThroughHole:SW_PUSH_6mm_h4.3mm" H 1450 4750 60  0001 C CNN
-F 3 "" H 1450 4750 60  0000 C CNN
-	1    1450 4750
+P 2350 3400
+F 0 "RST_SW1" H 2500 3510 50  0000 C CNN
+F 1 "SW_PUSH" H 2350 3320 50  0000 C CNN
+F 2 "Buttons_Switches_ThroughHole:SW_PUSH_6mm_h4.3mm" H 2350 3400 60  0001 C CNN
+F 3 "" H 2350 3400 60  0000 C CNN
+	1    2350 3400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -89,14 +62,6 @@ Text GLabel 3300 1800 2    60   Input ~ 0
 RST
 Wire Wire Line
 	3050 1800 3300 1800
-Text GLabel 1450 2100 0    60   Input ~ 0
-SCL
-Text GLabel 1450 2000 0    60   Input ~ 0
-SDA
-Wire Wire Line
-	1450 2000 1650 2000
-Wire Wire Line
-	1450 2100 1650 2100
 Text GLabel 3300 2100 2    60   Input ~ 0
 col0
 Text GLabel 3300 2200 2    60   Input ~ 0
@@ -146,69 +111,20 @@ Wire Wire Line
 Wire Wire Line
 	1450 2200 1650 2200
 NoConn ~ 3050 1600
-Text GLabel 1450 1600 0    60   Input ~ 0
-rgb_data
-Wire Wire Line
-	1450 1600 1650 1600
 NoConn ~ 1650 1700
 NoConn ~ 1650 2300
 NoConn ~ 3050 2000
-$Comp
-L GND #PWR03
-U 1 1 5A808DAF
-P 900 3600
-F 0 "#PWR03" H 900 3350 50  0001 C CNN
-F 1 "GND" H 900 3450 50  0000 C CNN
-F 2 "" H 900 3600 50  0001 C CNN
-F 3 "" H 900 3600 50  0001 C CNN
-	1    900  3600
-	1    0    0    -1  
-$EndComp
-Text GLabel 1850 3200 2    60   Input ~ 0
-SDA
-Text GLabel 1850 3300 2    60   Input ~ 0
-SCL
-Wire Wire Line
-	1300 3200 1450 3200
-Wire Wire Line
-	1300 3300 1700 3300
-$Comp
-L GND #PWR04
-U 1 1 5A808EA3
-P 1550 4300
-F 0 "#PWR04" H 1550 4050 50  0001 C CNN
-F 1 "GND" H 1550 4150 50  0000 C CNN
-F 2 "" H 1550 4300 50  0001 C CNN
-F 3 "" H 1550 4300 50  0001 C CNN
-	1    1550 4300
-	0    1    1    0   
-$EndComp
-$Comp
-L VCC #PWR05
-U 1 1 5A808EBA
-P 1550 4100
-F 0 "#PWR05" H 1550 3950 50  0001 C CNN
-F 1 "VCC" H 1550 4250 50  0000 C CNN
-F 2 "" H 1550 4100 50  0001 C CNN
-F 3 "" H 1550 4100 50  0001 C CNN
-	1    1550 4100
-	0    -1   -1   0   
-$EndComp
-Text GLabel 1300 4200 0    60   Input ~ 0
-rgb_data
-Wire Wire Line
-	1300 4200 1550 4200
-Text GLabel 1150 4750 0    60   Input ~ 0
+Text GLabel 2050 3400 0    60   Input ~ 0
 RST
 $Comp
 L GND #PWR06
 U 1 1 5A80901B
-P 1750 4750
-F 0 "#PWR06" H 1750 4500 50  0001 C CNN
-F 1 "GND" H 1750 4600 50  0000 C CNN
-F 2 "" H 1750 4750 50  0001 C CNN
-F 3 "" H 1750 4750 50  0001 C CNN
-	1    1750 4750
+P 2650 3400
+F 0 "#PWR06" H 2650 3150 50  0001 C CNN
+F 1 "GND" H 2650 3250 50  0000 C CNN
+F 2 "" H 2650 3400 50  0001 C CNN
+F 3 "" H 2650 3400 50  0001 C CNN
+	1    2650 3400
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -892,49 +808,6 @@ Text GLabel 9200 1350 1    60   Input ~ 0
 col5
 Text GLabel 10000 1350 1    60   Input ~ 0
 col6
-$Comp
-L R R1
-U 1 1 5A80A2DF
-P 1450 3350
-F 0 "R1" V 1530 3350 50  0000 C CNN
-F 1 "4.7k" V 1450 3350 50  0000 C CNN
-F 2 "Keebio-Parts:Resistor-Compact" V 1380 3350 50  0001 C CNN
-F 3 "" H 1450 3350 50  0001 C CNN
-	1    1450 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R2
-U 1 1 5A80A522
-P 1700 3450
-F 0 "R2" V 1780 3450 50  0000 C CNN
-F 1 "4.7k" V 1700 3450 50  0000 C CNN
-F 2 "Keebio-Parts:Resistor-Compact" V 1630 3450 50  0001 C CNN
-F 3 "" H 1700 3450 50  0001 C CNN
-	1    1700 3450
-	1    0    0    -1  
-$EndComp
-Connection ~ 1450 3200
-Connection ~ 1700 3300
-$Comp
-L VCC #PWR09
-U 1 1 5A80ACC6
-P 1900 3600
-F 0 "#PWR09" H 1900 3450 50  0001 C CNN
-F 1 "VCC" H 1900 3750 50  0000 C CNN
-F 2 "" H 1900 3600 50  0001 C CNN
-F 3 "" H 1900 3600 50  0001 C CNN
-	1    1900 3600
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1300 3400 1300 3600
-Wire Wire Line
-	1300 3600 1450 3600
-Wire Wire Line
-	1450 3500 1450 3600
-Connection ~ 1450 3600
-Connection ~ 1700 3600
 Wire Wire Line
 	5400 1900 6200 1900
 Wire Wire Line
@@ -1001,14 +874,6 @@ Wire Wire Line
 	9200 1500 9200 2250
 Wire Wire Line
 	9200 2250 9200 2950
-Wire Wire Line
-	1450 3200 1850 3200
-Wire Wire Line
-	1700 3300 1850 3300
-Wire Wire Line
-	1450 3600 1700 3600
-Wire Wire Line
-	1700 3600 1900 3600
 Wire Wire Line
 	10000 1350 10000 2950
 Connection ~ 7800 4100
@@ -1106,4 +971,7 @@ F 3 "" H 8600 4750 50  0001 C CNN
 	1    8600 4750
 	0    -1   -1   0   
 $EndComp
+NoConn ~ 1650 1600
+NoConn ~ 1650 2000
+NoConn ~ 1650 2100
 $EndSCHEMATC
