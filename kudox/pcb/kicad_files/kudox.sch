@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Kudox keyboard"
-Date "2019-06-30"
+Date "2019-07-01"
 Rev "1.0"
 Comp ""
 Comment1 "designed by inken and x1"
