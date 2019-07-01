@@ -1,51 +1,16 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:switches
-LIBS:relays
-LIBS:motors
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:keyboard_parts
-LIBS:mkl27z256vfm4
-LIBS:keebio
+EESchema Schematic File Version 4
 LIBS:kudox-cache
-EELAYER 25 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Kudox keyboard"
-Date "2019-06-10"
+Date "2019-06-30"
 Rev "1.0"
 Comp ""
 Comment1 "designed by x1 and inken"
-Comment2 "https://github.com/x1-/kudox-keyboard"
+Comment2 "https://github.com/kumaokobo/kudox-keyboard"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -199,9 +164,9 @@ SDA
 Text GLabel 1850 3300 2    60   Input ~ 0
 SCL
 Wire Wire Line
-	1300 3200 1850 3200
+	1300 3200 1450 3200
 Wire Wire Line
-	1300 3300 1850 3300
+	1300 3300 1700 3300
 $Comp
 L GND #PWR04
 U 1 1 5A808EA3
@@ -407,37 +372,12 @@ F 3 "" H 8600 1750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8600 1500 8600 1600
-$Comp
-L KEYSW K6
-U 1 1 5A8094A7
-P 9700 1500
-F 0 "K6" H 9650 1500 60  0000 C CNN
-F 1 "KEYSW" H 9700 1400 60  0001 C CNN
-F 2 "Keebio-Parts:Hybrid_PCB_100H_Dual_hole-nosilk" H 9700 1500 60  0001 C CNN
-F 3 "" H 9700 1500 60  0000 C CNN
-	1    9700 1500
-	1    0    0    -1  
-$EndComp
-$Comp
-L D D6
-U 1 1 5A8094AD
-P 9400 1750
-F 0 "D6" H 9400 1850 50  0000 C CNN
-F 1 "D" H 9400 1650 50  0000 C CNN
-F 2 "Keebio-Parts:Diode-dual" H 9400 1750 50  0001 C CNN
-F 3 "" H 9400 1750 50  0001 C CNN
-	1    9400 1750
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
-	9400 1500 9400 1600
-Wire Wire Line
-	4500 1900 9400 1900
+	4500 1900 4600 1900
 Connection ~ 5400 1900
 Connection ~ 6200 1900
 Connection ~ 7000 1900
 Connection ~ 7800 1900
-Connection ~ 8600 1900
 $Comp
 L KEYSW K10
 U 1 1 5A809C1D
@@ -448,17 +388,6 @@ F 2 "Keebio-Parts:Hybrid_PCB_100H_Dual_hole-nosilk" H 4900 2250 60  0001 C CNN
 F 3 "" H 4900 2250 60  0000 C CNN
 	1    4900 2250
 	1    0    0    -1  
-$EndComp
-$Comp
-L D D10
-U 1 1 5A809C23
-P 4600 2500
-F 0 "D10" H 4600 2600 50  0000 C CNN
-F 1 "D" H 4600 2400 50  0000 C CNN
-F 2 "Keebio-Parts:Diode-dual" H 4600 2500 50  0001 C CNN
-F 3 "" H 4600 2500 50  0001 C CNN
-	1    4600 2500
-	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	4600 2250 4600 2350
@@ -607,7 +536,7 @@ $EndComp
 Wire Wire Line
 	9400 2250 9400 2350
 Wire Wire Line
-	4500 2650 9400 2650
+	4500 2650 4600 2650
 Connection ~ 5400 2650
 Connection ~ 6200 2650
 Connection ~ 7000 2650
@@ -757,37 +686,12 @@ F 3 "" H 8600 3200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8600 2950 8600 3050
-$Comp
-L KEYSW K26
-U 1 1 5A80ABD8
-P 9700 2950
-F 0 "K26" H 9650 2950 60  0000 C CNN
-F 1 "KEYSW" H 9700 2850 60  0001 C CNN
-F 2 "Keebio-Parts:Hybrid_PCB_100H_Dual_hole-nosilk" H 9700 2950 60  0001 C CNN
-F 3 "" H 9700 2950 60  0000 C CNN
-	1    9700 2950
-	1    0    0    -1  
-$EndComp
-$Comp
-L D D26
-U 1 1 5A80ABDE
-P 9400 3200
-F 0 "D26" H 9400 3300 50  0000 C CNN
-F 1 "D" H 9400 3100 50  0000 C CNN
-F 2 "Keebio-Parts:Diode-dual" H 9400 3200 50  0001 C CNN
-F 3 "" H 9400 3200 50  0001 C CNN
-	1    9400 3200
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
-	9400 2950 9400 3050
-Wire Wire Line
-	4500 3350 9400 3350
+	4500 3350 4600 3350
 Connection ~ 5400 3350
 Connection ~ 6200 3350
 Connection ~ 7000 3350
 Connection ~ 7800 3350
-Connection ~ 8600 3350
 $Comp
 L KEYSW K30
 U 1 1 5A80ABEB
@@ -932,37 +836,12 @@ F 3 "" H 8600 3950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8600 3700 8600 3800
-$Comp
-L KEYSW K36
-U 1 1 5A80AC39
-P 9700 3700
-F 0 "K36" H 9650 3700 60  0000 C CNN
-F 1 "KEYSW" H 9700 3600 60  0001 C CNN
-F 2 "Keebio-Parts:Hybrid_PCB_100H_Dual_hole-nosilk" H 9700 3700 60  0001 C CNN
-F 3 "" H 9700 3700 60  0000 C CNN
-	1    9700 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L D D36
-U 1 1 5A80AC3F
-P 9400 3950
-F 0 "D36" H 9400 4050 50  0000 C CNN
-F 1 "D" H 9400 3850 50  0000 C CNN
-F 2 "Keebio-Parts:Diode-dual" H 9400 3950 50  0001 C CNN
-F 3 "" H 9400 3950 50  0001 C CNN
-	1    9400 3950
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
-	9400 3700 9400 3800
-Wire Wire Line
-	4500 4100 9400 4100
+	4500 4100 4600 4100
 Connection ~ 5400 4100
 Connection ~ 6200 4100
 Connection ~ 7000 4100
 Connection ~ 7800 4100
-Connection ~ 8600 4100
 $Comp
 L KEYSW K40
 U 1 1 5A80E493
@@ -1132,20 +1011,20 @@ $EndComp
 Wire Wire Line
 	9400 4500 9400 4600
 Wire Wire Line
-	4500 4900 9400 4900
+	4500 4900 4600 4900
 Connection ~ 5400 4900
 Connection ~ 6200 4900
 Connection ~ 7000 4900
 Connection ~ 7800 4900
 Connection ~ 8600 4900
 Wire Wire Line
-	5200 1300 5200 4500
+	5200 1300 5200 1500
 Connection ~ 5200 1500
 Connection ~ 5200 2250
 Connection ~ 5200 2950
 Connection ~ 5200 3700
 Wire Wire Line
-	6000 1300 6000 4500
+	6000 1300 6000 1500
 Connection ~ 6000 1500
 Connection ~ 6000 2250
 Connection ~ 6000 2950
@@ -1156,35 +1035,30 @@ Connection ~ 4600 3350
 Connection ~ 4600 4100
 Connection ~ 4600 4900
 Wire Wire Line
-	6800 1300 6800 4500
+	6800 1300 6800 1500
 Connection ~ 6800 1500
 Connection ~ 6800 2250
 Connection ~ 6800 2950
 Connection ~ 6800 3700
 Wire Wire Line
-	7600 1300 7600 4500
+	7600 1300 7600 1500
 Connection ~ 7600 1500
 Connection ~ 7600 2250
 Connection ~ 7600 2950
 Connection ~ 7600 3700
 Wire Wire Line
-	8400 1300 8400 4500
+	8400 1300 8400 1500
 Connection ~ 8400 1500
 Connection ~ 8400 2250
 Connection ~ 8400 2950
 Connection ~ 8400 3700
 Wire Wire Line
-	9200 1350 9200 4500
+	9200 1350 9200 1500
 Connection ~ 9200 1500
 Connection ~ 9200 2250
 Connection ~ 9200 2950
 Connection ~ 9200 3700
-Wire Wire Line
-	10000 1350 10000 4500
-Connection ~ 10000 1500
 Connection ~ 10000 2250
-Connection ~ 10000 2950
-Connection ~ 10000 3700
 Text GLabel 4500 1900 0    60   Input ~ 0
 row0
 Text GLabel 4500 2650 0    60   Input ~ 0
@@ -1247,9 +1121,134 @@ $EndComp
 Wire Wire Line
 	1300 3400 1300 3600
 Wire Wire Line
-	1300 3600 1900 3600
+	1300 3600 1450 3600
 Wire Wire Line
 	1450 3500 1450 3600
 Connection ~ 1450 3600
 Connection ~ 1700 3600
+Wire Wire Line
+	5400 1900 6200 1900
+Wire Wire Line
+	6200 1900 7000 1900
+Wire Wire Line
+	7000 1900 7800 1900
+Wire Wire Line
+	5400 2650 6200 2650
+Wire Wire Line
+	6200 2650 7000 2650
+Wire Wire Line
+	7000 2650 7800 2650
+Wire Wire Line
+	7800 2650 8600 2650
+Wire Wire Line
+	8600 2650 9400 2650
+Wire Wire Line
+	5400 3350 6200 3350
+Wire Wire Line
+	6200 3350 7000 3350
+Wire Wire Line
+	7000 3350 7800 3350
+Wire Wire Line
+	7800 3350 8600 3350
+Wire Wire Line
+	5400 4100 6200 4100
+Wire Wire Line
+	6200 4100 7000 4100
+Wire Wire Line
+	7000 4100 7800 4100
+Wire Wire Line
+	7800 4100 8600 4100
+Wire Wire Line
+	5400 4900 6200 4900
+Wire Wire Line
+	6200 4900 7000 4900
+Wire Wire Line
+	7000 4900 7800 4900
+Wire Wire Line
+	7800 4900 8600 4900
+Wire Wire Line
+	8600 4900 9400 4900
+Wire Wire Line
+	5200 1500 5200 2250
+Wire Wire Line
+	5200 2250 5200 2950
+Wire Wire Line
+	5200 2950 5200 3700
+Wire Wire Line
+	5200 3700 5200 4500
+Wire Wire Line
+	6000 1500 6000 2250
+Wire Wire Line
+	6000 2250 6000 2950
+Wire Wire Line
+	6000 2950 6000 3700
+Wire Wire Line
+	6000 3700 6000 4500
+Wire Wire Line
+	4600 1900 5400 1900
+Wire Wire Line
+	4600 2650 5400 2650
+Wire Wire Line
+	4600 3350 5400 3350
+Wire Wire Line
+	4600 4100 5400 4100
+Wire Wire Line
+	4600 4900 5400 4900
+Wire Wire Line
+	6800 1500 6800 2250
+Wire Wire Line
+	6800 2250 6800 2950
+Wire Wire Line
+	6800 2950 6800 3700
+Wire Wire Line
+	6800 3700 6800 4500
+Wire Wire Line
+	7600 1500 7600 2250
+Wire Wire Line
+	7600 2250 7600 2950
+Wire Wire Line
+	7600 2950 7600 3700
+Wire Wire Line
+	7600 3700 7600 4500
+Wire Wire Line
+	8400 2250 8400 2950
+Wire Wire Line
+	8400 2950 8400 3700
+Wire Wire Line
+	8400 3700 8400 4500
+Wire Wire Line
+	9200 2250 9200 2950
+Wire Wire Line
+	9200 2950 9200 3700
+Wire Wire Line
+	9200 3700 9200 4500
+Wire Wire Line
+	1450 3200 1850 3200
+Wire Wire Line
+	1700 3300 1850 3300
+Wire Wire Line
+	1450 3600 1700 3600
+Wire Wire Line
+	1700 3600 1900 3600
+$Comp
+L D D10
+U 1 1 5A809C23
+P 4600 2500
+F 0 "D10" H 4600 2600 50  0000 C CNN
+F 1 "D" H 4600 2400 50  0000 C CNN
+F 2 "Keebio-Parts:Diode-dual" H 4600 2500 50  0001 C CNN
+F 3 "" H 4600 2500 50  0001 C CNN
+	1    4600 2500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10000 1350 10000 2250
+Wire Wire Line
+	10000 2250 10000 4500
+Wire Wire Line
+	9200 1500 9200 2250
+Wire Wire Line
+	8400 1500 8400 2250
+Wire Wire Line
+	7800 1900 8600 1900
 $EndSCHEMATC
