@@ -300,30 +300,6 @@ Connection ~ 6200 1900
 Connection ~ 7000 1900
 Connection ~ 7800 1900
 $Comp
-L KEYSW K10
-U 1 1 5A809C1D
-P 4900 2250
-F 0 "K10" H 4850 2250 60  0000 C CNN
-F 1 "KEYSW" H 4900 2150 60  0001 C CNN
-F 2 "Keebio-Parts:Hybrid_PCB_100H_Dual_hole-nosilk" H 4900 2250 60  0001 C CNN
-F 3 "" H 4900 2250 60  0000 C CNN
-	1    4900 2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L D D10
-U 1 1 5A809C23
-P 4600 2500
-F 0 "D10" H 4600 2600 50  0000 C CNN
-F 1 "D" H 4600 2400 50  0000 C CNN
-F 2 "Keebio-Parts:Diode-dual" H 4600 2500 50  0001 C CNN
-F 3 "" H 4600 2500 50  0001 C CNN
-	1    4600 2500
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	4600 2250 4600 2350
-$Comp
 L KEYSW K11
 U 1 1 5A809C2A
 P 5700 2250
@@ -443,8 +419,6 @@ F 3 "" H 8600 2500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8600 2250 8600 2350
-Wire Wire Line
-	4500 2650 4600 2650
 Connection ~ 5400 2650
 Connection ~ 6200 2650
 Connection ~ 7000 2650
@@ -752,7 +726,6 @@ Wire Wire Line
 Wire Wire Line
 	5200 1300 5200 1500
 Connection ~ 5200 1500
-Connection ~ 5200 2250
 Connection ~ 5200 2950
 Connection ~ 5200 3700
 Wire Wire Line
@@ -761,7 +734,6 @@ Connection ~ 6000 1500
 Connection ~ 6000 2250
 Connection ~ 6000 2950
 Connection ~ 4600 1900
-Connection ~ 4600 2650
 Connection ~ 4600 3350
 Connection ~ 4600 4100
 Connection ~ 4600 4900
@@ -835,10 +807,6 @@ Wire Wire Line
 Wire Wire Line
 	8600 3350 9400 3350
 Wire Wire Line
-	5200 1500 5200 2250
-Wire Wire Line
-	5200 2250 5200 2950
-Wire Wire Line
 	5200 2950 5200 3700
 Wire Wire Line
 	5200 3700 5200 4500
@@ -850,8 +818,6 @@ Wire Wire Line
 	6000 2950 6000 3700
 Wire Wire Line
 	4600 1900 5400 1900
-Wire Wire Line
-	4600 2650 5400 2650
 Wire Wire Line
 	4600 3350 5400 3350
 Wire Wire Line
@@ -974,4 +940,8 @@ $EndComp
 NoConn ~ 1650 1600
 NoConn ~ 1650 2000
 NoConn ~ 1650 2100
+Wire Wire Line
+	4500 2650 5400 2650
+Wire Wire Line
+	5200 1500 5200 2950
 $EndSCHEMATC
