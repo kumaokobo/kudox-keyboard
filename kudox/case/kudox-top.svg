@@ -3,8 +3,8 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 436.4 392.9" style="enable-background:new 0 0 436.4 392.9;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#FF0000;stroke-width:1.000000e-02;stroke-miterlimit:10;}
-	.st1{fill:none;stroke:#FF0000;stroke-width:1.000000e-02;stroke-linecap:round;stroke-linejoin:round;}
+	.st0{fill:none;stroke:#FF0000;stroke-width:0.2835;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#FF0000;stroke-width:0.2835;stroke-linecap:round;stroke-linejoin:round;}
 </style>
 <g id="レイヤー_2">
 	<path class="st0" d="M33.8,5.7c20.2,0,314.6,0,337.6,0s43.5,6.9,43.5,39.5c0,34,0.5,231.1,0.4,241.4c-0.2,12.8,2.7,18.5,3.9,20.6
@@ -19,7 +19,7 @@
 	</g>
 	<circle class="st1" cx="30.7" cy="217.6" r="4.8"/>
 	<circle class="st1" cx="403.7" cy="311.3" r="4.8"/>
-	<circle class="st1" cx="380.6" cy="38.8" r="4.8"/>
+	<circle class="st1" cx="397.6" cy="38.8" r="4.8"/>
 	<circle class="st1" cx="82.1" cy="71.5" r="4.8"/>
 	<g>
 		<path class="st1" d="M79.9,20.7h39.6"/>
@@ -218,7 +218,5 @@
 		<path class="st1" d="M71.5,276.6H31.9"/>
 		<path class="st1" d="M31.9,276.6V237"/>
 	</g>
-</g>
-<g id="レイヤー_3">
 </g>
 </svg>
