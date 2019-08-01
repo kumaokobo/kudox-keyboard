@@ -53,7 +53,8 @@ The Kudox rev.1 is the first commercially available version of the Kudox keyboar
 <img src="../img/qmk-badge-dark.png" alt="qmk" width="200"/>
 </p>
 
-Kuedox-keyboard uses QMK for its firmware, follow the QMK installation instructions [here](hthttps://docs.qmk.fm/#/newbs_getting_started).
+Kudox keyboard uses [QMK Firmware](https://github.com/qmk/qmk_firmware) for its firmware.  
+Follow the QMK installation instructions [here](https://docs.qmk.fm/#/newbs_getting_started), then compile and burn the firmware as follows:  
 
 ### Basic compiling and burning command
 
@@ -73,21 +74,13 @@ Edit [config.h](https://github.com/qmk/qmk_firmware/blob/add-kudox-game/keyboard
 
 ```cpp
 /* Select hand configuration */
-// #define MASTER_LEFT
-// #define MASTER_RIGHT
-#define EE_HANDS
-```
-↓
-
-```cpp
-/* Select hand configuration */
 #define MASTER_LEFT
 // #define MASTER_RIGHT
 // #define EE_HANDS
 ```
 
-Save the file, then connect Pro Micro(**left hand**) and your PC by USB cable.
-Compile and burn the firmware by running [Basic compiling and burning command](#basic-compiling-and-burning-command).
+Save the file, then connect Pro Micro(**left hand**) and your PC by USB cable.  
+Compile and burn the firmware by running [Basic compiling and burning command](#basic-compiling-and-burning-command) as follows:  
 
 ```sh
 $ cd path/to/qmk_firmware
@@ -96,7 +89,7 @@ $ make kudox/rev1:default:avrdude
 
 #### 2. Right hand side
 
-Edit [config.h](https://github.com/qmk/qmk_firmware/blob/add-kudox-game/keyboards/kudox_game/keymaps/default/config.h) and activate `MASTER_RIGHT` .
+Edit [config.h](https://github.com/qmk/qmk_firmware/blob/add-kudox-game/keyboards/kudox_game/keymaps/default/config.h) and activate `MASTER_RIGHT` .  
 
 ```cpp
 /* Select hand configuration */
@@ -105,16 +98,16 @@ Edit [config.h](https://github.com/qmk/qmk_firmware/blob/add-kudox-game/keyboard
 // #define EE_HANDS
 ```
 
-Save the file, then connect Pro Micro(**right hand**) and your PC by USB cable.
-Compile and burn the firmware by running [Basic compiling and burning command](#basic-compiling-and-burning-command).
+Save the file, then connect Pro Micro(**right hand**) and your PC by USB cable.  
+Compile and burn the firmware by running [Basic compiling and burning command](#basic-compiling-and-burning-command).  
 
 
 #### 3. In the case of using Master Left
 
-In the case of using Master Left, burn Pro Micro(**left hand**) the firmware again.
-※ In the case of using Master Right, skip the following process and go to next 4.
+In the case of using Master Left, burn Pro Micro(**left hand**) the firmware again.  
+※ In the case of using Master Right, skip the following process and go to next.  
 
-Edit [config.h](https://github.com/qmk/qmk_firmware/blob/add-kudox-game/keyboards/kudox_game/keymaps/default/config.h) and activate `MASTER_RIGHT` .
+Edit [config.h](https://github.com/qmk/qmk_firmware/blob/add-kudox-game/keyboards/kudox_game/keymaps/default/config.h) and activate `MASTER_LEFT` .  
 
 ```cpp
 /* Select hand configuration */
@@ -123,13 +116,13 @@ Edit [config.h](https://github.com/qmk/qmk_firmware/blob/add-kudox-game/keyboard
 // #define EE_HANDS
 ```
 
-Save the file, then connect Pro Micro(**left hand**) and your PC by USB cable.
-Compile and burn the firmware by running [Basic compiling and burning command](#basic-compiling-and-burning-command).
+Save the file, then connect Pro Micro(**left hand**) and your PC by USB cable.  
+Compile and burn the firmware by running [Basic compiling and burning command](#basic-compiling-and-burning-command).  
 
 #### 4. Confirmation
 
-Pull out the USB cable, then connect left hand and right hand by TRRS cable.
-Plug in the Pro Micro (Master) the USB cable.
+Pull out the USB cable, then connect left hand and right hand by TRRS cable.  
+Plug in the Pro Micro (Master) the USB cable.  
 
 ## Layout
 

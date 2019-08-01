@@ -16,8 +16,8 @@ The Kudox Game rev.1 is the first commercially available version of the Kudox Ga
 |  26 | Cherry MX compatible switches                 |                                                     |
 |   1 | Kudox Game PCB                                    | |
 |  26 | 1N4148 diodes                                 | SMD diodes can also be used                         |
-|   2 | Through hole momentary switch                 | Dimensions 6mm x 6mm x 4.3mm                        |
-|   2 | Arduino Pro Micro compatible microcontroller  | ATMega32U4 |
+|   1 | Through hole momentary switch                 | Dimensions 6mm x 6mm x 4.3mm                        |
+|   1 | Arduino Pro Micro compatible microcontroller  | ATMega32U4 |
 |   1 | USB micro cable                               |                                                     |
 |  26 | Cherry MX compatible keycaps                  | 3x 1.5u keycaps, 1x 2u keycap, 22x 1u keycaps  |
 
@@ -46,7 +46,8 @@ The Kudox Game rev.1 is the first commercially available version of the Kudox Ga
 <img src="../img/qmk-badge-dark.png" alt="qmk" width="200"/>
 </p>
 
-Kuedox-keyboard uses QMK for its firmware, follow the QMK installation instructions [here](hthttps://docs.qmk.fm/#/newbs_getting_started), then compile and burn the firmware as follows:
+Kudox Game keyboard uses [QMK Firmware](https://github.com/qmk/qmk_firmware) for its firmware.  
+Follow the QMK installation instructions [here](https://docs.qmk.fm/#/newbs_getting_started), then compile and burn the firmware as follows:  
 
 ```sh
 $ cd path/to/qmk_firmware

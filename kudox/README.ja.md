@@ -1,12 +1,13 @@
 # Kudox Keyboard rev.1
 
-Kudox rev.1 は Column Stagger な分離キーボードです.
+Kudox rev.1 は Column Stagger な分離キーボードです.  
+**English Manual is [here](README.md).**
 
 ## Summary
 
   - [必要な部品](#必要な部品)
   - [組み立てガイド](#組み立てガイド)
-  - [ファームウェア](#firmware)
+  - [ファームウェア](#ファームウェア)
 
 ## 必要な部品
 
@@ -35,23 +36,23 @@ Kudox rev.1 は Column Stagger な分離キーボードです.
   1. 1N4148ダイオード (向きがあります. カソードが四角型の穴側にくるように差します)
   2. PJ-320Aコネクタ
   3. タクトスイッチ
-  4. 4.7 kΩ 抵抗 (どちらかのPCBのみにはんだ付けします)
-  5. Pro Micro の ヘッダ・ピン (**この時点ではまだ Pro Micro 自身をはんだ付けしちゃだめです**).
+  4. 4.7 kΩ 抵抗 (左右どちらかのPCBのみにはんだ付けします)
+  5. Pro Micro の ヘッダ・ピン (**Pro Micro 自身のはんだ付けはまだしません**).
 - PCB を裏返します.
 - スイッチをはんだ付けします.
 - もう一度 PCB を裏返します. (最初の向きに戻します)
-- Pro Micros を ヘッダ・ピンにはんだ付けします.
+- Pro Micro を ヘッダ・ピンにはんだ付けします.
   - `LEFT` と書いてある側: Pro Micro を表向き(チップが見えるように)にはんだ付けします.
   - `RIGHT` と書いてある側: Pro Micro を裏向き(チップ類がPCBに向くように)にはんだ付けします.
 
-## Firmware
+## ファームウェア
 
 <p align="center">
 <img src="../img/qmk-badge-dark.png" alt="qmk" width="200"/>
 </p>
 
-Kuedox Keyboard は [QMK Firmware](https://github.com/qmk/qmk_firmware) を利用しています.  
-QMK Firmware のインストールは [こちら]((hthttps://docs.qmk.fm/#/newbs_getting_started)) をご覧ください.  
+Kudox Keyboard は [QMK Firmware](https://github.com/qmk/qmk_firmware) を利用しています.  
+QMK Firmware のインストールは [こちら](https://docs.qmk.fm/#/newbs_getting_started) をご覧ください.  
 
 ### 基本書き込みコマンド
 
@@ -64,17 +65,9 @@ $ make kudox/rev1:default:avrdude
 
 初回書き込み時には、 左手・右手 両方の Pro Micro にファームを書く必要があります.  
 
-左手側から書き込んでいきます.(どちらからでも良いのですが)
+#### 1. 左手側
 
 [config.h](https://github.com/qmk/qmk_firmware/blob/add-kudox-game/keyboards/kudox_game/keymaps/default/config.h) を編集して `MASTER_LEFT` を有効にします.
-
-```cpp
-/* Select hand configuration */
-// #define MASTER_LEFT
-// #define MASTER_RIGHT
-#define EE_HANDS
-```
-↓
 
 ```cpp
 /* Select hand configuration */
@@ -83,14 +76,14 @@ $ make kudox/rev1:default:avrdude
 // #define EE_HANDS
 ```
 
-保存したら、左手側の Pro Micro と PC をUSBケーブルで接続し、 [基本書き込みコマンド](#基本書き込みコマンド) を実行します.
+保存したら、 **左手側** の Pro Micro と PC をUSBケーブルで接続し、 [基本書き込みコマンド](#基本書き込みコマンド) を実行します.
 
 ```sh
 $ cd path/to/qmk_firmware
 $ make kudox/rev1:default:avrdude
 ```
 
-次に、右手側に書き込みます.
+#### 2. 右手側
 
 [config.h](https://github.com/qmk/qmk_firmware/blob/add-kudox-game/keyboards/kudox_game/keymaps/default/config.h) を編集して `MASTER_RIGHT` を有効にします.
 
@@ -101,15 +94,12 @@ $ make kudox/rev1:default:avrdude
 // #define EE_HANDS
 ```
 
-保存したら、左手側の Pro Micro と PC をUSBケーブルで接続し、 [基本書き込みコマンド](#基本書き込みコマンド) を実行します.
+保存したら、**右手側** の Pro Micro と PC をUSBケーブルで接続し、 [基本書き込みコマンド](#基本書き込みコマンド) を実行します.
 
-```sh
-$ cd path/to/qmk_firmware
-$ make kudox/rev1:default:avrdude
-```
+#### 3. 左手をマスターにする場合
 
-左手をマスターにする場合、最後にもう一度左手用キーボードに書き込みます.
-※ 右手をマスターにする場合、この手順はスキップし、TRRSケーブルの接続へ進んでください.
+左手をマスターにする場合、最後にもう一度左手用キーボードに書き込みます.  
+※ 右手をマスターにする場合、この手順はスキップし、[動作確認](#動作確認) へ進んでください.
 
 [config.h](https://github.com/qmk/qmk_firmware/blob/add-kudox-game/keyboards/kudox_game/keymaps/default/config.h) を編集して `MASTER_LEFT` を有効にします.
 
@@ -120,14 +110,16 @@ $ make kudox/rev1:default:avrdude
 // #define EE_HANDS
 ```
 
-保存したら、左手側の Pro Micro と PC をUSBケーブルで接続し、 [基本書き込みコマンド](#基本書き込みコマンド) を実行します.
+保存したら、 **左手側** の Pro Micro と PC をUSBケーブルで接続し、 [基本書き込みコマンド](#基本書き込みコマンド) を実行します.
 
+#### 4. 動作確認
 
-ここまでできたら一度USBケーブルを外し、 TRRSケーブルで左右をつなぎます.
-マスター側の Pro Micro にUSBケーブルをつなぎ、左右ともに正常動作することを確認します.
+一度USBケーブルを外してから、 TRRSケーブルで左右をつなぎます.  
+マスター側の Pro Micro にUSBケーブルをつなぎ、左右ともに文字入力可能なことを確認します.
 
+以降、キー配列を変更した場合など再びファームを書く場合は、 TRRSケーブルをつないだままマスター側の Pro Micro に書き込みを行うことで、左右に設定が反映されるようになります.
 
-## Layout
+## レイアウト
 
 <p align="center">
 <img src="../img/kudox-layout.png" alt="Kudox rev1.0 layout"/>
