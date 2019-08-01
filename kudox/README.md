@@ -1,421 +1,133 @@
-# Kudox rev.0
+# Kudox Keyboard rev.1
 
-The Kudox rev.0 is the first commercially available version of the Kudox keyboard.
+The Kudox rev.1 is the first commercially available version of the Kudox keyboard.  
+**Japanese Manual is [here](README.ja.md).**
 
 ## Summary
 
   - [Bill of materials](#bill-of-materials)
-  - [Other assembly guides](#other-assembly-guides)
   - [Assembly guide](#assembly-guide)
   - [Firmware](#firmware)
-  - [Hot swappable mod](#hot-swappable-mod)
-  - [RGB Underglow](#rgb-underglow)
 
 ## Bill of materials
 
 | Qty | Item                                          | Notes                                               |
 |----:|-----------------------------------------------|-----------------------------------------------------|
-|  70 | Cherry MX compatible switches                 |                                                     |
-|   2 | Redox PCBs                                    | |
-|  70 | 1N4148 diodes                                 | SMD diodes can also be used                         |
+|  64 | Cherry MX compatible switches                 |                                                     |
+|   2 | Kudox PCBs                                    | |
+|  64 | 1N4148 diodes                                 | SMD diodes can also be used                         |
 |   2 | PJ-320A 4 poles 3.5 mm TRRS connectors        |                                                     |
-|   2 | 4.7 kOhm resistors                            | Need to be soldered on one half only                |
+|   2 | 4.7 kΩ resistors                              | Need to be soldered on one half only                |
 |   2 | Through hole momentary switch                 | Dimensions 6mm x 6mm x 4.3mm                        |
-|   2 | Arduino Pro Micro compatible microcontrollers | Beware of the infamous Green Pro Micro, see note below. |
+|   2 | Arduino Pro Micro compatible microcontrollers | ATMega32U4 |
 |   1 | TRRS cable                                    |                                                     |
 |   1 | USB micro cable                               |                                                     |
-|  70 | Cherry MX compatible keycaps                  | 10x 1.25u keycaps, 6x 1.5u keycaps, 54x 1u keycaps  |
-|  14 | WS2812/WS2812B leds                           | Optional RGB-underglow                              |
+|  64 | Cherry MX compatible keycaps                  | 4x 1.25u keycaps, 2x 1.75u keycaps, 2x 2.25u keycaps, 46x 1u keycaps  |
 
-
-> :warning: Pay attention to the Pro Micro you use in this project. Online you can find the infamous **Green Pro Micros** which have the same pinout of the normal Pro Micro but use a different power circuitry. Being the Redox a split keyboard that relies on detecting which side is directly powered to find which side is the master, these clones are not suited for the task. A more detailed explaination [here](http://www.40percent.club/2017/09/green-pro-micro.html). Please note that they can come in different colors, not necessarily green.
-
-## Other assembly guides
-
-External links to some other guides to building the Kudox keyboard:
-
-### Video guides
-
-Two great video guides by [インケンch](https://www.youtube.com/channel/UCXJZdip7JmW74HQHCtfYzFw) (Japanese only).
-
-<p align="center">
-<a href="http://www.youtube.com/watch?v=EVRlU_eR9j4"><img src="http://img.youtube.com/vi/EVRlU_eR9j4/0.jpg" alt="Redox hardware assembly" width="300"/></a>
-<a href="http://www.youtube.com/watch?v=jRIRdfIIa1Q"><img src="http://img.youtube.com/vi/jRIRdfIIa1Q/0.jpg" alt="Redox firmware" width="300"/></a>
-</p>
 
 ## Assembly guide
 
 <p align="center">
-<img src="../img/redox-pcb2.jpg" alt="Redox PCBs" width="600"/>
+<img src="../img/kudox-pcb.jpg" alt="Redox PCBs" width="600"/>
 </p>
 
-Installation steps:
+### Installation steps:
 
 - Solder components:
   1. Solder 1N4148 diodes. Keep the diode legs for the right hand controller installation.
   2. Solder PJ-320A connectors.
   3. Solder momentary switches.
-  4. Solder 4.7k Ohm resistors **on one half only**. If you are going for the RGB-underglow ignore this step.
-  5. Solder the Pro Micro header pins (**do not solder the Pro Micro controllers yet**). This step may differ depending on which case your're using. Refer to the following:
-    * See 3D-Printed case [right hand controller installation detail](#3d-printed-case-assembly).
-    * See Falbatech's [bamboo case](#falbatechs-bamboo-case-assembly).
-    * See [socketed Pro Micro installation guide](#pro-micro-sockets).
-  6. Optional see [RGB-underglow instructions](#rgb-underglow).
+  4. Solder 4.7 kΩ resistors **on one half only**.
+  5. Solder the Pro Micro header pins (**do not solder the Pro Micro controllers yet**).
 - Flip the PCBs.
 - Solder switches to the PCB.
-  * If you want hot swappable switches, see
-    [the hot swappable switch instructions](#hot-swappable-switches).
 - Flip the PCBs again.
 - Solder Pro Micros to the header pins following the PCB labelling.
+  - `LEFT` side: Solder Pro Micro face up.
+  - `RIGHT` side: Solder Pro Micro face down.
 
-##### Right hand back side:
-<p align="center">
-<img src="../img/pcb-assembly1.jpg" alt="Right hand back side" width="600"/>
-</p>
-
-##### Left hand back side:
-<p align="center">
-<img src="../img/pcb-assembly2.jpg" alt="Left hand back side" width="600"/>
-</p>
-
-##### Diode installation detail:
-<p align="center">
-<img src="../img/pcb-assembly3.jpg" alt="Diode installation detail" width="600"/>
-</p>
-
-### 3D Printed case assembly
-
-To lower the build costs I designed a 3D printable case which you can find in this repository or on [thingiverse](https://www.thingiverse.com/thing:2886662), feel free to modify it to best suit your needs.
-
-<p align="center">
-<img src="../img/3d-printed-case.jpg" alt="3D printed case" width=600 />
-</p>
-
-Parts:
-
-| Qty | Item                                          | Notes                                               |
-|----:|-----------------------------------------------|-----------------------------------------------------|
-|   1 | Left top plate                                | [KudoxTopLeft.STL](./case/KudoxTopLeft.STL)|
-|   1 | Left bottom                                   | [KudoxBottomLeft.STL](./case/KudoxBottomLeft.STL)|
-|   1 | Right top plate                               | [KudoxTopRight.STL](./case/KudoxTopRight.STL)|
-|   1 | Right bottom                                  | [KudoxBottomRight.STL](./case/KudoxBottomRight.STL)|
-|  10 | M3 x 8mm (or 5mm) screws                      |                                                     |
-
-For the Pro Micro installation on the right hand use the diodes legs leftover from previous steps as this will make the controller's USB port much closer to the PCB, this is needed for the USB connector to fit in the 3D printed case. If you're using Falbatech's bamboo case this is not needed and you can use standard header pins. Right hand controller installation detail:
-
-1. Use a breadboard to keep the diode's legs from falling.
-2. Solder the diode's legs in place. You want to have the Pro Micro as close to the Redox's PCB as possible.
-3. Cut the excess.
-4. Apply some electrical tape under the controller to prevent shorts.
-5. Install your preferred switches (**remember: the controller installation is the last step**).
-6. Solder the controllers in place.
-
-<p align="center">
-<img src="../img/right-hand-controller-detail1.jpg" alt="Right hand controller installation detail" width="300"/>
-<img src="../img/right-hand-controller-detail2.jpg" alt="Right hand controller installation detail" width="300"/>
-</p>
-
-Here's some measurements of the Pro Micro installation:
-
-<p align="center">
-<img src="../img/right-hand-controller-detail3.jpg" alt="Right hand controller installation detail" width="400"/>
-</p>
-
-### Falbatech's bamboo case assembly
-
-If you're using Falbatech's bamboo case the use of the diode's legs is not needed and you can use standard header pins
-
-<p align="center">
-<img src="../img/falbatech-case-assembly.jpg" alt="Falbatech's case assembly" width="600"/>
-</p>
 
 ## Firmware
 
-> :warning: If you have a Redox with RGB backlight installed you **MUST** use the serial connection. For details see [the RGB underglow firmare instructions.](#rgb-underglow)
+<p align="center">
+<img src="../img/qmk-badge-dark.png" alt="qmk" width="200"/>
+</p>
 
-The Redox uses QMK for its firmware, follow the QMK installation instructions [here](https://docs.qmk.fm/#/getting_started_build_tools), then compile and burn the firmware on both halves as follows:
+Kudox keyboard uses [QMK Firmware](https://github.com/qmk/qmk_firmware) for its firmware.  
+Follow the QMK installation instructions [here](https://docs.qmk.fm/#/newbs_getting_started), then compile and burn the firmware as follows:  
+
+### Basic compiling and burning command
 
 ```sh
 $ cd path/to/qmk_firmware
-$ make redox/rev1:default:avrdude
+$ make kudox/rev1:default:avrdude
 ```
 
-> :warning: You always need to burn the firmware on **BOTH** halves of the keyboard.
+### First time burning
 
-You can find the code for the Redox here: [QMK - Redox keyboard](https://github.com/qmk/qmk_firmware/tree/master/keyboards/redox).
+You need to burn the firmware both left hand and right hand.
 
-In the [firmware/](https://github.com/mattdibi/redox-keyboard/tree/master/redox/firmware) folder I added some pre-built hex files with the default keymap for testing purpose. You can upload the firmware binaries directly using the command below:
 
-```sh
-avrdude -p atmega32u4 -P $(COM_PORT) -c avr109 -U flash:w:redox_rev1_default.hex
-```
+#### 1. Left hand side
 
-### Setting EE_hands to use either hands as master
-If you define `EE_HANDS` in your `config.h`, you will need to set the EEPROM for the left and right halves.
+Edit [config.h](https://github.com/qmk/qmk_firmware/blob/add-kudox-game/keyboards/kudox_game/keymaps/default/config.h) and activate `MASTER_LEFT` .
 
-The EEPROM is used to store whether the half is left handed or right handed. This makes it so that the same firmware file will run on both hands instead of having to flash left and right handed versions of the firmware to each half. To flash the EEPROM file for the left half run:
-```
-$ cd path/to/qmk/folder
-avrdude -p atmega32u4 -P $(COM_PORT) -c avr109 -U eeprom:w:"./quantum/split_common/eeprom-lefthand.eep"
-// or the equivalent in dfu-programmer
-```
-and similarly for right half
-```
-avrdude -p atmega32u4 -P $(COM_PORT) -c avr109 -U eeprom:w:"./quantum/split_common/eeprom-righthand.eep"
-// or the equivalent in dfu-programmer
-```
-
-> :warning: Replace `$(COM_PORT)` with the port of your device (e.g. `/dev/ttyACM0`)
-
-After you have flashed the EEPROM, you then need to set `EE_HANDS` in `keyboard/redox/keymaps/default/config.h` like so:
-
-```c++
-// ...
-/* Use I2C or Serial, not both */
-
-// #define USE_SERIAL
-#define USE_I2C
-
+```cpp
 /* Select hand configuration */
-
-// #define MASTER_LEFT
-// #define MASTER_RIGHT
-#define EE_HANDS
-
-#undef RGBLED_NUM
-#define RGBLIGHT_ANIMATIONS
-// ...
-```
-
-Then rebuild the hex files and reflash.
-
-Note that you need to program both halves, but you have the option of using different keymaps for each half. You could program the left half with a QWERTY layout and the right half with a Colemak layout using bootmagic's default layout option. Then if you connect the left half to a computer by USB the keyboard will use QWERTY and Colemak when the right half is connected.
-
-## Hot swappable mod
-
-With a few modifications to the original design, it is possible to make a
-Redox with hot swappable switches and socketed Pro Micros. This was tested
-with Falbatech's PCBs and PVC cases. The switch hotswap mod should work with
-any case with a top plate that the switches snap into, with about a millimeter
-of extra clearance between the top plate and the PCB, and another extra half
-millimeter or so between the PCB and case bottom. If your (non-Falba) PCBs
-have particularly small diameter thru-holes for switch pins, check the
-Mill-Max 7305 spec sheet to ensure the receptacles will fit.
-
-### Extended bill of materials
-
-| Qty | Item                                          | Notes                                               |
-|----:|-----------------------------------------------|-----------------------------------------------------|
-|   1 | Peel-A-Way Sockets (82 pin strip)             | Available from [keeb.io](https://keeb.io/collections/frontpage/products/peel-a-way-sockets-for-pro-micros?variant=12972145344606)|
-| 140 | Mill-Max 7305 Pin Receptacles                 | Available from [Digi-Key](https://www.digikey.com/product-detail/en/mill-max-manufacturing-corp/7305-0-15-15-47-27-10-0/ED1039-ND/1765737) or [Mouser](https://www.mouser.com/ProductDetail/Mill-Max/7305-0-15-15-47-27-10-0?qs=sGAEpiMZZMtzcnMBgC2bs4r8MywUouWab4lhjKyTlYM%3D)|
-|   1 | Roll of Kapton tape                           |                                                     |
-
-Some extra Mill-Max receptacles may come in handy, in case of soldering
-mistakes or manufacturing defects.
-
-### Pro Micro Sockets
-
-<p align="center">
-<img src="../img/hs-mod-peelaway-socket.jpg" alt="Pro Micro Peel-A-Way socket top detail" width="300"/>
-<img src="../img/hs-mod-peelaway-solder.jpg" alt="Pro Micro Peel-A-Way socket solder detail" width="300"/>
-</p>
-
-Socketing your microcontrollers will allow you to swap out broken Pro Micros,
-or swap any Pro Micro pin-compatible microcontroller (with, for example, USB-C)
-into a finished build. Before you begin, you'll want to follow the
-[standard assembly guide steps](#assembly-guide)
-for soldering 1N4148 diodes, PJ-320A connectors,
-momentary switches, and any resistors you'll be using. Remember to 
-**trim the legs off your diodes and keep them**, as we'll be using the legs to
-make pins for each Pro Micro.
-
-Installation steps, after initial soldering:
-
-1. Using scissors or flush cutters, cut out two 12-pin strips of Peel-A-Way
-   sockets.
-2. With the bottom side of the PCB (the side with the diodes, momentary
-   switch, and TRRS connector visible) facing up, place the cut Peel-A-Way
-   socket strips into the thru-holes where the Pro Micro headers would
-   usually go.
-3. Temporarily fasten the Peel-A-Way sockets to the PCB with Kapton tape.
-4. Flip over the PCB.
-5. Solder the sockets into the thru-holes.
-6. Install your switches. This step differs depending on whether you plan
-   on making your switches hotswappable:
-   * For fixed, non-hotswap switches, follow [the standard assembly guide](#assembly-guide).
-   * Hotswap switch builds should follow [the hot swappable switch install guide](#hot-swappable-switches).
-7. Flip and orient your Pro Micro so that its labels match the labels on your
-   PCB, then cover the bottom of the Pro Micro in electrical or Kapton tape
-   to prevent shorts.
-8. Thread the least bent of your trimmed diode legs through the thru-holes
-   in your Pro Micro and into the corresponding sockets on the PCB. 
-9. Keeping the Pro Micro as level as possible, solder the diode legs to the
-   Pro Micro. It may help to keep a USB cable attached to the Pro Micro, to
-   help ensure the port ends up in a usable orientation.
-10. Trim the excess length of the diode legs off of the top of the Pro Micro.
-11. Repeat these steps for the other half of your Redox.
-
-### Hot Swappable Switches
-
-> :warning: A few things to keep in mind:
-> - Some switch pins (so far, Kailh Box Royals) may be slighly too wide to
->   fit the Mill-Max receptacle. When in doubt, try it with spare receptacles.
-> - The only thing keeping the PCB attached to the top plate is the switches;
->   if you remove too many (more than half per side), the PCB will detach and
->   fall into the case. Try to swap only a few switches at once.
-
-<p align="center">
-<img src="../img/hs-mod-finished.jpg" alt="Finished Redox with hotswap switches" width=600 />
-</p>
-
-To build a Redox with hot swappable switches, follow these steps instead of
-the switch installation instructions in the standard build guide. Soldering
-Mill-Max receptacles is trickier than soldering bare switch pins; a small
-iron tip, small diameter solder, and relatively low temperatures are
-recommended.
-
-1. Take each of your switches and push a Mill-Max receptacle fully onto each
-   pin. One end of the receptacle has a small ring around it that makes it
-   wider than the other end; the receptacle should be oriented so that the
-   wide end is touching the switch housing (and will end up on the top,
-   plate-facing side of the PCB in the assembled keyboard).
-2. Snap switches into each of the four corners of your top plate, and two
-   more into the mounting holes that will be directly above the Pro Micro
-   in the assembled keyboard.
-3. Flip over the top plate and install the PCB.
-   - The receptacles might be a tight fit for the PCB thru-holes; if so,
-     press the PCB into the switches to make sure the PCB is fully mounted
-     and level.
-4. Install the rest of the switches, starting from the outside edges of the
-   plate and moving inward.
-   - Initially, installing switches will likely shift the surrounding unsoldered
-     switches and the PCB out of position, so pinch any jostled switches and
-     the PCB back together as you go.
-   - Be careful not to apply too much pressure to the stem of the switch, as
-     this could damage it.
-5. Solder your switches, starting from the corners then going from the outside
-   edges to the inner switches in roughly the same order as the previous step.
-   - Before soldering each switch, apply pressure to the top of the switch
-     and the bottom of the PCB a final time to ensure the switch, plate, and
-     PCB are all properly seated.
-   - Apply heat to the pin receptacle and pad, then melt your solder onto
-     the pad. You will want a "volcano" shaped solder joint which fully
-     encircles the bottom of the receptacle, but doesn't fill its inner
-     surface.
-   - If you need to test that you haven't accidentally soldered a pin
-     permanently into its receptacle by allowing solder to spill into the
-     inner surface of the receptacle, you can try and temporarily remove
-     the switch as you would during a hot swap. Use a switch puller to depress
-     the tabs on the top and bottom of the switch (or the left and right for
-     the flipped 1.5u key switches), and gently pull up on the switch until
-     it is free of the keyboard. Note that if the switch and receptacles are
-     still hot, it might take some extra effort to pull out the switch.
-     Next, snap the switch back into its socket, and fix any unsoldered
-     switches that were knocked out of place during this process.
-6. Repeat these steps for the other side of the keyboard.
-
-##### Installing Mill-Max receptacles onto switch pins:
-<p align="center">
-<img src="../img/hs-mod-millmax.jpg" alt="Mill-Max receptacle installation" width="600"/>
-</p>
-
-##### Pins, receptacles, and PCB in proper alignment:
-<p align="center">
-<img src="../img/hs-mod-pre-solder.jpg" alt="Proper alignment of receptacles, pins, and PCB" width="600"/>
-</p>
-
-##### Soldered hot swap receptacles:
-<p align="center">
-<img src="../img/hs-mod-soldered.jpg" alt="Soldered hot swap receptacles" width="600"/>
-</p>
-
-## RGB Underglow
-
-> :warning: With this configuration:
-> - You don't need to solder the 4.7k resistors since the I2C connection won't be used.
-> - You can use only one hand as master.
-
-Parts:
-- [ ] WS2812/WS2812B LED strip
-- [ ] 24 AWG (or smaller) stranded wire (white, red, black are good choices)
-
-Data connection:
-
-```
-Led strip Headers -> DIN -> DO -> TRRS pad -> (TRRS to other side) -> TRRS pad -> DIN
-```
-
-### Assembly: LEFT hand as master (usually plugged in to the PC)
-- On the LEFT hand:
-  1. Solder the LED Strip headers as seen in the pictures below.
-  2. Solder the DO Pin of the RGB strip to the TRRS pad as seen in the figures below.
-- On the RIGHT hand:
-  1. Solder VCC and GND of the RGB strip to the LED Strip headers.
-  2. Solder the DIN Pin of the RGB strip to the TRRS pad as seen in the figures below.
-- Flash the firmware with the serial and RGB Backlight options on, specifying the number of LEDs installed (see instruction [here](#rgb-underglow-firmware)).
-
-##### Left hand back side:
-<p align="center">
-<img src="../img/rgb-underglow1.jpg" alt="RGB underglow left hand backside" width="600"/>
-</p>
-
-##### Right hand back side:
-
-<p align="center">
-<img src="../img/rgb-underglow2.jpg" alt="RGB underglow left hand backside" width="600"/>
-</p>
-
-### Assembly: RIGHT hand as master
-- On the RIGHT hand:
-  1. Solder the LED Strip headers to the RGB strip.
-  2. Solder the DO Pin of the RGB strip to the TRRS pad.
-- On the LEFT hand:
-  1. Solder VCC and GND of the RGB strip to the LED Strip headers.
-  2. Solder the DIN Pin of the RGB strip to the TRRS pad.
-
-### RGB Underglow firmware
-
-To enable RGB backlighting you need to modify the default firmware as follows:
-- Use serial communication instead of I2C.
-- Set the master hand.
-- Set the number of LED you installed.
-
-To do this, modify `qmk_firmware/keyboards/redox/keymaps/default/config.h` as follows:
-
-```c++
-// ...
-
-/* You need to use the sarial communication since we 
-used a cable to carry the data signal for the LED strip */
-#define USE_SERIAL
-
-/* Select hand configuration: you need to use as master 
-the hand that drives the LED strip */
 #define MASTER_LEFT
 // #define MASTER_RIGHT
-
-/* Put the total number of led used here */
-#undef RGBLED_NUM
-#define RGBLIGHT_ANIMATIONS
-#define RGBLED_NUM 14
-#define RGBLIGHT_HUE_STEP 8
-#define RGBLIGHT_SAT_STEP 8
-#define RGBLIGHT_VAL_STEP 8
-
-// ...
+// #define EE_HANDS
 ```
 
-Then compile and burn the firmware on both controllers:
+Save the file, then connect Pro Micro(**left hand**) and your PC by USB cable.  
+Compile and burn the firmware by running [Basic compiling and burning command](#basic-compiling-and-burning-command) as follows:  
 
 ```sh
 $ cd path/to/qmk_firmware
-$ make redox/rev1:default:avrdude
+$ make kudox/rev1:default:avrdude
 ```
+
+#### 2. Right hand side
+
+Edit [config.h](https://github.com/qmk/qmk_firmware/blob/add-kudox-game/keyboards/kudox_game/keymaps/default/config.h) and activate `MASTER_RIGHT` .  
+
+```cpp
+/* Select hand configuration */
+// #define MASTER_LEFT
+#define MASTER_RIGHT
+// #define EE_HANDS
+```
+
+Save the file, then connect Pro Micro(**right hand**) and your PC by USB cable.  
+Compile and burn the firmware by running [Basic compiling and burning command](#basic-compiling-and-burning-command).  
+
+
+#### 3. In the case of using Master Left
+
+In the case of using Master Left, burn Pro Micro(**left hand**) the firmware again.  
+※ In the case of using Master Right, skip the following process and go to next.  
+
+Edit [config.h](https://github.com/qmk/qmk_firmware/blob/add-kudox-game/keyboards/kudox_game/keymaps/default/config.h) and activate `MASTER_LEFT` .  
+
+```cpp
+/* Select hand configuration */
+#define MASTER_LEFT
+// #define MASTER_RIGHT
+// #define EE_HANDS
+```
+
+Save the file, then connect Pro Micro(**left hand**) and your PC by USB cable.  
+Compile and burn the firmware by running [Basic compiling and burning command](#basic-compiling-and-burning-command).  
+
+#### 4. Confirmation
+
+Pull out the USB cable, then connect left hand and right hand by TRRS cable.  
+Plug in the Pro Micro (Master) the USB cable.  
 
 ## Layout
 
 <p align="center">
-<img src="../img/redox-layout.png" alt="Redox rev1.0 layout"/>
+<img src="../img/kudox-layout.png" alt="Kudox rev1.0 layout"/>
 </p>
 
-[KLE Layout permalink](http://www.keyboard-layout-editor.com/##@_name=Redox&author=Mattia%20Dal%20Ben&switchMount=cherry&plate:false&pcb:false%3B&@_x:3.5%3B&=%23%0A3&_x:10.5%3B&=*%0A8%3B&@_y:-0.875&x:2.5%3B&=%2F@%0A2&_x:1%3B&=$%0A4&_x:8.5%3B&=%2F&%0A7&_x:1%3B&=(%0A9%3B&@_y:-0.875&x:5.5%3B&=%25%0A5&_x:6.5%3B&=%5E%0A6%3B&@_y:-0.875&x:0.25&a:5&w:1.25%3B&=%60%0A%0A%0A%0A%0A%0ALayer%202&_a:4%3B&=!%0A1&_x:14.5%3B&=)%0A0&_a:5&w:1.25%3B&=-%0A%0A%0A%0A%0A%0ALayer%202%3B&@_y:-0.625&x:6.5%3B&=Layer%201&_x:4.5%3B&=Layer%201%3B&@_y:-0.75&x:3.5&a:4%3B&=E&_x:10.5%3B&=I%3B&@_y:-0.875&x:2.5%3B&=W&_x:1%3B&=R&_x:8.5%3B&=U&_x:1%3B&=O%3B&@_y:-0.875&x:5.5%3B&=T&_x:6.5%3B&=Y%3B&@_y:-0.875&x:0.25&a:5&w:1.25%3B&=TAB&_a:4%3B&=Q&_x:14.5%3B&=P&_a:5&w:1.25%3B&=%2F=%3B&@_y:-0.625&x:6.5&a:7&h:1.5%3B&=%5B&_x:4.5&h:1.5%3B&=%5D%3B&@_y:-0.75&x:3.5&a:4%3B&=D&_x:10.5%3B&=K%3B&@_y:-0.875&x:2.5%3B&=S&_x:1&n:true%3B&=F&_x:8.5&n:true%3B&=J&_x:1%3B&=L%3B&@_y:-0.875&x:5.5%3B&=G&_x:6.5%3B&=H%3B&@_y:-0.875&x:0.25&a:5&w:1.25%3B&=ESC&_a:4%3B&=A&_x:14.5%3B&=%2F:%0A%2F%3B&_a:5&w:1.25%3B&='%3B&@_y:-0.375&x:3.5&a:4%3B&=C&_x:10.5%3B&=%3C%0A,%3B&@_y:-0.875&x:2.5%3B&=X&_x:1%3B&=V&_x:8.5%3B&=M&_x:1%3B&=%3E%0A.%3B&@_y:-0.875&x:5.5%3B&=B&_x:6.5%3B&=N%3B&@_y:-0.875&x:0.25&a:5&w:1.25%3B&=SHIFT&_a:4%3B&=Z&_x:14.5%3B&=%3F%0A%2F%2F&_a:5&w:1.25%3B&=SHIFT%3B&@_y:-0.375&x:3.5%3B&=*%0A%0A%0A%0A%0A%0AALT&_x:10.5%3B&=Left%3B&@_y:-0.875&x:2.5%3B&=-&_x:12.5%3B&=Down%3B&@_y:-0.75&x:0.5%3B&=GUI&=+&_x:14.5%3B&=Up&=Right%3B&@_r:15&y:-2.625&x:5.75&w:1.25%3B&=%2F%2F%0A%0A%0A%0A%0A%0ACTRL%3B&@_r:30&rx:6.5&ry:4.25&y:-1%3B&=PgUp&=PgDn%3B&@_h:1.5%3B&=Back%0A%0A%0A%0A%0A%0Aspace&_h:1.5%3B&=Del%3B&@_r:-30&rx:13&y:-1&x:-2%3B&=Home&=End%3B&@_x:-2&h:1.5%3B&=Enter&_h:1.5%3B&=Space%3B&@_r:-15&rx:0&ry:0&y:7.75&x:11.75&w:1.25%3B&=ALT)
+[KLE Layout permalink](http://www.keyboard-layout-editor.com/##@@=Esc%0A%60&_f2:2%3B&=1%0AF1%0A!&_f2:2%3B&=2%0AF2%0A%2F@&_f2:2%3B&=3%0AF3%0A%23&_f2:2%3B&=4%0AF4%0A$&_f2:2%3B&=5%0AF5%0A%25&_x:5&f2:2%3B&=6%0AF6%0A%5E&_f2:2%3B&=7%0AF7%0A%2F&&_f2:2%3B&=8%0AF8%0A*&_f2:2%3B&=9%0AF9%0A(&_f2:2%3B&=0%0AF10%0A)&_fa@:0&:2&:0&:2&:2&:2&:2&:2&:2&:2&:2%3B%3B&=%E2%86%90%0A%0Aback%3B&@_w:1.25%3B&=Tab&_f:3%3B&=Q%0A%22%0A%0A7&_f:3%3B&=W%0A'%0A%0A8&_f:3%3B&=E%0A%60%0A%0A9&_f:3%3B&=R%0A*&_f:3%3B&=T%0A+&_fa@:2%3B%3B&=LANG2%0A%2F=&_x:2.5&f:3%3B&=Y%0A(&_f:3%3B&=U%0A)&_f:3%3B&=I%0A%7C&_f:3%3B&=O%0A*&_f:3%3B&=P%0A~&_f:3%3B&=%2F%2F%0A%5E%0A%3F&_f:3&w:1.25%3B&=%5C%0A%C2%A5%0A%7C%3B&@_f:3&w:1.75%3B&=Ctrl&_f:3%3B&=A%0A%2F@%0A%0A4&_f:3%3B&=S%0A%2F:%0A%0A5&_f:3%3B&=D%0A%60%0A%0A6&_f:3%3B&=F%0A%0A%0A0&_f:3%3B&=G%0A-&_x:3.5&f:3%3B&=H%0A%5B&_f:3%3B&=J%0A%5D&_f:3%3B&=K%0A.&_f:3%3B&=L%0A%2F%2F&_f:3%3B&=%2F%3B%0A-%0A%2F:&_f:3&w:1.75%3B&=Enter%3B&@_f:3&w:2.25%3B&=Shift&_f:3%3B&=Z%0A%0A%0A1&_f:3%3B&=X%0A%0A%0A2&_f:3%3B&=C%0A%0A%0A3&_f:3%3B&=V%0A.&_f:3%3B&=B%0A%2F%2F&_x:2.5%3B&=LANG1&_f:3%3B&=N%0A%7B&_f:3%3B&=M%0A%7D&_f:3%3B&=,%0A.%0A%3C&_f:3%3B&=.%0A%2F%2F%0A%3E&_f:3&w:2.25%3B&=Shift%3B&@_f:3&w:1.25%3B&=Alt%0A%0A%0AEsc&_f:3%3B&='%0A%0A%22&_f:3%3B&=-%0A%0A%2F_%0A%C2%A5&_f:3%3B&=%2F=%0A%0A+%0A0&_x:8.5&f:3%3B&=%E2%86%90%0A%3C&_f:3%3B&=%E2%86%93%0A%2F_&_f:3%3B&=%E2%86%91%0A%5E&_f:3&w:1.25%3B&=%E2%86%92%0A%3E%3B&@_r:15&rx:5&y:4&x:0.75&f:3&w:1.25%3B&=layer&_f:3%3B&=GUI&_a:7%3B&=%3B&@_r:-15&rx:12&y:4&x:-4&a:4&f:3%3B&=Enter&_f2:0%3B&=Del&_w:1.25%3B&=layer)
