@@ -54,7 +54,7 @@ Pro Micro と PC をUSBケーブルで接続し、下記コマンド を実行�
 
 ```sh
 $ cd path/to/qmk_firmware
-$ make kudox-game/rev1:default:avrdude
+$ make kudox_game/rev1:default:avrdude
 ```
 
 文字入力可能なことを確認します.
