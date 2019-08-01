@@ -1,6 +1,6 @@
 # Kudox Keyboard rev.1
 
-Kudox rev.1 は Column Stagger な分離キーボードです.  
+Kudox rev.1 は Row-Staggered な分離キーボードです.  
 **English Manual is [here](README.md).**
 
 ## Summary

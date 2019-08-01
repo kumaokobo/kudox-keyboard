@@ -1,6 +1,6 @@
 # Kudox Keyboard rev.1
 
-The Kudox rev.1 is the first commercially available version of the Kudox keyboard.  
+The Kudox rev.1 is the first Row-Staggered split keyboard.  
 **Japanese Manual is [here](README.ja.md).**
 
 ## Summary

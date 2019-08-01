@@ -6,7 +6,7 @@
 </p>
 
 
-7x5 columnar stagger layout keyboards.  
+7x5 Row-Staggered layout keyboards.  
 Powered by [QMK (Quantum Mechanical Keyboard Firmware)](https://github.com/qmk/qmk_firmware).
 
 

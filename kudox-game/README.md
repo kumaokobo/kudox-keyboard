@@ -1,6 +1,6 @@
 # Kudox Game Keyboard rev.1
 
-The Kudox Game rev.1 is the first commercially available version of the Kudox Game keyboard.  
+The Kudox Game rev.1 is the first Row-Staggered split keyboard.  
 **Japanese Manual is [here](README.ja.md).**
 
 ## Summary
