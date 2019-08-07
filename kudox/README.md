@@ -5,6 +5,7 @@ The Kudox rev.1 is the first Row-Staggered split keyboard.
 
 <p align="center">
 <img src="../img/kudox-pcb.jpg" alt="Kudox image" width="400"/>
+<img src="../img/kudox-image1.jpg" alt="Kudox image1" width="400"/>
 </p>
 
 ## Summary
@@ -35,13 +36,14 @@ The Kudox rev.1 is the first Row-Staggered split keyboard.
 ## Assembly guide
 
 <p align="center">
-<img src="../img/pcb-image-kudox.jpg" alt="Kudox PCBs" width="600"/>
+<img src="../img/kudox-parts.jpg" alt="Kudox PCBs" width="600"/>
 </p>
 
 ### Installation steps:
 
 - Solder components:
   1. Solder 1N4148 diodes. Keep the diode legs for the right hand controller installation.
+  <img src="../img/kudox-diode.jpg" alt="Kudox diode" width="250"/>
   2. Solder PJ-320A connectors.
   3. Solder momentary switches.
   4. Solder 4.7 kΩ resistors **on one half only**.
@@ -52,7 +54,7 @@ The Kudox rev.1 is the first Row-Staggered split keyboard.
 - Solder Pro Micros to the header pins following the PCB labelling.
   - `LEFT` side: Solder Pro Micro face up.
   - `RIGHT` side: Solder Pro Micro face down.
-
+  <img src="../img/kudox-promicro.jpg" alt="Kudox ProMicro" width="250"/>
 
 ## Firmware
 
