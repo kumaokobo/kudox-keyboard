@@ -5,6 +5,7 @@ Kudox rev.1 は Row-Staggered な分離キーボードです.
 
 <p align="center">
 <img src="../img/kudox-pcb.jpg" alt="Kudox image" width="400"/>
+<img src="../img/kudox-image1.jpg" alt="Kudox image1" width="400"/>
 </p>
 
 ## Summary
@@ -35,12 +36,13 @@ Kudox rev.1 は Row-Staggered な分離キーボードです.
 ## 組み立てガイド
 
 <p align="center">
-<img src="../img/pcb-image-kudox.jpg" alt="Kudox PCBs" width="600"/>
+<img src="../img/kudox-parts.jpg" alt="Kudox PCBs" width="600"/>
 </p>
 
 
 - PCBに下記をはんだ付けします:
   1. 1N4148ダイオード (向きがあります. カソードが四角型の穴側にくるように差します)
+  <img src="../img/kudox-diode.jpg" alt="Kudox diode" width="250"/>
   2. PJ-320Aコネクタ
   3. タクトスイッチ
   4. 4.7 kΩ 抵抗 (左右どちらかのPCBのみにはんだ付けします)
@@ -51,6 +53,7 @@ Kudox rev.1 は Row-Staggered な分離キーボードです.
 - Pro Micro を ヘッダ・ピンにはんだ付けします.
   - `LEFT` と書いてある側: Pro Micro を表向き(チップが見えるように)にはんだ付けします.
   - `RIGHT` と書いてある側: Pro Micro を裏向き(チップ類がPCBに向くように)にはんだ付けします.
+  <img src="../img/kudox-promicro.jpg" alt="Kudox ProMicro" width="250"/>
 
 ## ファームウェア
 

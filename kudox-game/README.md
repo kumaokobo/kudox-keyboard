@@ -39,6 +39,7 @@ The Kudox Game rev.1 is the first Row-Staggered split keyboard.
 
 - Solder components:
   1. Solder 1N4148 diodes. Keep the diode legs for the right hand controller installation.
+  <img src="../img/kudox-game-diode.jpg" alt="Kudox Game diode" width="250"/>
   2. Solder a momentary switch.
   3. Solder the Pro Micro header pins (**do not solder the Pro Micro controllers yet**).
 - Flip the PCB.
