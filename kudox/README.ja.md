@@ -3,6 +3,10 @@
 Kudox rev.1 は Row-Staggered な分離キーボードです.  
 **English Manual is [here](README.md).**
 
+<p align="center">
+<img src="../img/kudox-pcb.jpg" alt="Kudox image" width="400"/>
+</p>
+
 ## Summary
 
   - [必要な部品](#必要な部品)
@@ -23,12 +27,15 @@ Kudox rev.1 は Row-Staggered な分離キーボードです.
 |   1 | TRRS ケーブル                                  | 4極のもの. (4極じゃないと正常動作しません)                 |
 |   1 | USB micro ケーブル                             | 家に落ちているもので可.                                 |
 |  64 | Cherry MX 互換 キーキャップ                     | 4x 1.25u, 2x 1.75u, 2x 2.25u, 46x 1u                |
+|   2 | ケース                                         |                                                     |
+|  10 | ネジ                                           | M3 のもの                                            |
+|  10 | スペーサー                                      | M3 のもの                                            |
 
 
 ## 組み立てガイド
 
 <p align="center">
-<img src="../img/kudox-pcb.jpg" alt="Redox PCBs" width="600"/>
+<img src="../img/pcb-image-kudox.jpg" alt="Kudox PCBs" width="600"/>
 </p>
 
 
@@ -67,7 +74,7 @@ $ make kudox/rev1:default:avrdude
 
 #### 1. 左手側
 
-[config.h](https://github.com/qmk/qmk_firmware/blob/add-kudox-game/keyboards/kudox_game/keymaps/default/config.h) を編集して `MASTER_LEFT` を有効にします.
+[kudox/config.h](https://github.com/qmk/qmk_firmware/blob/master/keyboards/kudox/config.h) を編集して `MASTER_LEFT` を有効にします.
 
 ```cpp
 /* Select hand configuration */
@@ -85,7 +92,7 @@ $ make kudox/rev1:default:avrdude
 
 #### 2. 右手側
 
-[config.h](https://github.com/qmk/qmk_firmware/blob/add-kudox-game/keyboards/kudox_game/keymaps/default/config.h) を編集して `MASTER_RIGHT` を有効にします.
+[kudox/config.h](https://github.com/qmk/qmk_firmware/blob/master/keyboards/kudox/config.h) を編集して `MASTER_RIGHT` を有効にします.
 
 ```cpp
 /* Select hand configuration */
@@ -101,7 +108,7 @@ $ make kudox/rev1:default:avrdude
 左手をマスターにする場合、最後にもう一度左手用キーボードに書き込みます.  
 ※ 右手をマスターにする場合、この手順はスキップし、[動作確認](#動作確認) へ進んでください.
 
-[config.h](https://github.com/qmk/qmk_firmware/blob/add-kudox-game/keyboards/kudox_game/keymaps/default/config.h) を編集して `MASTER_LEFT` を有効にします.
+[kudox/config.h](https://github.com/qmk/qmk_firmware/blob/master/keyboards/kudox/config.h) を編集して `MASTER_LEFT` を有効にします.
 
 ```cpp
 /* Select hand configuration */

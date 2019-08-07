@@ -3,6 +3,10 @@
 Kudox rev.1 は Row-Staggered な分離キーボードです.  
 **English Manual is [here](README.md).**
 
+<p align="center">
+<img src="../img/kudox-game-pcb.jpg" alt="Kudox Game image" width="400"/>
+</p>
+
 ## Summary
 
   - [必要な部品](#必要な部品)
@@ -20,12 +24,15 @@ Kudox rev.1 は Row-Staggered な分離キーボードです.
 |   1 | Arduino Pro Micro (互換品可)                   | マイコン: ATMega32U4                                  |
 |   1 | USB micro ケーブル                             | 家に落ちているもので可.                                 |
 |  26 | Cherry MX 互換 キーキャップ                     | 4x 1.25u, 2x 1.75u, 2x 2.25u, 46x 1u                |
+|   1 | ケース                                         |                                                     |
+|   5 | ネジ                                           | M3                                                  |
+|   5 | スペーサー                                      | M3                                                  |
 
 
 ## 組み立てガイド
 
 <p align="center">
-<img src="../img/kudox-game-pcb.jpg" alt="Redox PCBs" width="450"/>
+<img src="../img/pcb-image-kudox-game.jpg" alt="Kudox Game PCB" width="450"/>
 </p>
 
 

@@ -3,6 +3,10 @@
 The Kudox Game rev.1 is the first Row-Staggered split keyboard.  
 **Japanese Manual is [here](README.ja.md).**
 
+<p align="center">
+<img src="../img/kudox-game-pcb.jpg" alt="Kudox Game image" width="400"/>
+</p>
+
 ## Summary
 
   - [Bill of materials](#bill-of-materials)
@@ -20,12 +24,15 @@ The Kudox Game rev.1 is the first Row-Staggered split keyboard.
 |   1 | Arduino Pro Micro compatible microcontroller  | ATMega32U4 |
 |   1 | USB micro cable                               |                                                     |
 |  26 | Cherry MX compatible keycaps                  | 3x 1.5u keycaps, 1x 2u keycap, 22x 1u keycaps  |
+|   1 | Case                                          |                                                     |
+|   5 | Screws                                        | M3                                                  |
+|   5 | Spacers                                       | M3                                                  |
 
 
 ## Assembly guide
 
 <p align="center">
-<img src="../img/kudox-game-pcb.jpg" alt="Redox Game PCB" width="600"/>
+<img src="../img/pcb-image-kudox-game.jpg" alt="Kudox Game PCB" width="450"/>
 </p>
 
 ### Installation steps:
