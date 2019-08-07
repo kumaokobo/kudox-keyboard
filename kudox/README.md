@@ -3,6 +3,10 @@
 The Kudox rev.1 is the first Row-Staggered split keyboard.  
 **Japanese Manual is [here](README.ja.md).**
 
+<p align="center">
+<img src="../img/kudox-pcb.jpg" alt="Kudox image" width="400"/>
+</p>
+
 ## Summary
 
   - [Bill of materials](#bill-of-materials)
@@ -23,12 +27,15 @@ The Kudox rev.1 is the first Row-Staggered split keyboard.
 |   1 | TRRS cable                                    |                                                     |
 |   1 | USB micro cable                               |                                                     |
 |  64 | Cherry MX compatible keycaps                  | 4x 1.25u keycaps, 2x 1.75u keycaps, 2x 2.25u keycaps, 46x 1u keycaps  |
+|   2 | Cases                                         |                                                     |
+|  10 | Screws                                        | M3                                                  |
+|  10 | Spacers                                       | M3                                                  |
 
 
 ## Assembly guide
 
 <p align="center">
-<img src="../img/kudox-pcb.jpg" alt="Redox PCBs" width="600"/>
+<img src="../img/pcb-image-kudox.jpg" alt="Kudox PCBs" width="600"/>
 </p>
 
 ### Installation steps:
@@ -70,7 +77,7 @@ You need to burn the firmware both left hand and right hand.
 
 #### 1. Left hand side
 
-Edit [config.h](https://github.com/qmk/qmk_firmware/blob/add-kudox-game/keyboards/kudox_game/keymaps/default/config.h) and activate `MASTER_LEFT` .
+Edit [kudox/config.h](https://github.com/qmk/qmk_firmware/blob/master/keyboards/kudox/config.h) and activate `MASTER_LEFT` .
 
 ```cpp
 /* Select hand configuration */
@@ -89,7 +96,7 @@ $ make kudox/rev1:default:avrdude
 
 #### 2. Right hand side
 
-Edit [config.h](https://github.com/qmk/qmk_firmware/blob/add-kudox-game/keyboards/kudox_game/keymaps/default/config.h) and activate `MASTER_RIGHT` .  
+Edit [kudox/config.h](https://github.com/qmk/qmk_firmware/blob/master/keyboards/kudox/config.h) and activate `MASTER_RIGHT` .  
 
 ```cpp
 /* Select hand configuration */
@@ -107,7 +114,7 @@ Compile and burn the firmware by running [Basic compiling and burning command](#
 In the case of using Master Left, burn Pro Micro(**left hand**) the firmware again.  
 ※ In the case of using Master Right, skip the following process and go to next.  
 
-Edit [config.h](https://github.com/qmk/qmk_firmware/blob/add-kudox-game/keyboards/kudox_game/keymaps/default/config.h) and activate `MASTER_LEFT` .  
+Edit [kudox/config.h](https://github.com/qmk/qmk_firmware/blob/master/keyboards/kudox/config.h) and activate `MASTER_LEFT` .  
 
 ```cpp
 /* Select hand configuration */

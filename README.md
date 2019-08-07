@@ -10,6 +10,12 @@
 Powered by [QMK (Quantum Mechanical Keyboard Firmware)](https://github.com/qmk/qmk_firmware).
 
 
+<p align="center">
+<img src="img/kudox-pcb.jpg" alt="Kudox image" width="400"/>
+<img src="img/kudox-game-pcb.jpg" alt="Kudox Game image" width="400"/>
+</p>
+
+
 ## Documents
 
 ### Kudox Keyboard
