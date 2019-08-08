@@ -47,6 +47,13 @@ The Kudox Game rev.1 is the first Row-Staggered split keyboard.
 - Flip the PCB again.
 - Solder Pro Micro to the header pins.
 
+### Video guides
+
+- [Inken ch](https://www.youtube.com/channel/UCXJZdip7JmW74HQHCtfYzFw) (japanese only)
+
+<p align="center">
+<a href="https://www.youtube.com/watch?v=f3dFaBmC-ak"><img src="https://img.youtube.com/vi/f3dFaBmC-ak/0.jpg" alt="Kudox Game組み立てガイド" width="300"/></a>
+</p>
 
 ## Firmware
 
