@@ -56,6 +56,14 @@ The Kudox rev.1 is the first Row-Staggered split keyboard.
   - `RIGHT` side: Solder Pro Micro face down.
   <img src="../img/kudox-promicro.jpg" alt="Kudox ProMicro" width="250"/>
 
+### Video guides
+
+- [Inken ch](https://www.youtube.com/channel/UCXJZdip7JmW74HQHCtfYzFw) (japanese only)
+
+<p align="center">
+<a href="https://www.youtube.com/watch?v=6zZAXjMQ80E"><img src="https://img.youtube.com/vi/6zZAXjMQ80E/0.jpg" alt="Kudox組み立てガイド" width="300"/></a>
+</p>
+
 ## Firmware
 
 <p align="center">

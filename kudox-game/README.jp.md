@@ -47,6 +47,18 @@ Kudox rev.1 は Row-Staggered な分離キーボードです.
 - Pro Micro を ヘッダ・ピンにはんだ付けします.
   - Pro Micro は裏向き(チップが見えないように)にはんだ付けします.
 
+
+### 動画でも組み立て方を紹介しています
+
+- [インケンch](https://www.youtube.com/channel/UCXJZdip7JmW74HQHCtfYzFw)
+
+<p align="center">
+<a href="https://www.youtube.com/watch?v=f3dFaBmC-ak"><img src="https://img.youtube.com/vi/f3dFaBmC-ak/0.jpg" alt="Kudox Game組み立てガイド" width="300"/></a>
+</p>
+
+動画ではちょっとしたコツなども紹介しています。
+
+
 ## ファームウェア
 
 <p align="center">

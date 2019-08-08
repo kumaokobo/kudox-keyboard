@@ -55,6 +55,16 @@ Kudox rev.1 は Row-Staggered な分離キーボードです.
   - `RIGHT` と書いてある側: Pro Micro を裏向き(チップ類がPCBに向くように)にはんだ付けします.
   <img src="../img/kudox-promicro.jpg" alt="Kudox ProMicro" width="250"/>
 
+### 動画でも組み立て方を紹介しています
+
+- [インケンch](https://www.youtube.com/channel/UCXJZdip7JmW74HQHCtfYzFw)
+
+<p align="center">
+<a href="https://www.youtube.com/watch?v=6zZAXjMQ80E"><img src="https://img.youtube.com/vi/6zZAXjMQ80E/0.jpg" alt="Kudox組み立てガイド" width="300"/></a>
+</p>
+
+動画ではちょっとしたコツなども紹介しています。
+
 ## ファームウェア
 
 <p align="center">
