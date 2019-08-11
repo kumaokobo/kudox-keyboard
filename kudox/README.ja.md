@@ -41,19 +41,17 @@ Kudox rev.1 は Row-Staggered な分離キーボードです.
 
 
 - PCBに下記をはんだ付けします:
-  1. 1N4148ダイオード (向きがあります. カソードが四角型の穴側にくるように差します)
-  <img src="../img/kudox-diode.jpg" alt="Kudox diode" width="250"/>
+  1. 1N4148ダイオード (向きがあります. カソードが四角型の穴側にくるように差します)<br/><div><img src="../img/kudox-diode.jpg" alt="Kudox diode" width="250"/></div>
   2. PJ-320Aコネクタ
   3. タクトスイッチ
   4. 4.7 kΩ 抵抗 (左右どちらかのPCBのみにはんだ付けします)
   5. Pro Micro の ヘッダ・ピン (**Pro Micro 自身のはんだ付けはまだしません**).
-- PCB を裏返します.
-- スイッチをはんだ付けします.
-- もう一度 PCB を裏返します. (最初の向きに戻します)
+- PCB に上部ケースを取り付けます.
+  * M3ネジ(8mm) → 上部ケース → M3ナット → PCB → スペーサー の順番に取り付けます.<br/><div><img src="../img/kudox-case.jpg" alt="Kudox case" width="250"/></div>
+- スイッチを嵌めてはんだ付けします.
 - Pro Micro を ヘッダ・ピンにはんだ付けします.
   - `LEFT` と書いてある側: Pro Micro を表向き(チップが見えるように)にはんだ付けします.
-  - `RIGHT` と書いてある側: Pro Micro を裏向き(チップ類がPCBに向くように)にはんだ付けします.
-  <img src="../img/kudox-promicro.jpg" alt="Kudox ProMicro" width="250"/>
+  - `RIGHT` と書いてある側: Pro Micro を裏向き(チップ類がPCBに向くように)にはんだ付けします.<br/><div><img src="../img/kudox-promicro.jpg" alt="Kudox ProMicro" width="250"/></div>
 
 ### 動画でも組み立て方を紹介しています
 
