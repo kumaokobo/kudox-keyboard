@@ -17,16 +17,19 @@ The Kudox Game rev.1 is the first Row-Staggered split keyboard.
 
 | Qty | Item                                          | Notes                                               |
 |----:|-----------------------------------------------|-----------------------------------------------------|
-|  26 | Cherry MX compatible switches                 |                                                     |
-|   1 | Kudox Game PCB                                    | |
+|   1 | Kudox Game PCB                                |                                                     |
 |  26 | 1N4148 diodes                                 | SMD diodes can also be used                         |
 |   1 | Through hole momentary switch                 | Dimensions 6mm x 6mm x 4.3mm                        |
-|   1 | Arduino Pro Micro compatible microcontroller  | ATMega32U4 |
+|   1 | Arduino Pro Micro compatible microcontroller  | ATMega32U4                                          |
 |   1 | USB micro cable                               |                                                     |
-|  26 | Cherry MX compatible keycaps                  | 3x 1.5u keycaps, 1x 2u keycap, 22x 1u keycaps  |
 |   1 | Case                                          |                                                     |
 |   5 | Screws                                        | M3                                                  |
 |   5 | Spacers                                       | M3                                                  |
+|  26 | Cherry MX compatible switches                 |                                                     |
+|  26 | Cherry MX compatible keycaps                  | 3x 1.5u keycaps, 1x 2u keycap, 22x 1u keycaps       |
+
+
+[Kudox Game Basic](https://kumaokobo.booth.pm/items/1500316) is on sale at [BOOTH](https://kumaokobo.booth.pm/) (**NOT** including switches and keycaps).  
 
 
 ## Assembly guide
@@ -38,14 +41,13 @@ The Kudox Game rev.1 is the first Row-Staggered split keyboard.
 ### Installation steps:
 
 - Solder components:
-  1. Solder 1N4148 diodes. Keep the diode legs for the right hand controller installation.
-  <img src="../img/kudox-game-diode.jpg" alt="Kudox Game diode" width="250"/>
+  1. Solder 1N4148 diodes. Keep the diode legs for the right hand controller installation.<br/><div><img src="../img/kudox-game-diode.jpg" alt="Kudox Game diode" width="250"/></div>
   2. Solder a momentary switch.
   3. Solder the Pro Micro header pins (**do not solder the Pro Micro controllers yet**).
-- Flip the PCB.
-- Solder switches to the PCB.
-- Flip the PCB again.
-- Solder Pro Micro to the header pins.
+- Install upper cases to PCBs.
+  * M3x8 screws → upper case → M3 nuts → PCB → spacers.<br/><div><img src="../img/kudox-case.jpg" alt="Kudox case" width="250"/></div>
+- Fit switches to the upper cases and solder to the PCB.
+- Solder Pro Micro to the header pins.<br/><div><img src="../img/kudox-game-promicro.jpg" alt="Kudox Game ProMicro" width="250"/></div>
 
 ### Video guides
 
@@ -53,6 +55,7 @@ The Kudox Game rev.1 is the first Row-Staggered split keyboard.
 
 <p align="center">
 <a href="https://www.youtube.com/watch?v=f3dFaBmC-ak"><img src="https://img.youtube.com/vi/f3dFaBmC-ak/0.jpg" alt="Kudox Game組み立てガイド" width="300"/></a>
+<a href="https://www.youtube.com/watch?v=HCa4KX-FlOU"><img src="https://img.youtube.com/vi/HCa4KX-FlOU/0.jpg" alt="Kudox Game Firmware" width="300"/></a>
 </p>
 
 ## Firmware

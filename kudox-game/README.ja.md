@@ -12,21 +12,26 @@ Kudox rev.1 は Row-Staggered な分離キーボードです.
   - [必要な部品](#必要な部品)
   - [組み立てガイド](#組み立てガイド)
   - [ファームウェア](#ファームウェア)
+    - [コンパイル＆書き込みコマンド](#コンパイル＆書き込みコマンド)
 
 ## 必要な部品
 
 | 数量 | 項目                                           | 備考                                                |
 |----:|-----------------------------------------------|-----------------------------------------------------|
-|  26 | Cherry MX 互換スイッチ                          | x1は [Cherry Speed Silver](https://www.cherrymx.de/en/mx-original/mx-speed-silver.html)が好きです.|
 |   1 | Kudox Game                                    |                                                     |
-|  26 | 1N4148 ダイオード                               | SMD ダイオードでも可.                                  |
-|   1 | タクトスイッチ                                  | 6mm x 6mm x 4.3mm サイズのもの.                       |
-|   1 | Arduino Pro Micro (互換品可)                   | マイコン: ATMega32U4                                  |
-|   1 | USB micro ケーブル                             | 家に落ちているもので可.                                 |
-|  26 | Cherry MX 互換 キーキャップ                     | 4x 1.25u, 2x 1.75u, 2x 2.25u, 46x 1u                |
-|   1 | ケース                                         |                                                     |
-|   5 | ネジ                                           | M3                                                  |
-|   5 | スペーサー                                      | M3                                                  |
+|  26 | 1N4148 ダイオード                             | SMD ダイオードでも可.                                  |
+|   1 | タクトスイッチ                                | 6mm x 6mm x 4.3mm サイズのもの.                       |
+|   1 | Arduino Pro Micro (互換品可)                  | マイコン: ATMega32U4                                  |
+|   1 | USB micro ケーブル                            | 家に落ちているもので可.                                 |
+|   1 | ケース                                        |                                                     |
+|   5 | ネジ                                          | M3                                                  |
+|   5 | スペーサー                                    | M3                                                  |
+|   5 | ナット                                        | M3                                                  |
+|  26 | Cherry MX 互換スイッチ                        | x1は [Cherry Speed Silver](https://www.cherrymx.de/en/mx-original/mx-speed-silver.html)が好きです.|
+|  26 | Cherry MX 互換 キーキャップ                   | 4x 1.25u, 2x 1.75u, 2x 2.25u, 46x 1u                |
+
+
+キーキャップとスイッチ以外の全てを含む [Kudox Game基本セット](https://kumaokobo.booth.pm/items/1500316) を [BOOTH](https://kumaokobo.booth.pm/) にて販売しています.  
 
 
 ## 組み立てガイド
@@ -37,15 +42,14 @@ Kudox rev.1 は Row-Staggered な分離キーボードです.
 
 
 - PCBに下記をはんだ付けします:
-  1. 1N4148ダイオード (向きがあります. カソードが四角型の穴側にくるように差します)
-  <img src="../img/kudox-game-diode.jpg" alt="Kudox Game diode" width="250"/>
+  1. 1N4148ダイオード (向きがあります. カソードが四角型の穴側にくるように差します)<br/><div><img src="../img/kudox-game-diode.jpg" alt="Kudox Game diode" width="250"/></div>
   2. タクトスイッチ
   3. Pro Micro の ヘッダ・ピン (**Pro Micro 自身のはんだ付けはまだしません**).
-- PCB を裏返します.
-- スイッチをはんだ付けします.
-- もう一度 PCB を裏返します. (最初の向きに戻します)
+- PCB に上部ケースを取り付けます.
+  * M3ネジ(8mm) → 上部ケース → M3ナット → PCB → スペーサー の順番に取り付けます.<br/><div><img src="../img/kudox-case.jpg" alt="Kudox case" width="250"/></div>
+- スイッチを嵌めてはんだ付けします.
 - Pro Micro を ヘッダ・ピンにはんだ付けします.
-  - Pro Micro は裏向き(チップが見えないように)にはんだ付けします.
+  - Pro Micro は裏向き(チップが見えないように)にはんだ付けします.<br/><div><img src="../img/kudox-game-promicro.jpg" alt="Kudox Game ProMicro" width="250"/></div>
 
 
 ### 動画でも組み立て方を紹介しています
@@ -54,9 +58,10 @@ Kudox rev.1 は Row-Staggered な分離キーボードです.
 
 <p align="center">
 <a href="https://www.youtube.com/watch?v=f3dFaBmC-ak"><img src="https://img.youtube.com/vi/f3dFaBmC-ak/0.jpg" alt="Kudox Game組み立てガイド" width="300"/></a>
+<a href="https://www.youtube.com/watch?v=HCa4KX-FlOU"><img src="https://img.youtube.com/vi/HCa4KX-FlOU/0.jpg" alt="Kudox Game Firmware" width="300"/></a>
 </p>
 
-動画ではちょっとしたコツなども紹介しています。
+動画ではちょっとしたコツなども紹介しています.
 
 
 ## ファームウェア
