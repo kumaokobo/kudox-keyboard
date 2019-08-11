@@ -13,24 +13,30 @@ The Kudox rev.1 is the first Row-Staggered split keyboard.
   - [Bill of materials](#bill-of-materials)
   - [Assembly guide](#assembly-guide)
   - [Firmware](#firmware)
+    - [Basic compiling and burning command](#basic-compiling-and-burning-command)
+    - [First time burning](#first-time-burning)
 
 ## Bill of materials
 
 | Qty | Item                                          | Notes                                               |
 |----:|-----------------------------------------------|-----------------------------------------------------|
-|  64 | Cherry MX compatible switches                 |                                                     |
-|   2 | Kudox PCBs                                    | |
+|   2 | Kudox PCBs                                    |                                                     |
 |  64 | 1N4148 diodes                                 | SMD diodes can also be used                         |
 |   2 | PJ-320A 4 poles 3.5 mm TRRS connectors        |                                                     |
 |   2 | 4.7 kΩ resistors                              | Need to be soldered on one half only                |
 |   2 | Through hole momentary switch                 | Dimensions 6mm x 6mm x 4.3mm                        |
-|   2 | Arduino Pro Micro compatible microcontrollers | ATMega32U4 |
+|   2 | Arduino Pro Micro compatible microcontrollers | ATMega32U4                                          |
 |   1 | TRRS cable                                    |                                                     |
 |   1 | USB micro cable                               |                                                     |
-|  64 | Cherry MX compatible keycaps                  | 4x 1.25u keycaps, 2x 1.75u keycaps, 2x 2.25u keycaps, 46x 1u keycaps  |
 |   2 | Cases                                         |                                                     |
 |  10 | Screws                                        | M3                                                  |
 |  10 | Spacers                                       | M3                                                  |
+|  10 | Nuts                                          | M3                                                  |
+|  64 | Cherry MX compatible switches                 |                                                     |
+|  64 | Cherry MX compatible keycaps                  | 4x 1.25u keycaps, 2x 1.75u keycaps, 2x 2.25u keycaps, 46x 1u keycaps  |
+
+
+[Kudox Basic](https://kumaokobo.booth.pm/items/1500278) is on sale at [BOOTH](https://kumaokobo.booth.pm/) (**NOT** including switches and keycaps).  
 
 
 ## Assembly guide
@@ -60,7 +66,8 @@ The Kudox rev.1 is the first Row-Staggered split keyboard.
 - [Inken ch](https://www.youtube.com/channel/UCXJZdip7JmW74HQHCtfYzFw) (japanese only)
 
 <p align="center">
-<a href="https://www.youtube.com/watch?v=6zZAXjMQ80E"><img src="https://img.youtube.com/vi/6zZAXjMQ80E/0.jpg" alt="Kudox組み立てガイド" width="300"/></a>
+<a href="https://www.youtube.com/watch?v=6zZAXjMQ80E"><img src="https://img.youtube.com/vi/6zZAXjMQ80E/0.jpg" alt="Kudox assembly guide" width="300"/></a>
+<a href="https://www.youtube.com/watch?v=HCa4KX-FlOU"><img src="https://img.youtube.com/vi/HCa4KX-FlOU/0.jpg" alt="Kudox Firmware" width="300"/></a>
 </p>
 
 ## Firmware
@@ -117,25 +124,7 @@ Edit [kudox/config.h](https://github.com/qmk/qmk_firmware/blob/master/keyboards/
 Save the file, then connect Pro Micro(**right hand**) and your PC by USB cable.  
 Compile and burn the firmware by running [Basic compiling and burning command](#basic-compiling-and-burning-command).  
 
-
-#### 3. In the case of using Master Left
-
-In the case of using Master Left, burn Pro Micro(**left hand**) the firmware again.  
-※ In the case of using Master Right, skip the following process and go to next.  
-
-Edit [kudox/config.h](https://github.com/qmk/qmk_firmware/blob/master/keyboards/kudox/config.h) and activate `MASTER_LEFT` .  
-
-```cpp
-/* Select hand configuration */
-#define MASTER_LEFT
-// #define MASTER_RIGHT
-// #define EE_HANDS
-```
-
-Save the file, then connect Pro Micro(**left hand**) and your PC by USB cable.  
-Compile and burn the firmware by running [Basic compiling and burning command](#basic-compiling-and-burning-command).  
-
-#### 4. Confirmation
+#### 3. Confirmation
 
 Pull out the USB cable, then connect left hand and right hand by TRRS cable.  
 Plug in the Pro Micro (Master) the USB cable.  

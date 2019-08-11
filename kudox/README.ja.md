@@ -8,29 +8,37 @@ Kudox rev.1 は Row-Staggered な分離キーボードです.
 <img src="../img/kudox-image1.jpg" alt="Kudox image1" width="400"/>
 </p>
 
+
 ## Summary
 
   - [必要な部品](#必要な部品)
   - [組み立てガイド](#組み立てガイド)
   - [ファームウェア](#ファームウェア)
+    - [基本書き込みコマンド](#基本書き込みコマンド)
+    - [初回書き込み時](#初回書き込み時)
+    - [JIS配列を書き込む場合](#JIS配列を書き込む場合)
 
 ## 必要な部品
 
 | 数量 | 項目                                           | 備考                                                |
 |----:|-----------------------------------------------|-----------------------------------------------------|
-|  64 | Cherry MX 互換スイッチ                          | x1は [Cherry Speed Silver](https://www.cherrymx.de/en/mx-original/mx-speed-silver.html)が好きです.|
 |   2 | Kudox PCB                                     |                                                     |
-|  64 | 1N4148 ダイオード                               | SMD ダイオードでも可.                                  |
-|   2 | PJ-320A 4極 3.5mm TRRS コネクタ                 |                                                     |
-|   2 | 4.7 kΩ 抵抗                                    | 片側のPCBのみにはんだ付けします.                        |
-|   2 | タクトスイッチ                                  | 6mm x 6mm x 4.3mm サイズのもの.                       |
-|   2 | Arduino Pro Micro (互換品可)                   | マイコン: ATMega32U4                                  |
-|   1 | TRRS ケーブル                                  | 4極のもの. (4極じゃないと正常動作しません)                 |
-|   1 | USB micro ケーブル                             | 家に落ちているもので可.                                 |
-|  64 | Cherry MX 互換 キーキャップ                     | 4x 1.25u, 2x 1.75u, 2x 2.25u, 46x 1u                |
-|   2 | ケース                                         |                                                     |
-|  10 | ネジ                                           | M3 のもの                                            |
-|  10 | スペーサー                                      | M3 のもの                                            |
+|  64 | 1N4148 ダイオード                             | SMD ダイオードでも可.                                  |
+|   2 | PJ-320A 4極 3.5mm TRRS コネクタ               |                                                     |
+|   2 | 4.7 kΩ 抵抗                                   | 片側のPCBのみにはんだ付けします.                        |
+|   2 | タクトスイッチ                                | 6mm x 6mm x 4.3mm サイズのもの.                       |
+|   2 | Arduino Pro Micro (互換品可)                  | マイコン: ATMega32U4                                  |
+|   1 | TRRS ケーブル                                 | 4極のもの. (4極じゃないと正常動作しません)                 |
+|   1 | USB micro ケーブル                            | 家に落ちているもので可.                                 |
+|   2 | ケース                                        |                                                     |
+|  10 | ネジ                                          | M3 のもの                                            |
+|  10 | スペーサー                                    | M3 のもの                                            |
+|  10 | ナット                                        | M3 のもの (オプション)                                 |
+|  64 | Cherry MX 互換 スイッチ                       | x1は [Cherry Speed Silver](https://www.cherrymx.de/en/mx-original/mx-speed-silver.html)が好きです.|
+|  64 | Cherry MX 互換 キーキャップ                   | 4x 1.25u, 2x 1.75u, 2x 2.25u, 46x 1u                |
+
+
+キーキャップとスイッチ以外の全てを含む [Kudox基本セット](https://kumaokobo.booth.pm/items/1500278) を [BOOTH](https://kumaokobo.booth.pm/) にて販売しています.  
 
 
 ## 組み立てガイド
@@ -59,9 +67,10 @@ Kudox rev.1 は Row-Staggered な分離キーボードです.
 
 <p align="center">
 <a href="https://www.youtube.com/watch?v=6zZAXjMQ80E"><img src="https://img.youtube.com/vi/6zZAXjMQ80E/0.jpg" alt="Kudox組み立てガイド" width="300"/></a>
+<a href="https://www.youtube.com/watch?v=HCa4KX-FlOU"><img src="https://img.youtube.com/vi/HCa4KX-FlOU/0.jpg" alt="Kudox Firmware" width="300"/></a>
 </p>
 
-動画ではちょっとしたコツなども紹介しています。
+動画ではちょっとしたコツなども紹介しています.
 
 ## ファームウェア
 
@@ -114,30 +123,31 @@ $ make kudox/rev1:default:avrdude
 
 保存したら、**右手側** の Pro Micro と PC をUSBケーブルで接続し、 [基本書き込みコマンド](#基本書き込みコマンド) を実行します.
 
-#### 3. 左手をマスターにする場合
 
-左手をマスターにする場合、最後にもう一度左手用キーボードに書き込みます.  
-※ 右手をマスターにする場合、この手順はスキップし、[動作確認](#動作確認) へ進んでください.
-
-[kudox/config.h](https://github.com/qmk/qmk_firmware/blob/master/keyboards/kudox/config.h) を編集して `MASTER_LEFT` を有効にします.
-
-```cpp
-/* Select hand configuration */
-#define MASTER_LEFT
-// #define MASTER_RIGHT
-// #define EE_HANDS
-```
-
-保存したら、 **左手側** の Pro Micro と PC をUSBケーブルで接続し、 [基本書き込みコマンド](#基本書き込みコマンド) を実行します.
-
-#### 4. 動作確認
+#### 3. 動作確認
 
 一度USBケーブルを外してから、 TRRSケーブルで左右をつなぎます.  
-マスター側の Pro Micro にUSBケーブルをつなぎ、左右ともに文字入力可能なことを確認します.
+マスター側の Pro Micro にUSBケーブルをつなぎ、左右ともに文字入力可能なことを確認します.　　
 
-以降、キー配列を変更した場合など再びファームを書く場合は、 TRRSケーブルをつないだままマスター側の Pro Micro に書き込みを行うことで、左右に設定が反映されるようになります.
+以降、キー配列を変更した場合など再びファームを書く場合は、 TRRSケーブルをつないだままマスター側の Pro Micro に書き込みを行うことで、左右に設定が反映されるようになります.　　
 
-## レイアウト
+
+### JIS配列を書き込む場合
+
+JIS配列のkeymapは *2019-08-12 現在* [qmk_firmware](https://github.com/qmk/qmk_firmware) にPRを挙げている最中です.  
+JIS配列をお使いになりたい場合は [こちらのブランチ](https://github.com/kumaokobo/qmk_firmware/tree/modified-kudox-jis) をご利用くださいませ.  
+
+```sh
+$ cd qmk_firmware
+$ git remote add kumao git@github.com:kumaokobo/qmk_firmware.git
+$ git fetch kumao
+$ git co -b modified-kudox-jis -t kumao/modified-kudox-jis
+$ 
+$ make kudox/rev1:jis:avrdude
+```
+
+
+## デフォルト・レイアウト
 
 <p align="center">
 <img src="../img/kudox-layout.png" alt="Kudox rev1.0 layout"/>
