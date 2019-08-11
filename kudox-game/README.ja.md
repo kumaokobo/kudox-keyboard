@@ -1,6 +1,8 @@
 # Kudox Game Keyboard rev.1
 
-Kudox rev.1 は Row-Staggered な分離キーボードです.  
+Kudox rev.1 は Row-Staggered な ゲーム・プレイに特化したキーボードです.  
+キー・コードを自由にレイアウトできる [QMK Firmware](https://github.com/qmk/qmk_firmware) を利用することで、 `Ctrl-C` や `Ctrl-V` なども1キーに割り当てられるようになっています.  
+
 **English Manual is [here](README.md).**
 
 <p align="center">

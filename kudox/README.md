@@ -1,6 +1,6 @@
 # Kudox Keyboard rev.1
 
-The Kudox rev.1 is the first Row-Staggered split keyboard.  
+The Kudox rev.1 is the Row-Staggered split keyboard.  
 **Japanese Manual is [here](README.ja.md).**
 
 <p align="center">
