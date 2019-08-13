@@ -134,15 +134,10 @@ $ make kudox/rev1:default:avrdude
 
 ### JIS配列を書き込む場合
 
-JIS-like配列のkeymapは *2019-08-12 現在* [qmk_firmware](https://github.com/qmk/qmk_firmware) にPRを挙げている最中です.  
-JIS配列をお使いになりたい場合は [こちらのブランチ](https://github.com/kumaokobo/qmk_firmware/tree/modified-kudox-jis) をご利用くださいませ.  
+[qmk_firmware/keyboards/kudox/keymaps/jis](https://github.com/qmk/qmk_firmware/tree/master/keyboards/kudox/keymaps/jis) に JIS-like配列を置いていますが、[Qmk Firmware](https://github.com/qmk/qmk_firmware) の [keycodes](https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md) を参考にご自身の使いやすいレイアウトに変更してお使いになられると良いかもしれません.  
 
 ```sh
-$ cd qmk_firmware
-$ git remote add kumao git@github.com:kumaokobo/qmk_firmware.git
-$ git fetch kumao
-$ git co -b modified-kudox-jis -t kumao/modified-kudox-jis
-$ 
+$ cd path/to/qmk_firmware
 $ make kudox/rev1:jis:avrdude
 ```
 
