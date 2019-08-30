@@ -1,2 +1,3 @@
 (fp_lib_table
+  (lib (name kudox_footprints)(type KiCad)(uri ${KIPRJMOD}/../kudox_footprints.pretty)(options "")(descr ""))
 )
