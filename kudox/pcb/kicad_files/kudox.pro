@@ -1,4 +1,4 @@
-update=2019 July 01, Monday 11:25:53
+update=2019年08月30日 金曜日 12:48:34
 version=1
 last_client=kicad
 [cvpcb]
@@ -230,16 +230,16 @@ uViaDrill=0.1
 dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
-[eeschema]
-version=1
-LibDir=
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=../kudox.pdf
+PlotDirectoryName=../schematic
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=
 SpiceAjustPassiveValues=0
 LabSize=60
 ERC_TestSimilarLabels=1
+[eeschema]
+version=1
+LibDir=
