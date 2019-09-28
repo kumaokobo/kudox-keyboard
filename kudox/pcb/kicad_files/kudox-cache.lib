@@ -88,7 +88,7 @@ ENDDEF
 #
 # kudox-parts_KEYSW
 #
-DEF ~kudox-parts_KEYSW K? 0 40 Y Y 1 F N
+DEF kudox-parts_KEYSW K? 0 40 Y Y 1 F N
 F0 "K?" -50 0 60 H V C CNN
 F1 "kudox-parts_KEYSW" 0 -100 60 H I C CNN
 F2 "" 0 0 60 H V C CNN
