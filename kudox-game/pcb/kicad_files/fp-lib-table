@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name kudox_game_footprints)(type KiCad)(uri ${KIPRJMOD}/../kudox_game_footprints.pretty)(options "")(descr ""))
-)
