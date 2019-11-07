@@ -5,8 +5,8 @@ As hot-swap sockets need to be soldered, it is slightly more difficult to assemb
 **Japanese Manual is [here](README.ja.md).**
 
 <p align="center">
-<img src="../img/kudox-pcb.jpg" alt="Kudox image" width="400"/>
-<img src="../img/kudox-image-rev1.jpg" alt="Kudox image1" width="400"/>
+<img src="../../img/kudox-pcb.jpg" alt="Kudox image" width="400"/>
+<img src="../../img/kudox-image-rev1.jpg" alt="Kudox image1" width="400"/>
 </p>
 
 ## Summary
