@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name kudox-columner-parts)(type Legacy)(uri ${KIPRJMOD}/kudox-columner-parts.lib)(options "")(descr ""))
+)
