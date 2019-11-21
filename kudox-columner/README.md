@@ -10,6 +10,69 @@ It is different from Kudox Keyboard that `Column-` staggered and `Row-` staggere
 </p>
 
 
+## Summary
+
+  - [Bill of materials](#bill-of-materials)
+  - [Assembly guide](#assembly-guide)
+  - [Firmware](#firmware)
+    - [Basic compiling and burning command](#basic-compiling-and-burning-command)
+    - [First time burning](#first-time-burning)
+
+## Bill of materials
+
+| Qty | Item                                          | Notes                                               |
+|----:|-----------------------------------------------|-----------------------------------------------------|
+|   2 | Kudox Columner Rev1.0 PCBs                    |                                                     |
+|  66 | 1N4148 diodes                                 | SMD diodes can also be used                         |
+|   2 | PJ-320A 4 poles 3.5 mm TRRS connectors        |                                                     |
+|   2 | 4.7 kΩ resistors                              | Need to be soldered on one half only                |
+|   2 | Through hole momentary switch                 | Dimensions 6mm x 6mm x 4.3mm                        |
+|   2 | Arduino Pro Micro                             | ATMega32U4                                          |
+|   1 | TRRS cable                                    |                                                     |
+|   1 | USB micro cable                               |                                                     |
+|   2 | Cases                                         |                                                     |
+|  10 | Screws                                        | M3                                                  |
+|  10 | Spacers                                       | M3                                                  |
+|  10 | Nuts                                          | M3                                                  |
+|  66 | [Kailh PCB Scoket](https://www.kailhswitch.com/mechanical-keyboard-switches/box-switches/mechanical-keyboard-switches-kailh-pcb-socket.html) | Cherry MX compatible type                           |
+|  66 | Cherry MX compatible switches                 |                                                     |
+|  66 | Cherry MX compatible keycaps                  | 4x 1.25u keycaps, 2x 1.75u keycaps, 2x 2.25u keycaps, 48x 1u keycaps  |
+
+
+[Kudox Columner Basic](https://kumaokobo.booth.pm/items/1500278) is on sale at [BOOTH](https://kumaokobo.booth.pm/) (**NOT** including switches and keycaps).  
+
+
+## Assembly guide
+
+<p align="center">
+<img src="../img/kudox-parts.jpg" alt="Kudox PCBs" width="600"/>
+</p>
+
+### Installation steps:
+
+- Solder components:
+  1. Solder 1N4148 diodes. Keep the diode legs for the right hand controller installation.<br/><div><img src="../img/kudox-diode.jpg" alt="Kudox diode" width="250"/></div>
+  2. Solder PJ-320A connectors.
+  3. Solder momentary switches.
+  4. Solder 4.7 kΩ resistors **on one half only**.
+  5. Solder PCB hot-swap sockets.
+  6. Solder the Pro Micro header pins.
+- Solder Pro Micros to the header pins following the PCB labelling.
+  - `LEFT` side: Solder Pro Micro face up.
+  - `RIGHT` side: Solder Pro Micro face down.<br/><div><img src="../img/kudox-promicro.jpg" alt="Kudox ProMicro" width="250"/></div>
+- Install upper cases to PCBs.
+  * M3x8 screws → upper case → M3 nuts → PCB → spacers.<br/><div><img src="../img/kudox-case.jpg" alt="Kudox case" width="250"/></div>
+- Fit switches to the upper cases.
+
+### Video guides
+
+- [Inken ch](https://www.youtube.com/channel/UCXJZdip7JmW74HQHCtfYzFw) (japanese only)
+
+<p align="center">
+<a href="https://www.youtube.com/watch?v=6zZAXjMQ80E"><img src="https://img.youtube.com/vi/6zZAXjMQ80E/0.jpg" alt="Kudox assembly guide" width="300"/></a>
+<a href="https://www.youtube.com/watch?v=HCa4KX-FlOU"><img src="https://img.youtube.com/vi/HCa4KX-FlOU/0.jpg" alt="Kudox Firmware" width="300"/></a>
+</p>
+
 
 ## Layout
 

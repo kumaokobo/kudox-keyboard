@@ -22,6 +22,10 @@ Powered by [QMK (Quantum Mechanical Keyboard Firmware)](https://github.com/qmk/q
 - [English](./kudox/README.md)
 - [Japanese](./kudox/README.ja.md)
 
+### Kudox Keyboard Columner Type
+- [English](./kudox-columner/README.md)
+- [Japanese](./kudox-columner/README.ja.md)
+
 ### Kudox Game Keyboard
 - [English](./kudox-game/README.md)
 - [Japanese](./kudox-game/README.ja.md)
