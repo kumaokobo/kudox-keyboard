@@ -21,23 +21,24 @@ As hot-swap sockets need to be soldered, it is slightly more difficult to assemb
 
 | Qty | Item                                          | Notes                                               |
 |----:|-----------------------------------------------|-----------------------------------------------------|
-|   2 | Kudox PCBs                                    |                                                     |
+|   2 | Kudox Rev2.0 PCBs                             |                                                     |
 |  66 | 1N4148 diodes                                 | SMD diodes can also be used                         |
 |   2 | PJ-320A 4 poles 3.5 mm TRRS connectors        |                                                     |
 |   2 | 4.7 kΩ resistors                              | Need to be soldered on one half only                |
 |   2 | Through hole momentary switch                 | Dimensions 6mm x 6mm x 4.3mm                        |
-|   2 | Arduino Pro Micro compatible microcontrollers | ATMega32U4                                          |
+|   2 | Arduino Pro Micro microcontrollers            | ATMega32U4                                          |
 |   1 | TRRS cable                                    |                                                     |
 |   1 | USB micro cable                               |                                                     |
 |   2 | Cases                                         |                                                     |
 |  10 | Screws                                        | M3                                                  |
 |  10 | Spacers                                       | M3                                                  |
 |  10 | Nuts                                          | M3                                                  |
+|  66 | [Kailh PCB Scoket](https://www.kailhswitch.com/mechanical-keyboard-switches/box-switches/mechanical-keyboard-switches-kailh-pcb-socket.html) | Cherry MX compatible type                           |
 |  66 | Cherry MX compatible switches                 |                                                     |
 |  66 | Cherry MX compatible keycaps                  | 4x 1.25u keycaps, 2x 1.75u keycaps, 2x 2.25u keycaps, 48x 1u keycaps  |
 
 
-[Kudox Basic](https://kumaokobo.booth.pm/items/1500278) is on sale at [BOOTH](https://kumaokobo.booth.pm/) (**NOT** including switches and keycaps).  
+[Kudox Rev2 Basic](https://kumaokobo.booth.pm/items/1500278) is on sale at [BOOTH](https://kumaokobo.booth.pm/) (**NOT** including switches and keycaps).  
 
 
 ## Assembly guide
@@ -53,12 +54,11 @@ As hot-swap sockets need to be soldered, it is slightly more difficult to assemb
   2. Solder PJ-320A connectors.
   3. Solder momentary switches.
   4. Solder 4.7 kΩ resistors **on one half only**.
-  5. Solder switches hot-swap sockets.
+  5. Solder PCB hot-swap sockets.
   6. Solder the Pro Micro header pins.
 - Solder Pro Micros to the header pins following the PCB labelling.
   - `LEFT` side: Solder Pro Micro face up.
-  - `RIGHT` side: Solder Pro Micro face down.
-  <img src="../../img/kudox-promicro.jpg" alt="Kudox ProMicro" width="250"/>
+  - `RIGHT` side: Solder Pro Micro face down.<br/><div><img src="../../img/kudox-promicro.jpg" alt="Kudox ProMicro" width="250"/></div>
 - Install upper cases to PCBs.
   * M3x8 screws → upper case → M3 nuts → PCB → spacers.<br/><div><img src="../../img/kudox-case.jpg" alt="Kudox case" width="250"/></div>
 - Fit switches to the upper cases.

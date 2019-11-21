@@ -22,7 +22,7 @@ Kudox Rev 1.0 は 64キーの、スタンダードな Row-Staggered 分離キー
 
 | 数量 | 項目                                          | 備考                                                |
 |----:|-----------------------------------------------|----------------------------------------------------|
-|   2 | Kudox PCB                                     |                                                    |
+|   2 | Kudox Rev1.0 PCB                              |                                                    |
 |  64 | 1N4148 ダイオード                              | SMD ダイオードでも可.                                  |
 |   2 | PJ-320A 4極 3.5mm TRRS コネクタ                |                                                     |
 |   2 | 4.7 kΩ 抵抗                                   | 片側のPCBのみにはんだ付けします.                         |
@@ -38,7 +38,7 @@ Kudox Rev 1.0 は 64キーの、スタンダードな Row-Staggered 分離キー
 |  64 | Cherry MX 互換 キーキャップ                     | 4x 1.25u, 2x 1.75u, 2x 2.25u, 46x 1u                |
 
 
-キーキャップとスイッチ以外の全てを含む [Kudox基本セット](https://kumaokobo.booth.pm/items/1500278) を [BOOTH](https://kumaokobo.booth.pm/) にて販売しています.  
+キーキャップとスイッチ以外の全てを含む [Kudox Rev1 基本セット](https://kumaokobo.booth.pm/items/1500278) を [BOOTH](https://kumaokobo.booth.pm/) にて販売しています.  
 
 
 ## 組み立てガイド

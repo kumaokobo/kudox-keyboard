@@ -25,23 +25,24 @@ Kudox Rev 2.0 は 66キーのホット・スワップ分離キーボードです
 
 | 数量 | 項目                                           | 備考                                                |
 |----:|-----------------------------------------------|-----------------------------------------------------|
-|   2 | Kudox PCB                                     |                                                     |
-|  66 | 1N4148 ダイオード                             | SMD ダイオードでも可.                                  |
-|   2 | PJ-320A 4極 3.5mm TRRS コネクタ               |                                                     |
-|   2 | 4.7 kΩ 抵抗                                   | 片側のPCBのみにはんだ付けします.                        |
-|   2 | タクトスイッチ                                | 6mm x 6mm x 4.3mm サイズのもの.                       |
-|   2 | Arduino Pro Micro (互換品可)                  | マイコン: ATMega32U4                                  |
-|   1 | TRRS ケーブル                                 | 4極のもの. (4極じゃないと正常動作しません)                 |
-|   1 | USB micro ケーブル                            | 家に落ちているもので可.                                 |
-|   2 | ケース                                        |                                                     |
-|  10 | ネジ                                          | M3 のもの                                            |
-|  10 | スペーサー                                    | M3 のもの                                            |
-|  10 | ナット                                        | M3 のもの (オプション)                                 |
-|  66 | Cherry MX 互換 スイッチ                       | x1は [Cherry Speed Silver](https://www.cherrymx.de/en/mx-original/mx-speed-silver.html)が好きです.|
-|  66 | Cherry MX 互換 キーキャップ                   | 4x 1.25u, 2x 1.75u, 2x 2.25u, 48x 1u                |
+|   2 | Kudox Rev2.0 PCB                               |                                                     |
+|  66 | 1N4148 ダイオード                               | SMD ダイオードでも可.                                 |
+|   2 | PJ-320A 4極 3.5mm TRRS コネクタ                 |                                                    |
+|   2 | 4.7 kΩ 抵抗                                    | 片側のPCBのみにはんだ付けします.                        |
+|   2 | タクトスイッチ                                  | 6mm x 6mm x 4.3mm サイズのもの.                       |
+|   2 | Arduino Pro Micro                             | マイコン: ATMega32U4                                 |
+|   1 | TRRS ケーブル                                  | 4極のもの. (4極じゃないと正常動作しません)                |
+|   1 | USB micro ケーブル                             | 家に落ちているもので可.                                 |
+|   2 | ケース                                         |                                                     |
+|  10 | ネジ                                           | M3 のもの                                            |
+|  10 | スペーサー                                      | M3 のもの                                            |
+|  10 | ナット                                         | M3 のもの (オプション)                                 |
+|  66 | [Kailh PCB Scoket](https://www.kailhswitch.com/mechanical-keyboard-switches/box-switches/mechanical-keyboard-switches-kailh-pcb-socket.html) | Cherry MX 互換タイプの方                               |
+|  66 | Cherry MX 互換 スイッチ                         | お好みで...💕                                         |
+|  66 | Cherry MX 互換 キーキャップ                      | 4x 1.25u, 2x 1.75u, 2x 2.25u, 48x 1u                |
 
 
-キーキャップとスイッチ以外の全てを含む [Kudox基本セット](https://kumaokobo.booth.pm/items/1500278) を [BOOTH](https://kumaokobo.booth.pm/) にて販売しています.  
+キーキャップとスイッチ以外の全てを含む [Kudox Rev2 基本セット](https://kumaokobo.booth.pm/items/1500278) を [BOOTH](https://kumaokobo.booth.pm/) にて販売しています.  
 
 
 ## 組み立てガイド

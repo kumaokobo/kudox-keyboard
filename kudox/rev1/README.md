@@ -20,7 +20,7 @@ The Kudox Rev 1.0 is standard 64 key Row-Staggered split keyboard.
 
 | Qty | Item                                          | Notes                                               |
 |----:|-----------------------------------------------|-----------------------------------------------------|
-|   2 | Kudox PCBs                                    |                                                     |
+|   2 | Kudox Rev1.0 PCBs                             |                                                     |
 |  64 | 1N4148 diodes                                 | SMD diodes can also be used                         |
 |   2 | PJ-320A 4 poles 3.5 mm TRRS connectors        |                                                     |
 |   2 | 4.7 kΩ resistors                              | Need to be soldered on one half only                |
@@ -36,7 +36,7 @@ The Kudox Rev 1.0 is standard 64 key Row-Staggered split keyboard.
 |  64 | Cherry MX compatible keycaps                  | 4x 1.25u keycaps, 2x 1.75u keycaps, 2x 2.25u keycaps, 46x 1u keycaps  |
 
 
-[Kudox Basic](https://kumaokobo.booth.pm/items/1500278) is on sale at [BOOTH](https://kumaokobo.booth.pm/) (**NOT** including switches and keycaps).  
+[Kudox Rev1 Basic](https://kumaokobo.booth.pm/items/1500278) is on sale at [BOOTH](https://kumaokobo.booth.pm/) (**NOT** including switches and keycaps).  
 
 
 ## Assembly guide
