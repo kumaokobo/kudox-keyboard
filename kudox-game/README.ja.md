@@ -21,16 +21,16 @@ Kudox rev.1 は Row-Staggered な ゲーム・プレイに特化したキーボ�
 | 数量 | 項目                                           | 備考                                                |
 |----:|-----------------------------------------------|-----------------------------------------------------|
 |   1 | Kudox Game                                    |                                                     |
-|  26 | 1N4148 ダイオード                             | SMD ダイオードでも可.                                  |
-|   1 | タクトスイッチ                                | 6mm x 6mm x 4.3mm サイズのもの.                       |
-|   1 | Arduino Pro Micro (互換品可)                  | マイコン: ATMega32U4                                  |
-|   1 | USB micro ケーブル                            | 家に落ちているもので可.                                 |
-|   1 | ケース                                        |                                                     |
-|   5 | ネジ                                          | M3                                                  |
-|   5 | スペーサー                                    | M3                                                  |
-|   5 | ナット                                        | M3                                                  |
-|  26 | Cherry MX 互換スイッチ                        | x1は [Cherry Speed Silver](https://www.cherrymx.de/en/mx-original/mx-speed-silver.html)が好きです.|
-|  26 | Cherry MX 互換 キーキャップ                   | 4x 1.25u, 2x 1.75u, 2x 2.25u, 46x 1u                |
+|  26 | 1N4148 ダイオード                               | SMD ダイオードでも可.                                  |
+|   1 | タクトスイッチ                                   | 6mm x 6mm x 4.3mm サイズのもの.                       |
+|   1 | Arduino Pro Micro                             | マイコン: ATMega32U4                                  |
+|   1 | USB micro ケーブル                             | 家に落ちているもので可.                                 |
+|   1 | ケース                                         |                                                     |
+|   5 | ネジ                                           | M3                                                  |
+|   5 | スペーサー                                      | M3                                                  |
+|   5 | ナット                                         | M3                                                  |
+|  26 | Cherry MX 互換スイッチ                          | x1は [Cherry Speed Silver](https://www.cherrymx.de/en/mx-original/mx-speed-silver.html)が好きです.|
+|  26 | Cherry MX 互換 キーキャップ                      | 4x 1.25u, 2x 1.75u, 2x 2.25u, 46x 1u                |
 
 
 キーキャップとスイッチ以外の全てを含む [Kudox Game基本セット](https://kumaokobo.booth.pm/items/1500316) を [BOOTH](https://kumaokobo.booth.pm/) にて販売しています.  

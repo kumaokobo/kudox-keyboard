@@ -20,7 +20,7 @@ The Kudox Game rev.1 is the Row-Staggered keyboard specialized for playing game.
 |   1 | Kudox Game PCB                                |                                                     |
 |  26 | 1N4148 diodes                                 | SMD diodes can also be used                         |
 |   1 | Through hole momentary switch                 | Dimensions 6mm x 6mm x 4.3mm                        |
-|   1 | Arduino Pro Micro compatible microcontroller  | ATMega32U4                                          |
+|   1 | Arduino Pro Micro                             | ATMega32U4                                          |
 |   1 | USB micro cable                               |                                                     |
 |   1 | Case                                          |                                                     |
 |   5 | Screws                                        | M3                                                  |
