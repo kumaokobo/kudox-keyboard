@@ -61,8 +61,7 @@ It is different from Kudox Keyboard that `Column-` staggered and `Row-` staggere
   4. Solder 4.7 kΩ resistors **on one half only**.
   5. Solder PCB hot-swap sockets.
   6. Solder the Pro Micro header pins.
-- Cuts legs of parts.  
-  *Specially, pin-headers of Pro Micro needs to be cut as short as possible.*
+- Cuts legs of parts.
 - Not to interfere the hot-swap socket and Pro Micro on `RIGHT` side PCB, put insulating tape on the hot-swap socket, because `RIGHT` side PCB is soldered Pro Micro face down.<div>
   <img src="../img/kudox-seal-1.jpg" alt="seal hotswap socket 1" width="200"/><span>&nbsp;</span>
   <img src="../img/kudox-seal-2.jpg" alt="seal hotswap socket 2" width="200"/><span>&nbsp;</span>

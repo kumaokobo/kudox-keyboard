@@ -61,8 +61,7 @@ Kudox は `Row-` staggered キー配列を採用していますが、こちら�
   5. ホット・スワップ・ソケット<br/>はんだごてではんだ付けする場合:<div><img src="../img/solder-hotswap.jpg" alt="soldering hot swap sockets" width="250"/></div>
   クリームはんだでリフローして頂いてももちろん大丈夫です.
   6. Pro Micro の ピン・ヘッダ
-- パーツの足をカットします.  
-  *※ 特に Pro Micro のピン・ヘッダとPJ-320Aコネクタはスイッチに干渉しやすいのでできるだけ短くカットしてください*
+- パーツの足をカットします.
 - `RIGHT` と書いてある側に部品を実装したPCBはチップ類がPCB側を向くように Pro Micro をはんだ付けするため, ホット・スワップ・ソケットがチップに干渉しないよう, 絶縁テープでガードします.<div>
   <img src="../img/kudox-seal-1.jpg" alt="seal hotswap socket 1" width="200"/><span>&nbsp;</span>
   <img src="../img/kudox-seal-2.jpg" alt="seal hotswap socket 2" width="200"/><span>&nbsp;</span>

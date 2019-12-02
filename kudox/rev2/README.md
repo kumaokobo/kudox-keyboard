@@ -61,7 +61,7 @@ As hot-swap sockets need to be soldered, it is slightly more difficult to assemb
   6. Solder the Pro Micro header pins.
   7. Current state:<div><img src="../../img/soldered-kudox-rev2.jpg" alt="soldered kudox rev2" width="250"/></div>
 - Cuts legs of parts.  
-  *Specially, pin-headers of Pro Micro needs to be cut as short as possible.*
+  *Specially, pin-headers of Pro Micro needs to be cut as short as possible.*<div><img src="../../img/cuts-pins.jpg" alt="cuts pins" width="250"/></div>
 - Not to interfere the hot-swap socket and Pro Micro on `RIGHT` side PCB, put insulating tape on the hot-swap socket, because `RIGHT` side PCB is soldered Pro Micro face down.<div>
   <img src="../../img/kudox-seal-1.jpg" alt="seal hotswap socket 1" width="200"/><span>&nbsp;</span>
   <img src="../../img/kudox-seal-2.jpg" alt="seal hotswap socket 2" width="200"/><span>&nbsp;</span>
