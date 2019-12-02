@@ -4,10 +4,12 @@ Kudox Keyboard Rev 2.0 is hot-swappable 66 key split keyboard.
 As hot-swap sockets need to be soldered, it is slightly more difficult to assemble than Rev 1.0.  
 **Japanese Manual is [here](README.ja.md).**
 
+<div style="display:block;margin:50px auto;">
 <p align="center">
-<img src="../../img/kudox-pcb.jpg" alt="Kudox image" width="400"/>
-<img src="../../img/kudox-image-rev1.jpg" alt="Kudox image1" width="400"/>
+<img src="../../img/kudox-rev2-image1.jpg" alt="Kudox rev2 image1" width="300"/>
+<img src="../../img/kudox-rev2-image2.jpg" alt="Kudox rev2 image2" width="300"/>
 </p>
+</div>
 
 ## Summary
 
@@ -30,21 +32,22 @@ As hot-swap sockets need to be soldered, it is slightly more difficult to assemb
 |   1 | TRRS cable                                    |                                                     |
 |   1 | USB micro cable                               |                                                     |
 |   2 | Cases                                         |                                                     |
-|  10 | Screws                                        | M3                                                  |
-|  10 | Spacers                                       | M3                                                  |
+|  10 | Screws M3 x 10mm                              | M3                                                  |
+|  10 | Screws M3 x  5mm                              | M3                                                  |
+|  10 | Spacers                                       | M3 x 7mm                                            |
 |  10 | Nuts                                          | M3                                                  |
 |  66 | [Kailh PCB Scoket](https://www.kailhswitch.com/mechanical-keyboard-switches/box-switches/mechanical-keyboard-switches-kailh-pcb-socket.html) | Cherry MX compatible type                           |
 |  66 | Cherry MX compatible switches                 |                                                     |
 |  66 | Cherry MX compatible keycaps                  | 4x 1.25u keycaps, 2x 1.75u keycaps, 2x 2.25u keycaps, 48x 1u keycaps  |
 
 
-[Kudox Rev2 Basic](https://kumaokobo.booth.pm/items/1500278) is on sale at [BOOTH](https://kumaokobo.booth.pm/) (**NOT** including switches and keycaps).  
+[Kudox rev2 Basic](https://kumaokobo.booth.pm/items/1703779) is on sale at [BOOTH](https://kumaokobo.booth.pm/) (**NOT** including switches and keycaps).  
 
 
 ## Assembly guide
 
 <p align="center">
-<img src="../../img/kudox-parts.jpg" alt="Kudox PCBs" width="600"/>
+<img src="../../img/kudox-rev2-parts.jpg" alt="Kudox rev2 parts" width="600"/>
 </p>
 
 ### Installation steps:
@@ -54,14 +57,22 @@ As hot-swap sockets need to be soldered, it is slightly more difficult to assemb
   2. Solder PJ-320A connectors.
   3. Solder momentary switches.
   4. Solder 4.7 kΩ resistors **on one half only**.
-  5. Solder PCB hot-swap sockets.
+  5. Solder PCB hot-swap sockets.<br/>In case of using a soldering iron:<div><img src="../../img/solder-hotswap.jpg" alt="soldering hot swap sockets" width="250"/></div>
   6. Solder the Pro Micro header pins.
+  7. Current state:<div><img src="../../img/soldered-kudox-rev2.jpg" alt="soldered kudox rev2" width="250"/></div>
+- Cuts legs of parts.  
+  *Specially, pin-headers of Pro Micro needs to be cut as short as possible.*
+- Not to interfere the hot-swap socket and Pro Micro on `RIGHT` side PCB, put insulating tape on the hot-swap socket, because `RIGHT` side PCB is soldered Pro Micro face down.<div>
+  <img src="../../img/kudox-seal-1.jpg" alt="seal hotswap socket 1" width="200"/><span>&nbsp;</span>
+  <img src="../../img/kudox-seal-2.jpg" alt="seal hotswap socket 2" width="200"/><span>&nbsp;</span>
+  <img src="../../img/kudox-seal-3.jpg" alt="seal hotswap socket 3" width="200"/></div>
 - Solder Pro Micros to the header pins following the PCB labelling.
   - `LEFT` side: Solder Pro Micro face up.
   - `RIGHT` side: Solder Pro Micro face down.<br/><div><img src="../../img/kudox-promicro.jpg" alt="Kudox ProMicro" width="250"/></div>
-- Install upper cases to PCBs.
-  * M3x8 screws → upper case → M3 nuts → PCB → spacers.<br/><div><img src="../../img/kudox-case.jpg" alt="Kudox case" width="250"/></div>
-- Fit switches to the upper cases.
+- Install upper cases to PCBs.  
+  M3x10 screws → upper case → M3 nuts → PCB → spacers.<br/><div><img src="../../img/kudox-case.jpg" alt="Kudox case" width="250"/></div>
+- Install lower cases.
+- Fit switches to the upper cases.<div><img src="../../img/kudox-rev2-assembly-case-1.jpg" alt="assembly kudox rev2 case 1" width="250"/><span>&nbsp;&nbsp;</span><img src="../../img/kudox-rev2-assembly-case-2.jpg" alt="assembly kudox rev2 case 2" width="250"/></div>
 
 ### Video guides
 

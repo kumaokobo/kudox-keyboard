@@ -31,8 +31,9 @@ Kudox Rev 1.0 は 64キーの、スタンダードな Row-Staggered 分離キー
 |   1 | TRRS ケーブル                                  | 4極のもの. (4極じゃないと正常動作しません)                |
 |   1 | USB micro ケーブル                             | 家に落ちているもので可.                                |
 |   2 | ケース                                        |                                                     |
-|  10 | ネジ                                          | M3 のもの                                            |
-|  10 | スペーサー                                     | M3 のもの                                            |
+|  10 | ネジ M3 x 10mm                                |                                                     |
+|  10 | ネジ M3 x  5mm                                |                                                     |
+|  10 | スペーサー                                     | M3 x 7mm                                            |
 |  10 | ナット                                         | M3 のもの (オプション)                                |
 |  64 | Cherry MX 互換 スイッチ                         | x1は [Cherry Speed Silver](https://www.cherrymx.de/en/mx-original/mx-speed-silver.html)が好きです.|
 |  64 | Cherry MX 互換 キーキャップ                     | 4x 1.25u, 2x 1.75u, 2x 2.25u, 46x 1u                |
@@ -53,13 +54,15 @@ Kudox Rev 1.0 は 64キーの、スタンダードな Row-Staggered 分離キー
   2. PJ-320Aコネクタ
   3. タクトスイッチ
   4. 4.7 kΩ 抵抗 (左右どちらかのPCBのみにはんだ付けします)
-  5. Pro Micro の ヘッダ・ピン (**Pro Micro 自身のはんだ付けはまだしません**).
+  5. Pro Micro の ピン・ヘッダ (**Pro Micro 自身のはんだ付けはまだしません**).
+- パーツの足をカットします.
 - PCB に上部ケースを取り付けます.
-  * M3ネジ(8mm) → 上部ケース → M3ナット → PCB → スペーサー の順番に取り付けます.<br/><div><img src="../../img/kudox-case.jpg" alt="Kudox case" width="250"/></div>
+  * M3ネジ(10mm) → 上部ケース → M3ナット → PCB → スペーサー の順番に取り付けます.<br/><div><img src="../../img/kudox-case.jpg" alt="Kudox case" width="250"/></div>
 - スイッチを嵌めてはんだ付けします.
-- Pro Micro を ヘッダ・ピンにはんだ付けします.
+- Pro Micro を ピン・ヘッダにはんだ付けします.
   - `LEFT` と書いてある側: Pro Micro を表向き(チップが見えるように)にはんだ付けします.
   - `RIGHT` と書いてある側: Pro Micro を裏向き(チップ類がPCBに向くように)にはんだ付けします.<br/><div><img src="../../img/kudox-promicro.jpg" alt="Kudox ProMicro" width="250"/></div>
+- 下部ケースをスペーサーにネジ止めします.
 
 
 ### Youtube: 組み立てガイド
@@ -135,7 +138,7 @@ $ make kudox/rev1:default:flash
 
 ### JIS配列を書き込む場合
 
-[qmk_firmware/keyboards/kudox/rev1/keymaps/jis](https://github.com/qmk/qmk_firmware/blob/master/keyboards/kudox/rev1/keymaps/jis/keymap.c) に JIS-like配列を置いていますが、[Qmk Firmware](https://github.com/qmk/qmk_firmware) の [keycodes](https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md) を参考にご自身の使いやすいレイアウトに変更してお使いになられると良いかもしれません.  
+[kudox/rev1/keymaps/jis](https://github.com/qmk/qmk_firmware/blob/master/keyboards/kudox/rev1/keymaps/jis/keymap.c) に JIS-like配列を置いていますが、[Qmk Firmware](https://github.com/qmk/qmk_firmware) の [keycodes](https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md) を参考にご自身の使いやすいレイアウトに変更してお使いになられると良いかもしれません.  
 
 ```sh
 $ cd path/to/qmk_firmware

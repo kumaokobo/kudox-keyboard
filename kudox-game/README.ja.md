@@ -48,7 +48,7 @@ Kudox rev.1 は Row-Staggered な ゲーム・プレイに特化したキーボ�
   2. タクトスイッチ
   3. Pro Micro の ヘッダ・ピン (**Pro Micro 自身のはんだ付けはまだしません**).
 - PCB に上部ケースを取り付けます.
-  * M3ネジ(8mm) → 上部ケース → M3ナット → PCB → スペーサー の順番に取り付けます.<br/><div><img src="../img/kudox-case.jpg" alt="Kudox case" width="250"/></div>
+  * M3ネジ(10mm) → 上部ケース → M3ナット → PCB → スペーサー の順番に取り付けます.<br/><div><img src="../img/kudox-case.jpg" alt="Kudox case" width="250"/></div>
 - スイッチを嵌めてはんだ付けします.
 - Pro Micro を ヘッダ・ピンにはんだ付けします.
   - Pro Micro は裏向き(チップが見えないように)にはんだ付けします.<br/><div><img src="../img/kudox-game-promicro.jpg" alt="Kudox Game ProMicro" width="250"/></div>

@@ -29,8 +29,9 @@ The Kudox Rev 1.0 is standard 64 key Row-Staggered split keyboard.
 |   1 | TRRS cable                                    |                                                     |
 |   1 | USB micro cable                               |                                                     |
 |   2 | Cases                                         |                                                     |
-|  10 | Screws                                        | M3                                                  |
-|  10 | Spacers                                       | M3                                                  |
+|  10 | Screws M3 x 10mm                              | M3                                                  |
+|  10 | Screws M3 x  5mm                              | M3                                                  |
+|  10 | Spacers                                       | M3 x 7mm                                            |
 |  10 | Nuts                                          | M3                                                  |
 |  64 | Cherry MX compatible switches                 |                                                     |
 |  64 | Cherry MX compatible keycaps                  | 4x 1.25u keycaps, 2x 1.75u keycaps, 2x 2.25u keycaps, 46x 1u keycaps  |
@@ -54,7 +55,7 @@ The Kudox Rev 1.0 is standard 64 key Row-Staggered split keyboard.
   4. Solder 4.7 kΩ resistors **on one half only**.
   5. Solder the Pro Micro header pins (**do not solder the Pro Micro controllers yet**).
 - Install upper cases to PCBs.
-  * M3x8 screws → upper case → M3 nuts → PCB → spacers.<br/><div><img src="../../img/kudox-case.jpg" alt="Kudox case" width="250"/></div>
+  * M3x10 screws → upper case → M3 nuts → PCB → spacers.<br/><div><img src="../../img/kudox-case.jpg" alt="Kudox case" width="250"/></div>
 - Fit switches to the upper cases and solder to the PCB.
 - Solder Pro Micros to the header pins following the PCB labelling.
   - `LEFT` side: Solder Pro Micro face up.

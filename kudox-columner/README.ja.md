@@ -5,9 +5,12 @@ Kudox は `Row-` staggered キー配列を採用していますが、こちら�
 
 **English Manual is [here](README.md).**
 
+<div style="display:block;margin:50px auto;">
 <p align="center">
-<img src="../img/kudox-columner.jpg" alt="Kudox Columner image" width="400"/>
+<img src="../img/kudox-columner.jpg" alt="Kudox Columner image" width="300"/>
+<img src="../img/kudox-columner-image2.jpg" alt="Kudox Columner image2" width="300"/>
 </p>
+</div>
 
 
 ## Summary
@@ -31,21 +34,22 @@ Kudox は `Row-` staggered キー配列を採用していますが、こちら�
 |   1 | TRRS ケーブル                                  | 4極のもの. (4極じゃないと正常動作しません)                |
 |   1 | USB micro ケーブル                             | 家に落ちているもので可.                                 |
 |   2 | ケース                                         |                                                     |
-|  10 | ネジ                                           | M3 のもの                                            |
-|  10 | スペーサー                                      | M3 のもの                                            |
+|  10 | ネジ M3 x 10mm                                 |                                                     |
+|  10 | ネジ M3 x  5mm                                 |                                                     |
+|  10 | スペーサー                                      | M3 x  7mm                                           |
 |  10 | ナット                                         | M3 のもの (オプション)                                 |
 |  66 | [Kailh PCB Scoket](https://www.kailhswitch.com/mechanical-keyboard-switches/box-switches/mechanical-keyboard-switches-kailh-pcb-socket.html) | Cherry MX 互換タイプの方                               |
 |  66 | Cherry MX 互換 スイッチ                         | お好みで...☺                                         |
 |  66 | Cherry MX 互換 キーキャップ                      | 4x 1.25u, 2x 1.75u, 2x 2.25u, 48x 1u                |
 
 
-キーキャップとスイッチ以外の全てを含む [Kudox Columner基本セット](https://kumaokobo.booth.pm/items/1500278) を [BOOTH](https://kumaokobo.booth.pm/) にて販売しています.  
+キーキャップとスイッチ以外の全てを含む [Kudox Columner 基本セット](https://kumaokobo.booth.pm/items/1706475) を [BOOTH](https://kumaokobo.booth.pm/) にて販売しています.  
 
 
 ## 組み立てガイド
 
 <p align="center">
-<img src="../img/kudox-parts.jpg" alt="Kudox PCBs" width="600"/>
+<img src="../img/kudox-columner-parts.jpg" alt="Kudox PCBs" width="600"/>
 </p>
 
 
@@ -54,13 +58,21 @@ Kudox は `Row-` staggered キー配列を採用していますが、こちら�
   2. PJ-320Aコネクタ
   3. タクトスイッチ
   4. 4.7 kΩ 抵抗 (左右どちらかのPCBのみにはんだ付けします)
-  5. ホット・スワップ・ソケット
-  6. Pro Micro の ヘッダ・ピン
-- Pro Micro を ヘッダ・ピンにはんだ付けします.
+  5. ホット・スワップ・ソケット<br/>はんだごてではんだ付けする場合:<div><img src="../img/solder-hotswap.jpg" alt="soldering hot swap sockets" width="250"/></div>
+  クリームはんだでリフローして頂いてももちろん大丈夫です.
+  6. Pro Micro の ピン・ヘッダ
+- パーツの足をカットします.  
+  *※ 特に Pro Micro のピン・ヘッダとPJ-320Aコネクタはスイッチに干渉しやすいのでできるだけ短くカットしてください*
+- `RIGHT` と書いてある側に部品を実装したPCBはチップ類がPCB側を向くように Pro Micro をはんだ付けするため, ホット・スワップ・ソケットがチップに干渉しないよう, 絶縁テープでガードします.<div>
+  <img src="../img/kudox-seal-1.jpg" alt="seal hotswap socket 1" width="200"/><span>&nbsp;</span>
+  <img src="../img/kudox-seal-2.jpg" alt="seal hotswap socket 2" width="200"/><span>&nbsp;</span>
+  <img src="../img/kudox-seal-3.jpg" alt="seal hotswap socket 3" width="200"/></div>
+- Pro Micro を ピン・ヘッダにはんだ付けします.
   - `LEFT` と書いてある側: Pro Micro を表向き(チップが見えるように)にはんだ付けします.
-  - `RIGHT` と書いてある側: Pro Micro を裏向き(チップ類がPCBに向くように)にはんだ付けします.<br/><div><img src="../img/kudox-promicro.jpg" alt="Kudox ProMicro" width="250"/></div>
-- PCB に上部ケースを取り付けます.
-  * M3ネジ(8mm) → 上部ケース → M3ナット → PCB → スペーサー の順番に取り付けます.<br/><div><img src="../img/kudox-case.jpg" alt="Kudox case" width="250"/></div>
+  - `RIGHT` と書いてある側: Pro Micro を裏向き(チップ類がPCBに向くように)にはんだ付けします.<br/><div><img src="../img/kudox-columner-promicro.jpg" alt="Kudox Columner ProMicro" width="250"/></div>
+- PCB に上部ケースを取り付けます.  
+  M3ネジ(10mm) → 上部ケース → M3ナット → PCB → スペーサー の順番に取り付けます.<br/><div><img src="../img/kudox-case.jpg" alt="Kudox case" width="250"/></div>
+- 下部ケースをスペーサーにネジ止めします.
 - スイッチを嵌めて完成です.
 
 ### Youtube: 組み立てガイド
@@ -72,7 +84,8 @@ Kudox は `Row-` staggered キー配列を採用していますが、こちら�
 <a href="https://www.youtube.com/watch?v=HCa4KX-FlOU"><img src="https://img.youtube.com/vi/HCa4KX-FlOU/0.jpg" alt="Kudox Firmware" width="300"/></a>
 </p>
 
-動画ではちょっとしたコツなども紹介しています.
+動画ではちょっとしたコツなども紹介しています.  
+*動画は `Kudox rev1` のものですが、ホットスワップ・ソケット以外は概ね同じです.*
 
 ## ファームウェア
 
@@ -80,14 +93,14 @@ Kudox は `Row-` staggered キー配列を採用していますが、こちら�
 <img src="../img/qmk-badge-dark.png" alt="qmk" width="200"/>
 </p>
 
-Kudox Keyboard は [QMK Firmware](https://github.com/qmk/qmk_firmware) を利用しています.  
+Kudox Columner Keyboard は [QMK Firmware](https://github.com/qmk/qmk_firmware) を利用しています.  
 QMK Firmware のインストールは [こちら](https://docs.qmk.fm/#/newbs_getting_started) をご覧ください.  
 
 ### 基本書き込みコマンド
 
 ```sh
 $ cd path/to/qmk_firmware
-$ make kudox/rev2:default:flash
+$ make kudox/columner:default:flash
 ```
 
 ### 初回書き込み時
@@ -109,7 +122,7 @@ $ make kudox/rev2:default:flash
 
 ```sh
 $ cd path/to/qmk_firmware
-$ make kudox/rev2:default:flash
+$ make kudox/columner:default:flash
 ```
 
 #### 2. 右手側

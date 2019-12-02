@@ -45,7 +45,7 @@ The Kudox Game rev.1 is the Row-Staggered keyboard specialized for playing game.
   2. Solder a momentary switch.
   3. Solder the Pro Micro header pins (**do not solder the Pro Micro controllers yet**).
 - Install upper cases to PCBs.
-  * M3x8 screws → upper case → M3 nuts → PCB → spacers.<br/><div><img src="../img/kudox-case.jpg" alt="Kudox case" width="250"/></div>
+  * M3x10 screws → upper case → M3 nuts → PCB → spacers.<br/><div><img src="../img/kudox-case.jpg" alt="Kudox case" width="250"/></div>
 - Fit switches to the upper cases and solder to the PCB.
 - Solder Pro Micro to the header pins.<br/><div><img src="../img/kudox-game-promicro.jpg" alt="Kudox Game ProMicro" width="250"/></div>
 
