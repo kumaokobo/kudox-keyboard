@@ -1,6 +1,6 @@
 # Kudox Keyboard Rev.1
 
-Kudox Rev 1.0 は 64キーの、スタンダードな Row-Staggered 分離キーボードです.  
+Kudox Rev.1 は 64キーの、スタンダードな Row-Staggered 分離キーボードです.  
 **English Manual is [here](README.md).**
 
 <p align="center">
@@ -22,7 +22,7 @@ Kudox Rev 1.0 は 64キーの、スタンダードな Row-Staggered 分離キー
 
 | 数量 | 項目                                          | 備考                                                |
 |----:|-----------------------------------------------|----------------------------------------------------|
-|   2 | Kudox Rev1.0 PCB                              |                                                    |
+|   2 | Kudox Rev 1.x PCB                             |                                                    |
 |  64 | 1N4148 ダイオード                              | SMD ダイオードでも可.                                  |
 |   2 | PJ-320A 4極 3.5mm TRRS コネクタ                |                                                     |
 |   2 | 4.7 kΩ 抵抗                                   | 片側のPCBのみにはんだ付けします.                         |
@@ -39,7 +39,7 @@ Kudox Rev 1.0 は 64キーの、スタンダードな Row-Staggered 分離キー
 |  64 | Cherry MX 互換 キーキャップ                     | 4x 1.25u, 2x 1.75u, 2x 2.25u, 46x 1u                |
 
 
-キーキャップとスイッチ以外の全てを含む [Kudox Rev1 基本セット](https://kumaokobo.booth.pm/items/1500278) を [BOOTH](https://kumaokobo.booth.pm/) にて販売しています.  
+キーキャップとスイッチ以外の全てを含む [Kudox rev1 基本セット](https://kumaokobo.booth.pm/items/1500278) を [BOOTH](https://kumaokobo.booth.pm/) にて販売しています.  
 
 
 ## 組み立てガイド
@@ -151,7 +151,7 @@ $ make kudox/rev1:jis:flash
 ### デフォルト
 
 <p align="center">
-<img src="../../img/kudox-layout-rev1.png" alt="Kudox rev1.0 layout"/>
+<img src="../../img/kudox-layout-rev1.png" alt="Kudox rev1 layout"/>
 </p>
 <p align="center">
 <em><a href="http://www.keyboard-layout-editor.com/">http://www.keyboard-layout-editor.com/</a></em>
@@ -162,7 +162,7 @@ $ make kudox/rev1:jis:flash
 ### JIS-like 配列
 
 <p align="center">
-<img src="../../img/kudox-jis-rev1.png" alt="Kudox rev1.0 JIS layout"/>
+<img src="../../img/kudox-jis-rev1.png" alt="Kudox rev1 JIS layout"/>
 </p>
 <p align="center">
 <em><a href="http://www.keyboard-layout-editor.com/">http://www.keyboard-layout-editor.com/</a></em>
