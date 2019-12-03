@@ -7,10 +7,12 @@ Kudox は Row-Staggered な分離キーボードです.
 
 Rev 1.0 は 64キーのスタンダードなRow-Staggered な分離キーボードです.  
 
+<div style="display:block;margin:50px auto;">
 <p align="center">
 <img src="../img/kudox-pcb.jpg" alt="Kudox image" width="400"/>
 <img src="../img/kudox-image-rev1.jpg" alt="Kudox image1" width="400"/>
 </p>
+</div>
 
 - [Rev1.0の組み立てマニュアル](./rev1/README.ja.md)
 
@@ -20,8 +22,12 @@ Rev 1.0 は 64キーのスタンダードなRow-Staggered な分離キーボー�
 Rev 2.0 は 66キーのホット・スワップ分離キーボードです.  
 ホット・スワップ・ソケットのはんだ付けが必要なため、 Rev 1.0 に比べてやや組み立て難易度が上がります.  
 
+<div style="display:block;margin:50px auto;">
 <p align="center">
+<img src="../img/kudox-rev2-image1.jpg" alt="Kudox rev2 image1" width="400"/>
+<img src="../img/kudox-rev2-image2.jpg" alt="Kudox rev2 image2" width="400"/>
 </p>
+</div>
 
 - [Rev2.0の組み立てマニュアル](./rev2/README.ja.md)
 
