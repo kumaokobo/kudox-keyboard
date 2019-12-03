@@ -9,10 +9,12 @@ The Kudox is the Row-Staggered split keyboard.
 
 Rev 1.0 is standard 64 key Row-Staggered split keyboard.  
 
+<div style="display:block;margin:50px auto;">
 <p align="center">
 <img src="../img/kudox-pcb.jpg" alt="Kudox image" width="400"/>
 <img src="../img/kudox-image-rev1.jpg" alt="Kudox image1" width="400"/>
 </p>
+</div>
 
 - [Rev1.0 Assembly Guide](./rev1/README.md)
 
@@ -22,8 +24,12 @@ Rev 1.0 is standard 64 key Row-Staggered split keyboard.
 Rev 2.0 is hot-swappable 66 key split keyboard.  
 As hot-swap sockets need to be soldered, it is slightly more difficult to assemble than Rev 1.0.  
 
+<div style="display:block;margin:50px auto;">
 <p align="center">
+<img src="../img/kudox-rev2-image1.jpg" alt="Kudox rev2 image1" width="400"/>
+<img src="../img/kudox-rev2-image2.jpg" alt="Kudox rev2 image2" width="400"/>
 </p>
+</div>
 
 - [Rev2.0 Assembly Guide](./rev2/README.md)
 
