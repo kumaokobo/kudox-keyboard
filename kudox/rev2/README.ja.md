@@ -66,7 +66,7 @@ Kudox Rev 2.0 は 66キーのホット・スワップ分離キーボードです
   7. こんな感じになります:<div><img src="../../img/soldered-kudox-rev2.jpg" alt="soldered kudox rev2" width="250"/></div>
 - パーツの足をカットします.  
   *※ 特に Pro Micro のピン・ヘッダとPJ-320Aコネクタはスイッチに干渉しやすいのでできるだけ短くカットしてください*<div><img src="../../img/cuts-pins.jpg" alt="cuts pins" width="250"/></div>
-- `RIGHT` と書いてある側に部品を実装したPCBはチップ類がPCB側を向くように Pro Micro をはんだ付けするため, ホット・スワップ・ソケットがチップに干渉しないよう, 絶縁テープでガードします.<div>
+- `RIGHT` と書いてある側に部品を実装したPCBへの Pro Micro 実装ですが、 Pro Micro のチップ類がPCB側を向くようにをはんだ付けするため, ホット・スワップ・ソケットが干渉しないよう絶縁テープでガードします.<div>
   <img src="../../img/kudox-seal-1.jpg" alt="seal hotswap socket 1" width="200"/><span>&nbsp;</span>
   <img src="../../img/kudox-seal-2.jpg" alt="seal hotswap socket 2" width="200"/><span>&nbsp;</span>
   <img src="../../img/kudox-seal-3.jpg" alt="seal hotswap socket 3" width="200"/></div>
