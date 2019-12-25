@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name kudox-parts)(type Legacy)(uri ${KIPRJMOD}/../rev2/kudox-parts.lib)(options "")(descr ""))
+)
