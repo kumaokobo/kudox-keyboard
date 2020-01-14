@@ -18,6 +18,7 @@ Kudox Rev 2.0 は 66キーのホット・スワップ分離キーボードです
 
   - [必要な部品](#必要な部品)
   - [組み立てガイド](#組み立てガイド)
+  - [LEDテープの取り付け](#LEDテープの取り付け)
   - [ファームウェア](#ファームウェア)
     - [基本書き込みコマンド](#基本書き込みコマンド)
     - [初回書き込み時](#初回書き込み時)
@@ -39,11 +40,12 @@ Kudox Rev 2.0 は 66キーのホット・スワップ分離キーボードです
 |  10 | ネジ M3 x 10mm                                 |                                                     |
 |  10 | ネジ M3 x  5mm                                 |                                                     |
 |  10 | スペーサー                                      | M3 x  7mm                                           |
-|  10 | ナット                                         | M3 のもの (オプション)                                 |
+|  10 | ワッシャー                                      | M3 のもの                       |
 |  66 | [Kailh PCB Scoket](https://www.kailhswitch.com/mechanical-keyboard-switches/box-switches/mechanical-keyboard-switches-kailh-pcb-socket.html) | Cherry MX 互換タイプの方                               |
 |  66 | Cherry MX 互換 スイッチ                         | お好みで...💕                                         |
 |  66 | Cherry MX 互換 キーキャップ                      | 4x 1.25u, 2x 1.75u, 2x 2.25u, 48x 1u                |
-
+|  14 | LEDテープ WS2812B                              | ※ オプションです. 7 LEDs x 2                |
+|  7 | ビニール線                                       | ※ オプションです. LED を取り付ける場合に使います.       |
 
 キーキャップとスイッチ以外の全てを含む [Kudox rev2 基本セット](https://kumaokobo.booth.pm/items/1703779) を [BOOTH](https://kumaokobo.booth.pm/) にて販売しています.  
 
@@ -62,7 +64,9 @@ Kudox Rev 2.0 は 66キーのホット・スワップ分離キーボードです
   4. 4.7 kΩ 抵抗 (左右どちらかのPCBのみにはんだ付けします)
   5. ホット・スワップ・ソケット<br/>はんだごてではんだ付けする場合:<div><img src="../../img/solder-hotswap.jpg" alt="soldering hot swap sockets" width="250"/></div>
   クリームはんだでリフローして頂いてももちろん大丈夫です.
-  6. Pro Micro の ピン・ヘッダ
+  6. Pro Micro の ピン・ヘッダ  
+  *Pro Micro のピン・ヘッダをはんだ付けする際には, Pro Microを使って位置合わせをすることをおすすめしております.*  
+  *特にコンスルー対応のBlack Pro Microはチップがホット・スワップ・ソケットに当たりやすくなっていますので, ピン・ヘッダを少し浮かせてはんだ付けした方が安定します.*
   7. こんな感じになります:<div><img src="../../img/soldered-kudox-rev2.jpg" alt="soldered kudox rev2" width="250"/></div>
 - パーツの足をカットします.  
   *※ 特に Pro Micro のピン・ヘッダとPJ-320Aコネクタはスイッチに干渉しやすいのでできるだけ短くカットしてください*<div><img src="../../img/cuts-pins.jpg" alt="cuts pins" width="250"/></div>
@@ -73,8 +77,10 @@ Kudox Rev 2.0 は 66キーのホット・スワップ分離キーボードです
 - Pro Micro を ピン・ヘッダにはんだ付けします.
   - `LEFT` と書いてある側: Pro Micro を表向き(チップが見えるように)にはんだ付けします.
   - `RIGHT` と書いてある側: Pro Micro を裏向き(チップ類がPCBに向くように)にはんだ付けします.<br/><div><img src="../../img/kudox-promicro.jpg" alt="Kudox ProMicro" width="250"/></div><span><em>※ 写真は `rev1` のものですが, Pro Micro の向きは `rev2` も同じです.</em></span>
-- PCB に上部ケースを取り付けます.  
-  M3ネジ(10mm) → 上部ケース → M3ナット → PCB → スペーサー の順番に取り付けます.<br/><div><img src="../../img/kudox-case.jpg" alt="Kudox case" width="250"/></div>
+- PCB に上部ケースを取り付けます.  ß
+  M3ネジ(10mm) → 上部ケース → M3ワッシャー → PCB → スペーサー の順番に取り付けます.<br/><div>
+  <img src="../../img/kudox-rev2-case.jpg" alt="Kudox rev2 case" width="250"/><span>&nbsp;</span>
+  <img src="../../img/kudox-rev2-case2.jpg" alt="Kudox rev2 case 2" width="240"/><span></div>
 - 下部ケースをスペーサーにネジ止めします.
 - スイッチを嵌めて完成です.
 <div>
@@ -93,6 +99,10 @@ Kudox Rev 2.0 は 66キーのホット・スワップ分離キーボードです
 
 動画ではちょっとしたコツなども紹介しています.  
 *動画は `rev1` のものですが、ホットスワップ・ソケット以外は概ね同じです.*
+
+## LEDテープの取り付け
+
+[こちら](LED.ja.md)をご覧ください.
 
 ## ファームウェア
 
