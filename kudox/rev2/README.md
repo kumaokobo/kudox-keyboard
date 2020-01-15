@@ -15,6 +15,7 @@ As hot-swap sockets need to be soldered, it is slightly more difficult to assemb
 
   - [Bill of materials](#bill-of-materials)
   - [Assembly guide](#assembly-guide)
+  - [Assembly LED strips](#assembly-led-strips)
   - [Firmware](#firmware)
     - [Basic compiling and burning command](#basic-compiling-and-burning-command)
     - [First time burning](#first-time-burning)
@@ -89,9 +90,9 @@ As hot-swap sockets need to be soldered, it is slightly more difficult to assemb
 <a href="https://www.youtube.com/watch?v=HCa4KX-FlOU"><img src="https://img.youtube.com/vi/HCa4KX-FlOU/0.jpg" alt="Kudox Firmware" width="300"/></a>
 </p>
 
-## Assembly LED tape
+## Assembly LED strips
 
-The guide is [here](LED.md).
+▶ The guide is [here](LED.md).
 
 ## Firmware
 
