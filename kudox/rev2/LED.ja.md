@@ -1,5 +1,7 @@
 # LEDテープ (WS2812B) の取り付けガイド
 
+**English Guide is [here](LED.md).**
+
 <div>
 <img src="../../img/kudox_led.jpg" alt="Kudox led image" width="400"/>
 </div>
@@ -12,7 +14,7 @@
 
 - WS2812B LED 7玉 x 2本
 - リード線 7本  
-*5本は先がコネクタになっているとベター*
+*内5本は先がコネクタになっているとベター*
 - L型3ピンヘッダ x2
 - 絶縁テープ
 - はんだ付け済みPCB

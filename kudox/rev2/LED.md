@@ -1,5 +1,7 @@
 # Assembly LED strips (WS2812B)
 
+**Japanese Guide is [here](LED.ja.md).**
+
 <div>
 <img src="../../img/kudox_led.jpg" alt="Kudox led image" width="400"/>
 </div>
