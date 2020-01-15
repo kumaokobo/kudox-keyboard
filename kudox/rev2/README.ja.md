@@ -8,8 +8,8 @@ Kudox Rev 2.0 は 66キーのホット・スワップ分離キーボードです
 
 <div style="display:block;margin:50px auto;">
 <p align="center">
-<img src="../../img/kudox-rev2-image1.jpg" alt="Kudox rev2 image1" width="300"/>
-<img src="../../img/kudox-rev2-image2.jpg" alt="Kudox rev2 image2" width="300"/>
+<img src="../../img/kudox-rev2-image1.jpg" alt="Kudox rev2 image1" width="320"/>
+<img src="../../img/kudox-rev2-image2.jpg" alt="Kudox rev2 image2" width="320"/>
 </p>
 </div>
 
