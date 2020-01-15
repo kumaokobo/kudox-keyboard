@@ -15,6 +15,7 @@ As hot-swap sockets need to be soldered, it is slightly more difficult to assemb
 
   - [Bill of materials](#bill-of-materials)
   - [Assembly guide](#assembly-guide)
+  - [Assembly LED strips](#assembly-led-strips)
   - [Firmware](#firmware)
     - [Basic compiling and burning command](#basic-compiling-and-burning-command)
     - [First time burning](#first-time-burning)
@@ -35,10 +36,12 @@ As hot-swap sockets need to be soldered, it is slightly more difficult to assemb
 |  10 | Screws M3 x 10mm                              | M3                                                  |
 |  10 | Screws M3 x  5mm                              | M3                                                  |
 |  10 | Spacers                                       | M3 x 7mm                                            |
-|  10 | Nuts                                          | M3                                                  |
+|  10 | Washers                                       | M3                                                  |
 |  66 | [Kailh PCB Scoket](https://www.kailhswitch.com/mechanical-keyboard-switches/box-switches/mechanical-keyboard-switches-kailh-pcb-socket.html) | Cherry MX compatible type                           |
 |  66 | Cherry MX compatible switches                 |                                                     |
 |  66 | Cherry MX compatible keycaps                  | 4x 1.25u keycaps, 2x 1.75u keycaps, 2x 2.25u keycaps, 48x 1u keycaps  |
+|  14 | LED Tape WS2812B                              | Optional. 7 LEDs x 2  |
+|   7 | 24 AWG (or smaller) stranded wire             | Optional. Only in case of using LEDs. |
 
 
 [Kudox rev2 Basic](https://kumaokobo.booth.pm/items/1703779) is on sale at [BOOTH](https://kumaokobo.booth.pm/) (**NOT** including switches and keycaps).  
@@ -58,7 +61,9 @@ As hot-swap sockets need to be soldered, it is slightly more difficult to assemb
   3. Solder momentary switches.
   4. Solder 4.7 kΩ resistors **on one half only**.
   5. Solder PCB hot-swap sockets.<br/>In case of using a soldering iron:<div><img src="../../img/solder-hotswap.jpg" alt="soldering hot swap sockets" width="250"/></div>
-  6. Solder the Pro Micro header pins.
+  6. Solder the Pro Micro header pins.  
+  *We recommend to adjust the positions of Pin Headers using Pro Micro when soldering.*  
+  *Specially, it is easy to collide the tips of Black Pro Micro - compatible with conthrough and hotswap socket.*
   7. Current state:<div><img src="../../img/soldered-kudox-rev2.jpg" alt="soldered kudox rev2" width="250"/></div>
 - Cuts legs of parts.  
   *Specially, pin-headers of Pro Micro needs to be cut as short as possible.*<div><img src="../../img/cuts-pins.jpg" alt="cuts pins" width="250"/></div>
@@ -70,7 +75,9 @@ As hot-swap sockets need to be soldered, it is slightly more difficult to assemb
   - `LEFT` side: Solder Pro Micro face up.
   - `RIGHT` side: Solder Pro Micro face down.<br/><div><img src="../../img/kudox-promicro.jpg" alt="Kudox ProMicro" width="250"/></div>
 - Install upper cases to PCBs.  
-  M3x10 screws → upper case → M3 nuts → PCB → spacers.<br/><div><img src="../../img/kudox-case.jpg" alt="Kudox case" width="250"/></div>
+  M3x10 screws → upper case → M3 nuts → PCB → spacers.<br/><div>
+  <img src="../../img/kudox-rev2-case.jpg" alt="Kudox rev2 case" width="250"/><span>&nbsp;</span>
+  <img src="../../img/kudox-rev2-case2.jpg" alt="Kudox rev2 case 2" width="240"/><span></div>
 - Install lower cases.
 - Fit switches to the upper cases.<div><img src="../../img/kudox-rev2-assembly-case-1.jpg" alt="assembly kudox rev2 case 1" width="250"/><span>&nbsp;&nbsp;</span><img src="../../img/kudox-rev2-assembly-case-2.jpg" alt="assembly kudox rev2 case 2" width="250"/></div>
 
@@ -82,6 +89,10 @@ As hot-swap sockets need to be soldered, it is slightly more difficult to assemb
 <a href="https://www.youtube.com/watch?v=6zZAXjMQ80E"><img src="https://img.youtube.com/vi/6zZAXjMQ80E/0.jpg" alt="Kudox assembly guide" width="300"/></a>
 <a href="https://www.youtube.com/watch?v=HCa4KX-FlOU"><img src="https://img.youtube.com/vi/HCa4KX-FlOU/0.jpg" alt="Kudox Firmware" width="300"/></a>
 </p>
+
+## Assembly LED strips
+
+▶ The guide is [here](LED.md).
 
 ## Firmware
 
