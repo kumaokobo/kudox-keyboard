@@ -19,6 +19,15 @@
 - Insulation tape
 - Soldered PCB
 
+The guide indicate Colors below:
+```
+VCC: red
+GND: black
+DIN: yellow
+DO : green
+```
+
+**The resisters on Kudox PCB should be removed if you install LED strips.**
 
 ## 1. Solder LED strips lead wires.
 
@@ -55,8 +64,10 @@ Left hand DIN -> LED -> DO -> TRRS -> Right hand TRRS -> DO -> LED
 
 ## 4. Solder PCBs Pin Headers.
 
-Solder Angle-3 Pin Headers at point of `RGB` .
+<div><img src="../../img/led-pin-header.jpg" alt="led pin header" width="250"/></div>
 
+Solder Angle-3 Pin Headers at point of `RGB` .  
+To avoid to collide Pin Header and diode, solder Pin Header using lead wire connector.
 
 ## 5. Connect Lead Wires to Pin Headers.
 
