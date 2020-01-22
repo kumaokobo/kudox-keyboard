@@ -69,23 +69,21 @@ Kudox Rev 2.0 は 66キーのホット・スワップ分離キーボードです
   *特にコンスルー対応のBlack Pro Microはチップがホット・スワップ・ソケットに当たりやすくなっていますので, ピン・ヘッダを少し浮かせてはんだ付けした方が安定します.*
   7. こんな感じになります:<div><img src="../../img/soldered-kudox-rev2.jpg" alt="soldered kudox rev2" width="250"/></div>
 - パーツの足をカットします.  
-  *※ 特に Pro Micro のピン・ヘッダとPJ-320Aコネクタはスイッチに干渉しやすいのでできるだけ短くカットしてください*<div><img src="../../img/cuts-pins.jpg" alt="cuts pins" width="250"/></div>
-- `RIGHT` と書いてある側に部品を実装したPCBへの Pro Micro 実装ですが、 Pro Micro のチップ類がPCB側を向くようにをはんだ付けするため, ホット・スワップ・ソケットが干渉しないよう絶縁テープでガードします.<div>
+  *※ Pro Micro のピン・ヘッダとPJ-320Aコネクタはスイッチに干渉しやすいのでできるだけ短くカットしてください*<div><img src="../../img/cuts-pins.jpg" alt="cuts pins" width="250"/></div>
+- `RIGHT` と書いてある側に部品を実装したPCBは, チップ類がPCB側を向くように Pro Micro をはんだ付けするため, ホット・スワップ・ソケットがチップに干渉しないよう, 絶縁テープでガードします.<div>
   <img src="../../img/kudox-seal-1.jpg" alt="seal hotswap socket 1" width="200"/><span>&nbsp;</span>
   <img src="../../img/kudox-seal-2.jpg" alt="seal hotswap socket 2" width="200"/><span>&nbsp;</span>
   <img src="../../img/kudox-seal-3.jpg" alt="seal hotswap socket 3" width="200"/></div>
 - Pro Micro を ピン・ヘッダにはんだ付けします.
   - `LEFT` と書いてある側: Pro Micro を表向き(チップが見えるように)にはんだ付けします.
-  - `RIGHT` と書いてある側: Pro Micro を裏向き(チップ類がPCBに向くように)にはんだ付けします.<br/><div><img src="../../img/kudox-promicro.jpg" alt="Kudox ProMicro" width="250"/></div><span><em>※ 写真は `rev1` のものですが, Pro Micro の向きは `rev2` も同じです.</em></span>
+  - `RIGHT` と書いてある側: Pro Micro を裏向き(チップ類がPCBに向くように)にはんだ付けします.<br/><div><img src="../../img/kudox-rev2-promicro.jpg" alt="Kudox rev2 ProMicro" width="250"/></div>
 - PCB に上部ケースを取り付けます.  ß
   M3ネジ(10mm) → 上部ケース → M3ワッシャー → PCB → スペーサー の順番に取り付けます.<br/><div>
   <img src="../../img/kudox-rev2-case.jpg" alt="Kudox rev2 case" width="250"/><span>&nbsp;</span>
   <img src="../../img/kudox-rev2-case2.jpg" alt="Kudox rev2 case 2" width="240"/><span></div>
 - 下部ケースをスペーサーにネジ止めします.
-- スイッチを嵌めて完成です.
-<div>
-  <img src="../../img/kudox-rev2-assembly-case-1.jpg" alt="assembly kudox rev2 case 1" width="250"/><span>&nbsp;&nbsp;</span>
-  <img src="../../img/kudox-rev2-assembly-case-2.jpg" alt="assembly kudox rev2 case 2" width="250"/>
+- スイッチを嵌めて完成です.<div>
+  <img src="../../img/kudox-rev2-assembly-case-1.jpg" alt="assembly kudox rev2 case 1" width="250"/><span>&nbsp;&nbsp;</span><img src="../../img/kudox-rev2-assembly-case-2.jpg" alt="assembly kudox rev2 case 2" width="250"/>
 </div>
 
 ### Youtube: 組み立てガイド
