@@ -22,3 +22,9 @@ for ((i = 0; i < ${#KEYS[@]}; i++)) {
 	done
 }
 
+ZIP_NAME=${DIR##*/}
+PARENT_DIR="$(dirname "$DIR")"
+echo "move $PARENT_DIR and will create $PARENT_DIR/$ZIP_NAME.zip"
+
+cd $PARENT_DIR
+zip -r ${ZIP_NAME}.zip ./$ZIP_NAME

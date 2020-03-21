@@ -49,7 +49,7 @@ The Kudox Rev.1 is standard 64 key Row-Staggered split keyboard.
 ### Installation steps:
 
 - Solder components:
-  1. Solder 1N4148 diodes. Keep the diode legs for the right hand controller installation.<br/><div><img src="../../img/kudox-diode.jpg" alt="Kudox diode" width="250"/></div>
+  1. Solder 1N4148 diodes. Put the cathode in the square hole.<br/><div><img src="../../img/kudox-diode.jpg" alt="Kudox diode" width="250"/></div>
   2. Solder PJ-320A connectors.
   3. Solder momentary switches.
   4. Solder 4.7 kΩ resistors **on one half only**.

@@ -77,11 +77,9 @@ Kudox Rev 2.0 は 66キーのホット・スワップ分離キーボードです
   <img src="../../img/kudox-seal-3.jpg" alt="seal hotswap socket 3" width="200"/></div>
 - Pro Micro を ピン・ヘッダにはんだ付けします.
   - `LEFT` と書いてある側: Pro Micro を表向き(チップが見えるように)にはんだ付けします.
-  - `RIGHT` と書いてある側: Pro Micro を裏向き(チップ類がPCBに向くように)にはんだ付けします.<br/><div><img src="../../img/kudox-rev2-promicro.jpg" alt="Kudox rev2 ProMicro" width="250"/></div>
-- PCB に上部ケースを取り付けます.  ß
-  M3ネジ(10mm) → 上部ケース → M3ワッシャー → PCB → スペーサー の順番に取り付けます.<br/><div>
-  <img src="../../img/kudox-rev2-case.jpg" alt="Kudox rev2 case" width="250"/><span>&nbsp;</span>
-  <img src="../../img/kudox-rev2-case2.jpg" alt="Kudox rev2 case 2" width="240"/><span></div>
+  - `RIGHT` と書いてある側: Pro Micro を裏向き(チップ類がPCBに向くように)にはんだ付けします.<br/><div><img src="../../img/kudox-promicro.jpg" alt="Kudox ProMicro" width="250"/></div><span><em>※ 写真は `rev1` のものですが, Pro Micro の向きは `rev2` も同じです.</em></span>
+- PCB に上部ケースを取り付けます.  
+  M3ネジ(10mm) → 上部ケース → ワッシャー → PCB → スペーサー の順番に取り付けます.<br/><div><img src="../../img/kudox-case-hotswap.jpg" alt="Kudox case" width="250"/></div>
 - 下部ケースをスペーサーにネジ止めします.
 - スイッチを嵌めて完成です.<div>
   <img src="../../img/kudox-rev2-assembly-case-1.jpg" alt="assembly kudox rev2 case 1" width="250"/><span>&nbsp;&nbsp;</span><img src="../../img/kudox-rev2-assembly-case-2.jpg" alt="assembly kudox rev2 case 2" width="250"/>
