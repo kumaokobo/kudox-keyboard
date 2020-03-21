@@ -18,7 +18,7 @@ Rev 1.0 needs to solder switches on PCB.
 - [Rev1.0 Assembly Guide](./rev1/README.md)
 
 
-### Youtube: Assembly Guide
+### Youtube: Videos
 
 - [Inken ch](https://www.youtube.com/channel/UCXJZdip7JmW74HQHCtfYzFw) (*Japanese only*)
 
@@ -37,7 +37,8 @@ As hot-swap sockets need to be soldered, it is slightly more difficult to assemb
 
 <div style="display:block;margin:50px auto;">
 <p align="center">
-<img src="../img/kudox-game-rev2-image1.jpg" alt="Kudox Game image" width="400"/>
+<img src="../img/kudox-game-rev2-image1.jpg" alt="Kudox Game Rev2 image1" width="350"/>
+<img src="../img/kudox-game-rev2-image2.jpg" alt="Kudox Game Rev2 image2" width="350"/>
 </p>
 </div>
 

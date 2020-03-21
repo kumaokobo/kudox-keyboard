@@ -23,8 +23,10 @@ The Kudox Game rev.1 is the Row-Staggered keyboard specialized for playing game.
 |   1 | Arduino Pro Micro                             | ATMega32U4                                          |
 |   1 | USB micro cable                               |                                                     |
 |   1 | Case                                          |                                                     |
-|   5 | Screws                                        | M3                                                  |
+|   5 | Screws M3 x 10mm                              | M3                                                  |
+|   5 | Screws M3 x  5mm                              | M3                                                  |
 |   5 | Spacers                                       | M3                                                  |
+|   5 | Nuts                                          | M3                                                  |
 |  26 | Cherry MX compatible switches                 |                                                     |
 |  26 | Cherry MX compatible keycaps                  | 3x 1.5u keycaps, 1x 2u keycap, 22x 1u keycaps       |
 
@@ -41,7 +43,7 @@ The Kudox Game rev.1 is the Row-Staggered keyboard specialized for playing game.
 ### Installation steps:
 
 - Solder components:
-  1. Solder 1N4148 diodes. Keep the diode legs for the right hand controller installation.<br/><div><img src="../../img/kudox-game-diode.jpg" alt="Kudox Game diode" width="250"/></div>
+  1. Solder 1N4148 diodes. Put the cathode in the square hole.<br/><div><img src="../../img/kudox-game-diode.jpg" alt="Kudox Game diode" width="250"/></div>
   2. Solder a momentary switch.
   3. Solder the Pro Micro header pins (**do not solder the Pro Micro controllers yet**).
 - Install upper cases to PCBs.

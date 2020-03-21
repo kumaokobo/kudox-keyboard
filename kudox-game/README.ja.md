@@ -18,7 +18,7 @@ Rev 1.0 は スイッチをPCBに直付けする仕様になっています.
 - [Rev1.0の組み立てマニュアル](./rev1/README.ja.md)
 
 
-### Youtube: 組み立てガイド
+### Youtube: 組み立てガイド & プレイ動画
 
 - [インケンch](https://www.youtube.com/channel/UCXJZdip7JmW74HQHCtfYzFw)
 
@@ -34,12 +34,13 @@ Rev 1.0 は スイッチをPCBに直付けする仕様になっています.
 
 ## Rev 2.0
 
-Rev 2.0 では スイッチ・ホットスワップを採用し, スイッチの入れ替えを容易にすることでキー毎に反応のし易さや打鍵感を調整できるようにしました.  
+Rev 2.0 では スイッチ・ホットスワップを採用し, スイッチの入れ替えを容易にすることで, キー毎に反応のし易さや打鍵感を調整できるようにしました.  
 ホットスワップ・ソケットのはんだ付けが必要なため、 Rev 1.0 に比べてやや組み立て難易度が上がります.  
 
 <div style="display:block;margin:50px auto;">
 <p align="center">
-<img src="../img/kudox-game-rev2-image1.jpg" alt="Kudox Game image" width="400"/>
+<img src="../img/kudox-game-rev2-image1.jpg" alt="Kudox Game Rev2 image1" width="350"/>
+<img src="../img/kudox-game-rev2-image2.jpg" alt="Kudox Game Rev2 image2" width="350"/>
 </p>
 </div>
 

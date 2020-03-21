@@ -27,7 +27,9 @@ Also it uses [QMK Firmware](https://github.com/qmk/qmk_firmware) and can be assi
 |   1 | Arduino Pro Micro                             | ATMega32U4                                          |
 |   1 | USB micro cable                               |                                                     |
 |   1 | Case                                          |                                                     |
-|   5 | Screws                                        | M3                                                  |
+|   5 | Screws M3 x 10mm                              | M3                                                  |
+|   5 | Screws M3 x  5mm                              | M3                                                  |
+|   5 | Spacers                                       | M3 x 7mm                                            |
 |   5 | Washers                                       | M3                                                  |
 |  26 | Cherry MX compatible switches                 |                                                     |
 |  26 | Cherry MX compatible keycaps                  | 3x 1.5u keycaps, 1x 2u keycap, 22x 1u keycaps       |
@@ -39,13 +41,14 @@ Also it uses [QMK Firmware](https://github.com/qmk/qmk_firmware) and can be assi
 ## Assembly guide
 
 <p align="center">
-<img src="../../img/kudox-game-rev2-image2.jpg" alt="Kudox Game Rev2" width="450"/>
+<img src="../../img/kudox-game-rev2-pcb.jpg" alt="Kudox Game Rev2 PCB" width="350"/>&nbsp;
+<img src="../../img/kudox-game-rev2-image2.jpg" alt="Kudox Game Rev2" width="350"/>
 </p>
 
 ### Installation steps:
 
 - Solder components:
-  1. Solder 1N4148 diodes. Keep the diode legs for the right hand controller installation.<br/><div><img src="../../img/kudox-game-diode.jpg" alt="Kudox Game diode" width="250"/></div>
+  1. Solder 1N4148 diodes. Put the cathode in the square hole.<br/><div><img src="../../img/kudox-game-diode.jpg" alt="Kudox Game diode" width="250"/></div>
   2. Solder a momentary switch.
   3. Solder PCB hot-swap sockets.<div><img src="../../img/solder-hotswap.jpg" alt="soldering hot swap sockets" width="250"/></div>How to solder hot-swap sockets: <br/><div><a href="https://www.youtube.com/watch?v=uHqkW0cQ80I"><img src="https://img.youtube.com/vi/uHqkW0cQ80I/0.jpg" alt="ホットスワップソケットの付け方" width="250"/></a></div>[YouTube:Inken ch:How to solder hot-swap sockets](https://www.youtube.com/watch?v=uHqkW0cQ80I)
   4. Solder the Pro Micro header pins.
