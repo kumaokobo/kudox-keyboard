@@ -14,6 +14,7 @@ Also it uses [QMK Firmware](https://github.com/qmk/qmk_firmware) and can be assi
 
   - [Bill of materials](#bill-of-materials)
   - [Assembly guide](#assembly-guide)
+  - [Assembly LED strips](#assembly-led-strips)
   - [Firmware](#firmware)
 
 ## Bill of materials
@@ -74,6 +75,10 @@ Also it uses [QMK Firmware](https://github.com/qmk/qmk_firmware) and can be assi
 <a href="https://www.youtube.com/watch?v=HCa4KX-FlOU"><img src="https://img.youtube.com/vi/HCa4KX-FlOU/0.jpg" alt="Kudox Game Firmware" width="250"/></a>
 <a href="https://www.youtube.com/watch?v=UFQ--JORdnw"><img src="https://img.youtube.com/vi/UFQ--JORdnw/0.jpg" alt="Kudox Game Playing Video" width="250"/></a>
 </p>
+
+## Assembly LED strips
+
+▶ The guide is [here](LED.md).
 
 ## Firmware
 
