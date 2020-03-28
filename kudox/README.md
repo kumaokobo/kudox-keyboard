@@ -35,6 +35,22 @@ As hot-swap sockets need to be soldered, it is slightly more difficult to assemb
 
 
 
+## Rev 3.0
+
+Rev 3.0 supports both hot swap sockets and direct switch mounting.  
+Also, we divided the board design for right hand and left hand.  
+For this reason, the key columns become more normal row-staggered.  
+
+<div style="display:block;margin:50px auto;">
+<p align="center">
+<img src="../img/kudox-rev3-image1.jpg" alt="Kudox rev3 image1" width="400"/>
+<img src="../img/kudox-rev3-image2.jpg" alt="Kudox rev3 image2" width="400"/>
+</p>
+</div>
+
+- [Rev3.0 Assembly Guide](./rev3/README.md)
+
+
 ### Video guides
 
 - [Inken ch](https://www.youtube.com/channel/UCXJZdip7JmW74HQHCtfYzFw) (japanese only)

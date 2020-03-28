@@ -51,7 +51,7 @@ Also it uses [QMK Firmware](https://github.com/qmk/qmk_firmware) and can be assi
 - Solder components:
   1. Solder 1N4148 diodes. Put the cathode in the square hole.<br/><div><img src="../../img/kudox-game-diode.jpg" alt="Kudox Game diode" width="250"/></div>
   2. Solder a momentary switch.
-  3. Solder PCB hot-swap sockets.<div><img src="../../img/solder-hotswap.jpg" alt="soldering hot swap sockets" width="250"/></div>How to solder hot-swap sockets: <br/><div><a href="https://www.youtube.com/watch?v=uHqkW0cQ80I"><img src="https://img.youtube.com/vi/uHqkW0cQ80I/0.jpg" alt="ホットスワップソケットの付け方" width="250"/></a></div>[YouTube:Inken ch:How to solder hot-swap sockets](https://www.youtube.com/watch?v=uHqkW0cQ80I)
+  3. Solder PCB hot-swap sockets.<div><img src="../../img/solder-hotswap.jpg" alt="soldering hot swap sockets" width="250"/></div>How to solder hot-swap sockets: <br/><div><a href="https://www.youtube.com/watch?v=uHqkW0cQ80I"><img src="https://img.youtube.com/vi/uHqkW0cQ80I/0.jpg" alt="How to solder hot-swap sockets" width="250"/></a></div>[YouTube:Inken ch:How to solder hot-swap sockets](https://www.youtube.com/watch?v=uHqkW0cQ80I)
   4. Solder the Pro Micro header pins.
 - Cuts legs of parts.  
   *Specially, pin-headers of Pro Micro needs to be cut as short as possible.*<div><img src="../../img/cuts-pins.jpg" alt="cuts pins" width="250"/></div>
