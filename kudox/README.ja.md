@@ -1,6 +1,6 @@
 # Kudox Keyboard
 
-Kudox は Row-Staggered な分離キーボードです.  
+Kudox は Row-Staggered 配列の左右分離キーボードです.  
 **English Manual is [here](README.md).**
 
 ## Rev 1.0
@@ -19,8 +19,9 @@ Rev 1.0 は 64キーのスタンダードなRow-Staggered な分離キーボー�
 
 ## Rev 2.0
 
-Rev 2.0 は 66キーのホット・スワップ分離キーボードです.  
-ホット・スワップ・ソケットのはんだ付けが必要なため、 Rev 1.0 に比べてやや組み立て難易度が上がります.  
+Rev 2.0 では スイッチの フットプリント に スイッチホットスワップ を採用しました.  
+また キー数が2つ増え 66キーになりました.  
+ホットスワップ・ソケットのはんだ付けが必要なため、 Rev 1.0 に比べてやや組み立て難易度が上がります.  
 
 <div style="display:block;margin:50px auto;">
 <p align="center">
@@ -30,6 +31,21 @@ Rev 2.0 は 66キーのホット・スワップ分離キーボードです.
 </div>
 
 - [Rev2.0の組み立てマニュアル](./rev2/README.ja.md)
+
+
+## Rev 3.0
+
+Rev 3.0 から ホットスワップ・ソケット / スイッチ直付けの両方に対応たフットプリントを採用しました.  
+また, 右手用と左手用で基板設計を分け, キーのずれ方を *Normal staggerrd* に寄せました.  
+
+<div style="display:block;margin:50px auto;">
+<p align="center">
+<img src="../img/kudox-rev3-image1.jpg" alt="Kudox rev3 image1" width="400"/>
+<img src="../img/kudox-rev3-image2.jpg" alt="Kudox rev3 image2" width="400"/>
+</p>
+</div>
+
+- [Rev3.0の組み立てマニュアル](./rev3/README.ja.md)
 
 
 ## 組み立て方を動画で紹介
