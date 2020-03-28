@@ -67,7 +67,7 @@ Rev 3.0 から ホットスワップ・ソケット / スイッチ直付けの�
   2. PJ-320Aコネクタ
   3. タクトスイッチ
   4. 4.7 kΩ 抵抗 (LED Underglow を取り付ける場合, 不要です)
-  5. ホットスワップ・ソケット (*オプションです)<br/>はんだごてではんだ付けする場合:<div><img src="../../img/solder-hotswap.jpg" alt="soldering hot swap sockets" width="250"/></div>下記の動画で取り付け方を詳しく紹介しています: <br/><div><a href="https://www.youtube.com/watch?v=uHqkW0cQ80I"><img src="https://img.youtube.com/vi/uHqkW0cQ80I/0.jpg" alt="ホットスワップソケットの付け方" width="250"/></a></div>[[YouTube] インケンch: ホットスワップソケットの付け方](https://www.youtube.com/watch?v=uHqkW0cQ80I)<br/>(クリームはんだでリフローして頂いてももちろん大丈夫です)
+  5. ホットスワップ・ソケット (*オプションです)<br/>はんだごてではんだ付けする場合:<div><img src="../../img/solder-hotswap.jpg" alt="soldering hot swap sockets" width="250"/></div>下記の動画で取り付け方を詳しく紹介しています: <br/><div><a href="https://www.youtube.com/watch?v=uHqkW0cQ80I"><img src="https://img.youtube.com/vi/uHqkW0cQ80I/0.jpg" alt="ホットスワップソケットの付け方" width="250"/></a></div>[[YouTube] インケンch: ホットスワップソケットの付け方](https://www.youtube.com/watch?v=uHqkW0cQ80I)<br/>*クリームはんだでリフローして頂いてももちろん大丈夫です*
   6. Pro Micro の ピン・ヘッダ (**Pro Micro 自身のはんだ付けはまだしません**)  
   *Pro Micro のピン・ヘッダをはんだ付けする際には, Pro Microを使って位置合わせをすることをおすすめしております.*  
   7. こんな感じになります:<div><img src="../../img/kudox-rev3-soldered-hotswap.jpg" alt="soldered kudox rev3 hostwap" width="250"/><span style="font-size:70%;">ホットスワップ</span>&nbsp;<img src="../../img/kudox-rev3-soldered-direct.jpg" alt="soldered kudox rev3 direct" width="250"/><span style="font-size:70%;">直付け</span></div>

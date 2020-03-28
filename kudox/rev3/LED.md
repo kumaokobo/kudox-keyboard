@@ -3,7 +3,7 @@
 **Japanese Guide is [here](LED.ja.md).**
 
 <div>
-<img src="../../img/kudox_led.jpg" alt="Kudox led image" width="400"/>
+<img src="../../img/kudox-rev3-led.jpg" alt="kudox led image" width="400"/>
 </div>
 
 ## Parts
@@ -13,8 +13,7 @@
 </div>
 
 - WS2812B LEDs 7 x 2
-- Lead Wires x 7  
-*Recommend: Five lead wires attached with connector*
+- Lead Wires x 7 (*Recommend: Five lead wires attached with connector*)
 - Angle-3 Pin Headers x 2
 - Insulation tape
 - Soldered PCB
@@ -55,8 +54,8 @@ Insulate the soldered points using tape or tube.
 
 Solder TRRS-Jacks the wires drawn each `DO` and `DIN` of LED strips.
 
-- Left hand side(`RIGHT` on mounting surface): Using LED strip solderd `5V` , `DIN` , `GND` .
-- Right hand side (`LEFT` on mounting surface): Using LED strip solderd `5V` , `GND` .
+- Left hand side: Using LED strip solderd `5V` , `DIN` , `GND` .
+- Right hand side: Using LED strip solderd `5V` , `GND` .
 
 ```
 Left hand DIN -> LED -> DO -> TRRS -> Right hand TRRS -> DO -> LED
