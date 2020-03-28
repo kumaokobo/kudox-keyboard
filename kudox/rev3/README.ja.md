@@ -44,6 +44,7 @@ Rev 3.0 から ホットスワップ・ソケット / スイッチ直付けの�
 |  66 | Cherry MX 互換 スイッチ                        | お好みで...💕                                       |
 |  66 | Cherry MX 互換 キーキャップ                    | 2x 1.25u, 2x 1.5u, 2x 1.75u, 2x 2.25u, 58x 1u       |
 |  66 | [Kailh PCB Scoket](https://www.kailhswitch.com/mechanical-keyboard-switches/box-switches/mechanical-keyboard-switches-kailh-pcb-socket.html)    | ※ オプションです. Cherry MX 互換タイプの方         |
+|  2 | MXスイッチ スタビライザー                       | ※ オプションです. PCBマウントタイプ                      |
 |  14 | LED Underglow WS2812B                          | ※ オプションです. 7 LEDs x 2                       |
 |   7 | ビニール線                                     | ※ オプションです. LED を取り付ける場合に使います.  |
 |   2 | L型3ピンヘッダ                                 | ※ オプションです. LED を取り付ける場合に使います.  |
@@ -74,6 +75,9 @@ Rev 3.0 から ホットスワップ・ソケット / スイッチ直付けの�
   *※ Pro Micro のピン・ヘッダはスイッチに干渉しやすいので, できるだけ短くカットしてください*<div><img src="../../img/cuts-pins-rev3.jpg" alt="cuts pins" width="250"/></div>
 - Pro Micro を ピン・ヘッダにはんだ付けします.  
   左右とも **表向き(チップが見えるように)** にはんだ付けします.<div><img src="../../img/kudox-rev3-promicro.jpg" alt="kudox pro micro" width="250"/></div>
+- **スタビライザーを使用する場合:**  
+  2.25uのスイッチにはPCBマウントのスタビライザーを取り付けることができます.  
+  もしスタビライザーを使用する場合は, この時点で取り付けを行ってください.
 - PCB に上部ケースを取り付けます.  
   M3ネジ(10mm) → 上部ケース → ナット(or ワッシャー) → PCB → スペーサー の順番に取り付けます.<br/><div><img src="../../img/kudox-rev3-case.jpg" alt="kudox case" width="250"/></div>
 - **スイッチを直付する場合のみ**: スイッチをケースに嵌め, PCBにはんだ付けします.

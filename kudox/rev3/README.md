@@ -76,6 +76,9 @@ are on sale at [BOOTH](https://kumaokobo.booth.pm/) (**NOT** including switches 
   *Specially, pin-headers of Pro Micro needs to be cut as short as possible.*<div><img src="../../img/cuts-pins-rev3.jpg" alt="cuts pins" width="250"/></div>
 - Solder Pro Micros controllers to the header pins.  
   Pro Micro **face up** on both of sides.<div><img src="../../img/kudox-rev3-promicro.jpg" alt="kudox pro micro" width="250"/></div>
+- **In case of using stabilizer:**  
+  We can install PCB mount stabilizers for MX on the place of 2.25u.  
+  If you would like to use stabilizers, install the time.
 - Install upper cases to PCBs.  
   M3x10 screws → upper case → M3 nuts(or washers) → PCB → spacers.<br/><div><img src="../../img/kudox-rev3-case.jpg" alt="kudox case" width="250"/></div>
 - Install lower cases.
