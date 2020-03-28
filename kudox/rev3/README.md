@@ -43,6 +43,7 @@ For this reason, the key columns become more normal row-staggered.
 |  66 | Cherry MX compatible switches                 |                                                     |
 |  66 | Cherry MX compatible keycaps                  | 2x 1.25u, 2x 1.5u, 2x 1.75u, 2x 2.25u, 58x 1u       |
 |  66 | [Kailh PCB Scoket](https://www.kailhswitch.com/mechanical-keyboard-switches/box-switches/mechanical-keyboard-switches-kailh-pcb-socket.html)   | Optional. Cherry MX compatible type                 |
+|   2 | Stabilizer for Cherry MX                      | Optional. Type of PCB mount                         |
 |  14 | LED Tape WS2812B                              | Optional. 7 LEDs x 2                                |
 |   7 | 24 AWG (or smaller) stranded wire             | Optional. Only in case of using LEDs.               |
 |   2 | Right angle 3 pin headers                     | Optional. Only in case of using LEDs.               |
@@ -78,7 +79,7 @@ are on sale at [BOOTH](https://kumaokobo.booth.pm/) (**NOT** including switches 
   Pro Micro **face up** on both of sides.<div><img src="../../img/kudox-rev3-promicro.jpg" alt="kudox pro micro" width="250"/></div>
 - **In case of using stabilizer:**  
   We can install PCB mount stabilizers for MX on the place of 2.25u.  
-  If you would like to use stabilizers, install the time.
+  If you would like to use stabilizers, install them now.
 - Install upper cases to PCBs.  
   M3x10 screws → upper case → M3 nuts(or washers) → PCB → spacers.<br/><div><img src="../../img/kudox-rev3-case.jpg" alt="kudox case" width="250"/></div>
 - Install lower cases.
