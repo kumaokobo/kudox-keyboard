@@ -99,6 +99,15 @@ Confirm to be able to input chars.
 In case of changing the keymap, modify [kudox_game/keymaps/default/keymap.c](https://github.com/qmk/qmk_firmware/blob/master/keyboards/kudox_game/keymaps/default/keymap.c) and re-write firmware.  
 You can see keycodes at [keycodes](https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md) on [Qmk Firmware](https://github.com/qmk/qmk_firmware).  
 
+
+### Online GUI
+
+The [QMK Configurator](https://config.qmk.fm/) is an online graphical user interface that generates QMK Firmware hex files.
+
+<p align="center">
+<img src="../../img/qmk_configurator.gif" alt="qmk configurator" width="336"/>
+</p>
+
 ## Layout
 
 <p align="center">

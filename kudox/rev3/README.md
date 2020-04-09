@@ -153,6 +153,16 @@ $ make kudox/rev3:default:flash
 Pull out the USB cable, then connect left hand and right hand by TRRS cable.  
 Plug in the Pro Micro (Master) the USB cable.  
 
+
+### Online GUI
+
+The [QMK Configurator](https://config.qmk.fm/) is an online graphical user interface that generates QMK Firmware hex files.
+
+<p align="center">
+<img src="../../img/qmk_configurator.gif" alt="qmk configurator" width="336"/>
+</p>
+
+
 ## Layout
 
 <p align="center">

@@ -11,9 +11,9 @@ Powered by [QMK (Quantum Mechanical Keyboard Firmware)](https://github.com/qmk/q
 
 
 <p align="center">
-<img src="img/kudox-pcb.jpg" alt="Kudox image" width="300"/>
-<img src="img/kudox-game-pcb.jpg" alt="Kudox Game image" width="300"/>
-<img src="img/kudox-columner-thumb.jpg" alt="Kudox Columner image" width="300"/>
+<img src="img/kudox-rev3-image3.jpg" alt="Kudox rev3 image" width="300"/>
+<img src="img/kudox-rev3-image4.jpg" alt="Kudox rev3 image" width="300"/>
+<img src="img/kudox-game-led1.jpg" alt="Kudox Game Rev2 image" width="300"/>
 </p>
 
 
