@@ -110,14 +110,14 @@ $ make kudox_game/rev2:default:flash
 
 ### オンラインGUIのファームウェア生成ツール
 
-[Qmk Firmware](https://github.com/qmk/qmk_firmware) は はオンラインでQMKのファームウェアを生成することができる [QMK Configurator](https://config.qmk.fm/) というツールを公開しています.  
+[Qmk Firmware](https://github.com/qmk/qmk_firmware) はオンラインでQMKのファームウェアを生成することができる [QMK Configurator](https://config.qmk.fm/) というツールを公開しています.  
 
 <p align="center">
 <img src="../../img/qmk_configurator.gif" alt="qmk configurator" width="336"/>
 </p>
 
 *QMK Configuratorの詳細な使い方はいろいろなサイトで詳しく解説されているので, そちらをご参照くださいませ.*  
-*残念ながらUS配列にしか対応していないようです.*  
+*残念ながらJIS配列の生成はできないようです.*  
 
 
 ## レイアウト
