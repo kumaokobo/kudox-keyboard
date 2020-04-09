@@ -7,7 +7,8 @@ Also it uses [QMK Firmware](https://github.com/qmk/qmk_firmware) and can be assi
 **Japanese Manual is [here](README.ja.md).**
 
 <p align="center">
-<img src="../../img/kudox-game-rev2-image1.jpg" alt="Kudox Game image" width="400"/>
+<img src="../../img/kudox-game-rev2-image1.jpg" alt="Kudox Game image" width="350"/>&nbsp;
+<img src="../../img/kudox-game-rev2-image2.jpg" alt="Kudox Game Rev2" width="350"/>
 </p>
 
 ## Summary
@@ -42,8 +43,7 @@ Also it uses [QMK Firmware](https://github.com/qmk/qmk_firmware) and can be assi
 ## Assembly guide
 
 <p align="center">
-<img src="../../img/kudox-game-rev2-pcb.jpg" alt="Kudox Game Rev2 PCB" width="350"/>&nbsp;
-<img src="../../img/kudox-game-rev2-image2.jpg" alt="Kudox Game Rev2" width="350"/>
+<img src="../../img/kudox-game-rev2-pcb.jpg" alt="Kudox Game Rev2 PCB" width="350"/>
 </p>
 
 ### Installation steps:
