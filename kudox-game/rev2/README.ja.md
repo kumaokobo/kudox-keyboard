@@ -108,6 +108,17 @@ $ make kudox_game/rev2:default:flash
 キー・コード設定は [Qmk Firmware](https://github.com/qmk/qmk_firmware) の [keycodes](https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md) をご参照くださいませ.  
 
 
+### オンラインGUIのファームウェア生成ツール
+
+[Qmk Firmware](https://github.com/qmk/qmk_firmware) は はオンラインでQMKのファームウェアを生成することができる [QMK Configurator](https://config.qmk.fm/) というツールを公開しています.  
+
+<p align="center">
+<img src="../../img/qmk_configurator.gif" alt="qmk configurator" width="336"/>
+</p>
+
+*QMK Configuratorの詳細な使い方はいろいろなサイトで詳しく解説されているので, そちらをご参照くださいませ.*  
+*残念ながらUS配列にしか対応していないようです.*  
+
 
 ## レイアウト
 
