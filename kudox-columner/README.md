@@ -87,7 +87,7 @@ It is different from Kudox Keyboard that `Column-` staggered and `Row-` staggere
 ## Firmware
 
 <p>
-<img src="../../img/qmk-badge-light.png" alt="qmk" width="220"/>
+<img src="../img/qmk-badge-light.png" alt="qmk" width="220"/>
 </p>
 
 Kudox Columner keyboard uses [QMK Firmware](https://github.com/qmk/qmk_firmware) for its firmware.  
