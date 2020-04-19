@@ -92,8 +92,8 @@ Rev 3.0 から ホットスワップ・ソケット / スイッチ直付けの�
 
 ## ファームウェア
 
-<p>
-<img src="../../img/qmk-badge-light.png" alt="qmk" width="220"/>
+<p align="center">
+<img src="../../img/qmk-badge-light.png" alt="qmk" width="250"/>
 </p>
 
 Kudox Keyboard は [QMK Firmware](https://github.com/qmk/qmk_firmware) を利用しています.  

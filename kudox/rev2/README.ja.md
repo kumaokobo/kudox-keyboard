@@ -103,8 +103,8 @@ Kudox Rev 2.0 は 66キーのホット・スワップ分離キーボードです
 
 ## ファームウェア
 
-<p>
-<img src="../../img/qmk-badge-light.png" alt="qmk" width="220"/>
+<p align="center">
+<img src="../../img/qmk-badge-light.png" alt="qmk" width="250"/>
 </p>
 
 Kudox Keyboard は [QMK Firmware](https://github.com/qmk/qmk_firmware) を利用しています.  

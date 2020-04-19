@@ -62,8 +62,8 @@ The Kudox Game rev.1 is the Row-Staggered keyboard specialized for playing game.
 
 ## Firmware
 
-<p>
-<img src="../../img/qmk-badge-light.png" alt="qmk" width="220"/>
+<p align="center">
+<img src="../../img/qmk-badge-light.png" alt="qmk" width="250"/>
 </p>
 
 Kudox Game keyboard uses [QMK Firmware](https://github.com/qmk/qmk_firmware) for its firmware.  

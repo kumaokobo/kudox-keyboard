@@ -86,8 +86,8 @@ Kudox Game Rev2.0 は ゲーム・プレイに特化した片手用キーボー�
 
 ## ファームウェア
 
-<p>
-<img src="../../img/qmk-badge-light.png" alt="qmk" width="220"/>
+<p align="center">
+<img src="../../img/qmk-badge-light.png" alt="qmk" width="250"/>
 </p>
 
 Kudox Game Keyboard は [QMK Firmware](https://github.com/qmk/qmk_firmware) を利用しています.  

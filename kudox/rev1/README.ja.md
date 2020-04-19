@@ -78,8 +78,8 @@ Kudox Rev.1 は 64キーの、スタンダードな Row-Staggered 分離キー�
 
 ## ファームウェア
 
-<p>
-<img src="../../img/qmk-badge-light.png" alt="qmk" width="220"/>
+<p align="center">
+<img src="../../img/qmk-badge-light.png" alt="qmk" width="250"/>
 </p>
 
 Kudox Keyboard は [QMK Firmware](https://github.com/qmk/qmk_firmware) を利用しています.  
