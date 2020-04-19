@@ -88,8 +88,8 @@ Kudox は `Row-` staggered キー配列を採用していますが、こちら�
 
 ## ファームウェア
 
-<p align="center">
-<img src="../img/qmk-badge-dark.png" alt="qmk" width="200"/>
+<p>
+<img src="../../img/qmk-badge-light.png" alt="qmk" width="220"/>
 </p>
 
 Kudox Columner Keyboard は [QMK Firmware](https://github.com/qmk/qmk_firmware) を利用しています.  

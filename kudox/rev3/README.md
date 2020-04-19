@@ -91,9 +91,10 @@ are on sale at [BOOTH](https://kumaokobo.booth.pm/) (**NOT** including switches 
 
 ## Firmware
 
-<p align="center">
-<img src="../../img/qmk-badge-dark.png" alt="qmk" width="200"/>
+<p>
+<img src="../../img/qmk-badge-light.png" alt="qmk" width="220"/>
 </p>
+
 
 Kudox keyboard uses [QMK Firmware](https://github.com/qmk/qmk_firmware) for its firmware.  
 Follow the QMK installation instructions [here](https://docs.qmk.fm/#/newbs_getting_started), then compile and burn the firmware as follows:  

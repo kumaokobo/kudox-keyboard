@@ -2,7 +2,7 @@
 
 <p align="center">
 <img src="img/kudox.png" alt="Kudox logo" width="600"/>
-<img src="img/qmk-badge-dark.png" alt="QMK" width="145"/>
+<img src="img/qmk-badge-light-square.png" alt="QMK" width="223"/>
 </p>
 
 
