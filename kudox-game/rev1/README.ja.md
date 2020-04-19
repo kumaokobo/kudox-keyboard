@@ -70,7 +70,7 @@ Kudox rev.1 は Row-Staggered な ゲーム・プレイに特化したキーボ�
 ## ファームウェア
 
 <p align="center">
-<img src="../../img/qmk-badge-dark.png" alt="qmk" width="200"/>
+<img src="../../img/qmk-badge-light.png" alt="qmk" width="250"/>
 </p>
 
 Kudox Game Keyboard は [QMK Firmware](https://github.com/qmk/qmk_firmware) を利用しています.  

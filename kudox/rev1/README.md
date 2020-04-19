@@ -74,7 +74,7 @@ The Kudox Rev.1 is standard 64 key Row-Staggered split keyboard.
 ## Firmware
 
 <p align="center">
-<img src="../../img/qmk-badge-dark.png" alt="qmk" width="200"/>
+<img src="../../img/qmk-badge-light.png" alt="qmk" width="250"/>
 </p>
 
 Kudox keyboard uses [QMK Firmware](https://github.com/qmk/qmk_firmware) for its firmware.  
