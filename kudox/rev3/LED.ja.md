@@ -3,7 +3,7 @@
 **English Guide is [here](LED.md).**
 
 <div>
-<img src="../../img/kudox-rev3-led.jpg" alt="kudox led image" width="400"/>
+<img src="../../img/kudox-rev3-led.jpg" alt="kudox led image" width="360"/>
 </div>
 
 ## 使用部品
@@ -29,6 +29,8 @@ DO : 緑
 
 **※ LEDテープを使う場合はKudox PCBに取り付けた抵抗をお外しください.**
 
+<div class="page"/>
+
 ## 1. LEDテープにリード線をはんだ付けします.
 
 <div><img src="../../img/led-soldered.jpg" alt="led soldered" width="250"/></div>
@@ -50,6 +52,7 @@ DO : 緑
 
 絶縁テープ(ビニールテープ)や熱収縮チューブなどではんだ付けした部分を絶縁します.  
 
+<div class="page"/>
 
 ## 3. TRRSコネクタにリード線をはんだ付けします.
 
@@ -71,11 +74,13 @@ DO : 緑
 
 L型3ピンヘッダ をPCBの `RGB` の箇所にはんだ付けします.  
 
+<div class="page"/>
 
 ## 5. ピンヘッダにリード線を接続します.
-<div><img src="../../img/led-wired.jpg" alt="led wired" width="250"/></div>
+<div><img src="../../img/led-wired-rev3.jpg" alt="led wired" width="250"/></div>
 
-`RGB` ピンヘッダは、上から下記のように並んでいます.
+`RGB` ピンヘッダは、上から下記のように並んでいます.  
+*(PCBにシルクで記載しています)*
 
 ```
 VCC

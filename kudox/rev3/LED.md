@@ -69,7 +69,7 @@ Solder Angle-3 Pin Headers at point of `RGB` .
 
 ## 5. Connect Lead Wires to Pin Headers.
 
-<div><img src="../../img/led-wired.jpg" alt="led wired" width="250"/></div>
+<div><img src="../../img/led-wired-rev3.jpg" alt="led wired" width="250"/></div>
 
 `RGB` Pin Header is below:
 
