@@ -1,8 +1,8 @@
 # Kudox Keyboard Rev.3
 
 Kudox Rev 3.0 は Row-Staggered 配列のスイッチ・ホットスワップ対応左右分離キーボードです.  
-Rev 3.0 から ホットスワップ・ソケット / スイッチ直付けの両方に対応たフットプリントを採用しました.  
-また, 右手用と左手用で基板設計を分け, キーのずれ方を *Normal staggerrd* に寄せました.  
+Rev 3.0 から ホットスワップ・ソケット / スイッチ直付けの両方に対応したフットプリントを採用しました.  
+また 右手用と左手用で基板設計を分け, キーのずれ方を *Normal-Staggerrd* に寄せました.  
 
 **English Manual is [here](README.md).**
 
@@ -72,12 +72,12 @@ Rev 3.0 から ホットスワップ・ソケット / スイッチ直付けの�
   *Pro Micro のピン・ヘッダをはんだ付けする際には, Pro Microを使って位置合わせをすることをおすすめしております.*  
   7. こんな感じになります:<div><img src="../../img/kudox-rev3-soldered-hotswap.jpg" alt="soldered kudox rev3 hostwap" width="250"/><span style="font-size:70%;">ホットスワップ</span>&nbsp;<img src="../../img/kudox-rev3-soldered-direct.jpg" alt="soldered kudox rev3 direct" width="250"/><span style="font-size:70%;">直付け</span></div>
 - パーツの足をカットします.  
-  *※ Pro Micro のピン・ヘッダはスイッチに干渉しやすいので, できるだけ短くカットしてください*<div><img src="../../img/cuts-pins-rev3.jpg" alt="cuts pins" width="250"/></div>
+  *※Pro Microのピン・ヘッダはスイッチに干渉しやすいので, できるだけ短くカットしてください*<div><img src="../../img/cuts-pins-rev3.jpg" alt="cuts pins" width="250"/></div>
 - Pro Micro を ピン・ヘッダにはんだ付けします.  
   左右とも **表向き(チップが見えるように)** にはんだ付けします.<div><img src="../../img/kudox-rev3-promicro.jpg" alt="kudox pro micro" width="250"/></div>
 - **スタビライザーを使用する場合:**  
   2.25uのスイッチにはPCBマウントのスタビライザーを取り付けることができます.  
-  もしスタビライザーを使用する場合は, この時点で取り付けを行ってください.
+  スタビライザーを使用する場合は, この時点で取り付けを行ってください.
 - PCB に上部ケースを取り付けます.  
   M3ネジ(10mm) → 上部ケース → ナット(or ワッシャー) → PCB → スペーサー の順番に取り付けます.<br/><div><img src="../../img/kudox-rev3-case.jpg" alt="kudox case" width="250"/></div>
 - **スイッチを直付する場合のみ**: スイッチをケースに嵌め, PCBにはんだ付けします.
@@ -112,7 +112,7 @@ $ make kudox/rev3:default:flash
 
 #### 1. 左手側
 
-[kudox/config.h](https://github.com/qmk/qmk_firmware/blob/master/keyboards/kudox/config.h) を編集して `MASTER_LEFT` を有効にします.
+[qmk_firmware/keyboards/kudox/config.h](https://github.com/qmk/qmk_firmware/blob/master/keyboards/kudox/config.h) を編集して `MASTER_LEFT` を有効にします.
 
 ```cpp
 /* Select hand configuration */
@@ -130,7 +130,7 @@ $ make kudox/rev3:default:flash
 
 #### 2. 右手側
 
-[kudox/config.h](https://github.com/qmk/qmk_firmware/blob/master/keyboards/kudox/config.h) を編集して `MASTER_RIGHT` を有効にします.
+[qmk_firmware/keyboards/kudox/config.h](https://github.com/qmk/qmk_firmware/blob/master/keyboards/kudox/config.h) を編集して `MASTER_RIGHT` を有効にします.
 
 ```cpp
 /* Select hand configuration */
@@ -156,7 +156,7 @@ $ make kudox/rev3:default:flash
 
 ### JIS配列を書き込む場合
 
-[kudox/rev3/keymaps/jis](https://github.com/qmk/qmk_firmware/blob/master/keyboards/kudox/rev3/keymaps/jis/keymap.c) に JIS-like配列を置いていますが、[Qmk Firmware](https://github.com/qmk/qmk_firmware) の [keycodes](https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md) を参考にご自身の使いやすいレイアウトに変更してお使いになられると良いかもしれません.  
+[qmk_firmware/keyboards/kudox/rev3/keymaps/jis](https://github.com/qmk/qmk_firmware/blob/master/keyboards/kudox/rev3/keymaps/jis/keymap.c) に JIS-like配列を置いていますが、[Qmk Firmware](https://github.com/qmk/qmk_firmware) の [keycodes](https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md) を参考にご自身の使いやすいレイアウトに変更してお使いになられると良いかもしれません.  
 
 ```sh
 $ cd path/to/qmk_firmware

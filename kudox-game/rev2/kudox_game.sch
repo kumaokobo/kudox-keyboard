@@ -155,7 +155,7 @@ U 1 1 5A808C37
 P 4900 1500
 F 0 "K0" H 4850 1500 60  0000 C CNN
 F 1 "KEYSW" H 4900 1400 60  0001 C CNN
-F 2 "kudox_game_footprints:Mx_hotswappable" H 4900 1500 60  0001 C CNN
+F 2 "kudox_game_footprints:MX_socket_optional_100" H 4900 1500 60  0001 C CNN
 F 3 "" H 4900 1500 60  0000 C CNN
 	1    4900 1500
 	1    0    0    -1  
@@ -179,7 +179,7 @@ U 1 1 5A809089
 P 5700 1500
 F 0 "K1" H 5650 1500 60  0000 C CNN
 F 1 "KEYSW" H 5700 1400 60  0001 C CNN
-F 2 "kudox_game_footprints:Mx_hotswappable" H 5700 1500 60  0001 C CNN
+F 2 "kudox_game_footprints:MX_socket_optional_100" H 5700 1500 60  0001 C CNN
 F 3 "" H 5700 1500 60  0000 C CNN
 	1    5700 1500
 	1    0    0    -1  
@@ -203,7 +203,7 @@ U 1 1 5A8091F6
 P 6500 1500
 F 0 "K2" H 6450 1500 60  0000 C CNN
 F 1 "KEYSW" H 6500 1400 60  0001 C CNN
-F 2 "kudox_game_footprints:Mx_hotswappable" H 6500 1500 60  0001 C CNN
+F 2 "kudox_game_footprints:MX_socket_optional_100" H 6500 1500 60  0001 C CNN
 F 3 "" H 6500 1500 60  0000 C CNN
 	1    6500 1500
 	1    0    0    -1  
@@ -227,7 +227,7 @@ U 1 1 5A809203
 P 7300 1500
 F 0 "K3" H 7250 1500 60  0000 C CNN
 F 1 "KEYSW" H 7300 1400 60  0001 C CNN
-F 2 "kudox_game_footprints:Mx_hotswappable" H 7300 1500 60  0001 C CNN
+F 2 "kudox_game_footprints:MX_socket_optional_100" H 7300 1500 60  0001 C CNN
 F 3 "" H 7300 1500 60  0000 C CNN
 	1    7300 1500
 	1    0    0    -1  
@@ -251,7 +251,7 @@ U 1 1 5A80948D
 P 8100 1500
 F 0 "K4" H 8050 1500 60  0000 C CNN
 F 1 "KEYSW" H 8100 1400 60  0001 C CNN
-F 2 "kudox_game_footprints:Mx_hotswappable" H 8100 1500 60  0001 C CNN
+F 2 "kudox_game_footprints:MX_socket_optional_100" H 8100 1500 60  0001 C CNN
 F 3 "" H 8100 1500 60  0000 C CNN
 	1    8100 1500
 	1    0    0    -1  
@@ -275,7 +275,7 @@ U 1 1 5A80949A
 P 8900 1500
 F 0 "K5" H 8850 1500 60  0000 C CNN
 F 1 "KEYSW" H 8900 1400 60  0001 C CNN
-F 2 "kudox_game_footprints:Mx_hotswappable" H 8900 1500 60  0001 C CNN
+F 2 "kudox_game_footprints:MX_socket_optional_100" H 8900 1500 60  0001 C CNN
 F 3 "" H 8900 1500 60  0000 C CNN
 	1    8900 1500
 	1    0    0    -1  
@@ -305,7 +305,7 @@ U 1 1 5A809C2A
 P 5700 2250
 F 0 "K11" H 5650 2250 60  0000 C CNN
 F 1 "KEYSW" H 5700 2150 60  0001 C CNN
-F 2 "kudox_game_footprints:Mx_hotswappable" H 5700 2250 60  0001 C CNN
+F 2 "kudox_game_footprints:MX_socket_optional_100" H 5700 2250 60  0001 C CNN
 F 3 "" H 5700 2250 60  0000 C CNN
 	1    5700 2250
 	1    0    0    -1  
@@ -329,7 +329,7 @@ U 1 1 5A809C37
 P 6500 2250
 F 0 "K12" H 6450 2250 60  0000 C CNN
 F 1 "KEYSW" H 6500 2150 60  0001 C CNN
-F 2 "kudox_game_footprints:Mx_hotswappable" H 6500 2250 60  0001 C CNN
+F 2 "kudox_game_footprints:MX_socket_optional_100" H 6500 2250 60  0001 C CNN
 F 3 "" H 6500 2250 60  0000 C CNN
 	1    6500 2250
 	1    0    0    -1  
@@ -353,7 +353,7 @@ U 1 1 5A809C44
 P 7300 2250
 F 0 "K13" H 7250 2250 60  0000 C CNN
 F 1 "KEYSW" H 7300 2150 60  0001 C CNN
-F 2 "kudox_game_footprints:Mx_hotswappable" H 7300 2250 60  0001 C CNN
+F 2 "kudox_game_footprints:MX_socket_optional_100" H 7300 2250 60  0001 C CNN
 F 3 "" H 7300 2250 60  0000 C CNN
 	1    7300 2250
 	1    0    0    -1  
@@ -377,7 +377,7 @@ U 1 1 5A809C51
 P 8100 2250
 F 0 "K14" H 8050 2250 60  0000 C CNN
 F 1 "KEYSW" H 8100 2150 60  0001 C CNN
-F 2 "kudox_game_footprints:Mx_hotswappable" H 8100 2250 60  0001 C CNN
+F 2 "kudox_game_footprints:MX_socket_optional_100" H 8100 2250 60  0001 C CNN
 F 3 "" H 8100 2250 60  0000 C CNN
 	1    8100 2250
 	1    0    0    -1  
@@ -401,7 +401,7 @@ U 1 1 5A809C5E
 P 8900 2250
 F 0 "K15" H 8850 2250 60  0000 C CNN
 F 1 "KEYSW" H 8900 2150 60  0001 C CNN
-F 2 "kudox_game_footprints:Mx_hotswappable" H 8900 2250 60  0001 C CNN
+F 2 "kudox_game_footprints:MX_socket_optional_100" H 8900 2250 60  0001 C CNN
 F 3 "" H 8900 2250 60  0000 C CNN
 	1    8900 2250
 	1    0    0    -1  
@@ -429,7 +429,7 @@ U 1 1 5A80AB8A
 P 4900 2950
 F 0 "K20" H 4850 2950 60  0000 C CNN
 F 1 "KEYSW" H 4900 2850 60  0001 C CNN
-F 2 "kudox_game_footprints:Mx_hotswappable" H 4900 2950 60  0001 C CNN
+F 2 "kudox_game_footprints:MX_socket_optional_100" H 4900 2950 60  0001 C CNN
 F 3 "" H 4900 2950 60  0000 C CNN
 	1    4900 2950
 	1    0    0    -1  
@@ -453,7 +453,7 @@ U 1 1 5A80AB97
 P 5700 2950
 F 0 "K21" H 5650 2950 60  0000 C CNN
 F 1 "KEYSW" H 5700 2850 60  0001 C CNN
-F 2 "kudox_game_footprints:Mx_hotswappable" H 5700 2950 60  0001 C CNN
+F 2 "kudox_game_footprints:MX_socket_optional_100" H 5700 2950 60  0001 C CNN
 F 3 "" H 5700 2950 60  0000 C CNN
 	1    5700 2950
 	1    0    0    -1  
@@ -477,7 +477,7 @@ U 1 1 5A80ABA4
 P 6500 2950
 F 0 "K22" H 6450 2950 60  0000 C CNN
 F 1 "KEYSW" H 6500 2850 60  0001 C CNN
-F 2 "kudox_game_footprints:Mx_hotswappable" H 6500 2950 60  0001 C CNN
+F 2 "kudox_game_footprints:MX_socket_optional_100" H 6500 2950 60  0001 C CNN
 F 3 "" H 6500 2950 60  0000 C CNN
 	1    6500 2950
 	1    0    0    -1  
@@ -501,7 +501,7 @@ U 1 1 5A80ABB1
 P 7300 2950
 F 0 "K23" H 7250 2950 60  0000 C CNN
 F 1 "KEYSW" H 7300 2850 60  0001 C CNN
-F 2 "kudox_game_footprints:Mx_hotswappable" H 7300 2950 60  0001 C CNN
+F 2 "kudox_game_footprints:MX_socket_optional_100" H 7300 2950 60  0001 C CNN
 F 3 "" H 7300 2950 60  0000 C CNN
 	1    7300 2950
 	1    0    0    -1  
@@ -525,7 +525,7 @@ U 1 1 5A80ABBE
 P 8100 2950
 F 0 "K24" H 8050 2950 60  0000 C CNN
 F 1 "KEYSW" H 8100 2850 60  0001 C CNN
-F 2 "kudox_game_footprints:Mx_hotswappable" H 8100 2950 60  0001 C CNN
+F 2 "kudox_game_footprints:MX_socket_optional_100" H 8100 2950 60  0001 C CNN
 F 3 "" H 8100 2950 60  0000 C CNN
 	1    8100 2950
 	1    0    0    -1  
@@ -549,7 +549,7 @@ U 1 1 5A80ABCB
 P 8900 2950
 F 0 "K25" H 8850 2950 60  0000 C CNN
 F 1 "KEYSW" H 8900 2850 60  0001 C CNN
-F 2 "kudox_game_footprints:Mx_hotswappable" H 8900 2950 60  0001 C CNN
+F 2 "kudox_game_footprints:MX_socket_optional_100" H 8900 2950 60  0001 C CNN
 F 3 "" H 8900 2950 60  0000 C CNN
 	1    8900 2950
 	1    0    0    -1  
@@ -573,7 +573,7 @@ U 1 1 5A80ABD8
 P 9700 2950
 F 0 "K26" H 9650 2950 60  0000 C CNN
 F 1 "KEYSW" H 9700 2850 60  0001 C CNN
-F 2 "kudox_game_footprints:Mx_hotswappable" H 9700 2950 60  0001 C CNN
+F 2 "kudox_game_footprints:MX_socket_optional_100" H 9700 2950 60  0001 C CNN
 F 3 "" H 9700 2950 60  0000 C CNN
 	1    9700 2950
 	1    0    0    -1  
@@ -604,7 +604,7 @@ U 1 1 5A80ABEB
 P 4900 3700
 F 0 "K30" H 4850 3700 60  0000 C CNN
 F 1 "KEYSW" H 4900 3600 60  0001 C CNN
-F 2 "kudox_game_footprints:Mx_hotswappable" H 4900 3700 60  0001 C CNN
+F 2 "kudox_game_footprints:MX_socket_optional_150" H 4900 3700 60  0001 C CNN
 F 3 "" H 4900 3700 60  0000 C CNN
 	1    4900 3700
 	1    0    0    -1  
@@ -628,7 +628,7 @@ U 1 1 5A80ABF8
 P 5700 3700
 F 0 "K31" H 5650 3700 60  0000 C CNN
 F 1 "KEYSW" H 5700 3600 60  0001 C CNN
-F 2 "kudox_game_footprints:Mx_hotswappable" H 5700 3700 60  0001 C CNN
+F 2 "kudox_game_footprints:MX_socket_optional_100" H 5700 3700 60  0001 C CNN
 F 3 "" H 5700 3700 60  0000 C CNN
 	1    5700 3700
 	1    0    0    -1  
@@ -652,7 +652,7 @@ U 1 1 5A80AC1F
 P 8100 3700
 F 0 "K34" H 8050 3700 60  0000 C CNN
 F 1 "KEYSW" H 8100 3600 60  0001 C CNN
-F 2 "kudox_game_footprints:Mx_hotswappable" H 8100 3700 60  0001 C CNN
+F 2 "kudox_game_footprints:MX_socket_optional_100" H 8100 3700 60  0001 C CNN
 F 3 "" H 8100 3700 60  0000 C CNN
 	1    8100 3700
 	1    0    0    -1  
@@ -679,7 +679,7 @@ U 1 1 5A80E493
 P 4900 4500
 F 0 "K40" H 4850 4500 60  0000 C CNN
 F 1 "KEYSW" H 4900 4400 60  0001 C CNN
-F 2 "kudox_game_footprints:Mx_hotswappable" H 4900 4500 60  0001 C CNN
+F 2 "kudox_game_footprints:MX_socket_optional_150" H 4900 4500 60  0001 C CNN
 F 3 "" H 4900 4500 60  0000 C CNN
 	1    4900 4500
 	1    0    0    -1  
@@ -703,7 +703,7 @@ U 1 1 5A80E4E1
 P 9700 4500
 F 0 "K46" H 9650 4500 60  0000 C CNN
 F 1 "KEYSW" H 9700 4400 60  0001 C CNN
-F 2 "kudox_game_footprints:Mx_hotswappable" H 9700 4500 60  0001 C CNN
+F 2 "kudox_game_footprints:MX_socket_optional_200" H 9700 4500 60  0001 C CNN
 F 3 "" H 9700 4500 60  0000 C CNN
 	1    9700 4500
 	1    0    0    -1  
@@ -858,7 +858,7 @@ U 1 1 5A80AC2C
 P 8900 3700
 F 0 "K35" H 8850 3700 60  0000 C CNN
 F 1 "KEYSW" H 8900 3600 60  0001 C CNN
-F 2 "kudox_game_footprints:Mx_hotswappable" H 8900 3700 60  0001 C CNN
+F 2 "kudox_game_footprints:MX_socket_optional_100" H 8900 3700 60  0001 C CNN
 F 3 "" H 8900 3700 60  0000 C CNN
 	1    8900 3700
 	1    0    0    -1  
@@ -890,7 +890,7 @@ U 1 1 5A80AC39
 P 9700 3700
 F 0 "K36" H 9650 3700 60  0000 C CNN
 F 1 "KEYSW" H 9700 3600 60  0001 C CNN
-F 2 "kudox_game_footprints:Mx_hotswappable" H 9700 3700 60  0001 C CNN
+F 2 "kudox_game_footprints:MX_socket_optional_100" H 9700 3700 60  0001 C CNN
 F 3 "" H 9700 3700 60  0000 C CNN
 	1    9700 3700
 	1    0    0    -1  
@@ -916,7 +916,7 @@ U 1 1 5A80E4D4
 P 8900 4500
 F 0 "K45" H 8850 4500 60  0000 C CNN
 F 1 "KEYSW" H 8900 4400 60  0001 C CNN
-F 2 "kudox_game_footprints:Mx_hotswappable" H 8900 4500 60  0001 C CNN
+F 2 "kudox_game_footprints:MX_socket_optional_150" H 8900 4500 60  0001 C CNN
 F 3 "" H 8900 4500 60  0000 C CNN
 	1    8900 4500
 	1    0    0    -1  
