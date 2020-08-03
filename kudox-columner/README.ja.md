@@ -145,7 +145,7 @@ $ make kudox/columner:default:flash
 
 以降、キー配列を変更した場合など再びファームを書く場合は、 TRRSケーブルをつないだままマスター側の Pro Micro に書き込みを行うことで、左右に設定が反映されるようになります.　　
 
-### VIA への対応
+### VIA を使ったキーマップ変更
 
 - [the-via](https://caniusevia.com/): https://caniusevia.com/
 

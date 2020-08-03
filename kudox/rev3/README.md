@@ -155,6 +155,30 @@ Pull out the USB cable, then connect left hand and right hand by TRRS cable.
 Plug in the Pro Micro (Master) the USB cable.  
 
 
+### VIA Support
+
+- [the-via](https://caniusevia.com/): https://caniusevia.com/
+
+Burn the firmware compatible with [VIA](https://caniusevia.com/).
+
+```sh
+$ cd path/to/qmk_firmware
+$ make kudox/rev3:via:flash
+```
+
+Get VIA and install it.
+- [https://www.github.com/the-via/releases/releases/latest](https://www.github.com/the-via/releases/releases/latest)
+
+Plug the keyboard in your PC, select `File` -> `Import Keymap` on VIA and load the json below:
+- [kudox_rev3.json](https://github.com/kumaokobo/kudox-keyboard/blob/master/kudox/rev3/kudox_rev3.json)
+
+Change keymap by VIA.
+
+<p align="center">
+<img src="../../img/via-operation.gif" alt="via operation" width="400"/>
+</p>
+
+
 ### Online GUI
 
 The [QMK Configurator](https://config.qmk.fm/) is an online graphical user interface that generates QMK Firmware hex files.
@@ -162,6 +186,7 @@ The [QMK Configurator](https://config.qmk.fm/) is an online graphical user inter
 <p align="center">
 <img src="../../img/qmk_configurator.gif" alt="qmk configurator" width="336"/>
 </p>
+
 
 
 ## Layout

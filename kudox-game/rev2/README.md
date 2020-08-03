@@ -91,13 +91,37 @@ Follow the QMK installation instructions [here](https://docs.qmk.fm/#/newbs_gett
 
 ```sh
 $ cd path/to/qmk_firmware
-$ make kudox_game/rev2:default:avrdude
+$ make kudox_game/rev2:default:flash
 ```
 
 Confirm to be able to input chars.  
 
 In case of changing the keymap, modify [kudox_game/keymaps/default/keymap.c](https://github.com/qmk/qmk_firmware/blob/master/keyboards/kudox_game/keymaps/default/keymap.c) and re-write firmware.  
 You can see keycodes at [keycodes](https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md) on [Qmk Firmware](https://github.com/qmk/qmk_firmware).  
+
+
+### VIA Support
+
+- [the-via](https://caniusevia.com/): https://caniusevia.com/
+
+Burn the firmware compatible with [VIA](https://caniusevia.com/).
+
+```sh
+$ cd path/to/qmk_firmware
+$ make kudox_game/rev2:via:flash
+```
+
+Get VIA and install it.
+- [https://www.github.com/the-via/releases/releases/latest](https://www.github.com/the-via/releases/releases/latest)
+
+Plug the keyboard in your PC, select `File` -> `Import Keymap` on VIA and load the json below:
+- [kudox_game_rev2.json](https://github.com/kumaokobo/kudox-keyboard/blob/master/kudox_game/rev2/kudox_game_rev2.json)
+
+Change keymap by VIA.
+
+<p align="center">
+<img src="../../img/via-operation.gif" alt="via operation" width="400"/>
+</p>
 
 
 ### Online GUI

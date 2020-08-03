@@ -71,7 +71,7 @@ Follow the QMK installation instructions [here](https://docs.qmk.fm/#/newbs_gett
 
 ```sh
 $ cd path/to/qmk_firmware
-$ make kudox_game/rev1:default:avrdude
+$ make kudox_game/rev1:default:flash
 ```
 
 
