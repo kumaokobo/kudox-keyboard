@@ -37,8 +37,8 @@ It is different from Kudox Keyboard that `Column-` staggered and `Row-` staggere
 |  10 | Screws M3 x 10mm                              | M3                                                  |
 |  10 | Screws M3 x  5mm                              | M3                                                  |
 |  10 | Spacers                                       | M3 x 7mm                                            |
-|  10 | Nuts                                          | M3                                                  |
-|  66 | [Kailh PCB Scoket](https://www.kailhswitch.com/mechanical-keyboard-switches/box-switches/mechanical-keyboard-switches-kailh-pcb-socket.html) | Cherry MX compatible type                           |
+|  10 | Wahers                                        | M3                                                  |
+|  66 | [Kailh PCB Scoket](https://www.kailhswitch.com/mechanical-keyboard-switches/box-switches/mechanical-keyboard-switches-kailh-pcb-socket.html) | Cherry MX compatible type                             |
 |  66 | Cherry MX compatible switches                 |                                                     |
 |  66 | Cherry MX compatible keycaps                  | 4x 1.25u keycaps, 2x 1.75u keycaps, 2x 2.25u keycaps, 48x 1u keycaps  |
 
@@ -142,6 +142,30 @@ Compile and burn the firmware by running [Basic compiling and burning command](#
 
 Pull out the USB cable, then connect left hand and right hand by TRRS cable.  
 Plug in the Pro Micro (Master) the USB cable.  
+
+
+### VIA Support
+
+- [the-via](https://caniusevia.com/): https://caniusevia.com/
+
+Burn the firmware compatible with [VIA](https://caniusevia.com/).
+
+```sh
+$ cd path/to/qmk_firmware
+$ make kudox/columner:via:flash
+```
+
+Get VIA and install it.
+- [https://www.github.com/the-via/releases/releases/latest](https://www.github.com/the-via/releases/releases/latest)
+
+Plug the keyboard in your PC, select `File` -> `Import Keymap` on VIA and load the json below:
+- [kudox_columner_rev1.json](https://github.com/kumaokobo/kudox-keyboard/blob/master/kudox-columner/rev1/kudox_columner_rev1.json)
+
+Change keymap by VIA.
+
+<p align="center">
+<img src="../img/via-operation.gif" alt="via operation" width="400"/>
+</p>
 
 
 ## Layout

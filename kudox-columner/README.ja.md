@@ -23,24 +23,24 @@ Kudox は `Row-` staggered キー配列を採用していますが、こちら�
 
 ## 必要な部品
 
-| 数量 | 項目                                           | 備考                                                |
-|----:|-----------------------------------------------|-----------------------------------------------------|
-|   2 | Kudox Columner Rev1.0 PCB                     |                                                     |
-|  66 | 1N4148 ダイオード                               | SMD ダイオードでも可.                                 |
-|   2 | PJ-320A 4極 3.5mm TRRS コネクタ                 |                                                    |
-|   2 | 4.7 kΩ 抵抗                                    | 片側のPCBのみにはんだ付けします.                        |
-|   2 | タクトスイッチ                                  | 6mm x 6mm x 4.3mm サイズのもの.                       |
-|   2 | Arduino Pro Micro                             | マイコン: ATMega32U4                                 |
-|   1 | TRRS ケーブル                                  | 4極のもの. (4極じゃないと正常動作しません)                |
-|   1 | USB micro ケーブル                             | 家に落ちているもので可.                                 |
-|   2 | ケース                                         |                                                     |
-|  10 | ネジ M3 x 10mm                                 |                                                     |
-|  10 | ネジ M3 x  5mm                                 |                                                     |
-|  10 | スペーサー                                      | M3 x  7mm                                           |
-|  10 | ナット                                         | M3 のもの (オプション)                                 |
-|  66 | [Kailh PCB Scoket](https://www.kailhswitch.com/mechanical-keyboard-switches/box-switches/mechanical-keyboard-switches-kailh-pcb-socket.html) | Cherry MX 互換タイプの方                               |
-|  66 | Cherry MX 互換 スイッチ                         | お好みで...☺                                         |
-|  66 | Cherry MX 互換 キーキャップ                      | 4x 1.25u, 2x 1.75u, 2x 2.25u, 48x 1u                |
+| 数量 | 項目                                           | 備考                                               |
+|-----:|-----------------------------------------------|-----------------------------------------------------|
+|    2 | Kudox Columner Rev1.0 PCB                     |                                                     |
+|   66 | 1N4148 ダイオード                             | SMD ダイオードでも可.                               |
+|    2 | PJ-320A 4極 3.5mm TRRS コネクタ               |                                                     |
+|    2 | 4.7 kΩ 抵抗                                   | 片側のPCBのみにはんだ付けします.                    |
+|    2 | タクトスイッチ                                | 6mm x 6mm x 4.3mm サイズのもの.                     |
+|    2 | Arduino Pro Micro                             | マイコン: ATMega32U4                                |
+|    1 | TRRS ケーブル                                 | 4極のもの. (4極じゃないと正常動作しません)          |
+|    1 | USB micro ケーブル                            | 家に落ちているもので可.                             |
+|    2 | ケース                                        |                                                     |
+|   10 | ネジ M3 x 10mm                                |                                                     |
+|   10 | ネジ M3 x  5mm                                |                                                     |
+|   10 | スペーサー                                    | M3 x  7mm                                           |
+|   10 | ワッシャー                                    | M3 のもの (オプション)                              |
+|   66 | [Kailh PCB Scoket](https://www.kailhswitch.com/mechanical-keyboard-switches/box-switches/mechanical-keyboard-switches-kailh-pcb-socket.html) | Cherry MX 互換タイプの方                               |
+|   66 | Cherry MX 互換 スイッチ                       | お好みで...☺                                       |
+|   66 | Cherry MX 互換 キーキャップ                   | 4x 1.25u, 2x 1.75u, 2x 2.25u, 48x 1u                |
 
 
 キーキャップとスイッチ以外の全てを含む [Kudox Columner 基本セット](https://kumaokobo.booth.pm/items/1706475) を [BOOTH](https://kumaokobo.booth.pm/) にて販売しています.  
@@ -49,7 +49,7 @@ Kudox は `Row-` staggered キー配列を採用していますが、こちら�
 ## 組み立てガイド
 
 <p align="center">
-<img src="../img/kudox-columner-parts.jpg" alt="Kudox PCBs" width="600"/>
+<img src="../img/kudox-columner-parts.jpg" alt="Kudox Columner PCBs" width="600"/>
 </p>
 
 
@@ -70,7 +70,7 @@ Kudox は `Row-` staggered キー配列を採用していますが、こちら�
   - `LEFT` と書いてある側: Pro Micro を表向き(チップが見えるように)にはんだ付けします.
   - `RIGHT` と書いてある側: Pro Micro を裏向き(チップ類がPCBに向くように)にはんだ付けします.<br/><div><img src="../img/kudox-columner-promicro.jpg" alt="Kudox Columner ProMicro" width="250"/></div>
 - PCB に上部ケースを取り付けます.  
-  M3ネジ(10mm) → 上部ケース → M3ナット → PCB → スペーサー の順番に取り付けます.<br/><div><img src="../img/kudox-case.jpg" alt="Kudox case" width="250"/></div>
+  M3ネジ(10mm) → 上部ケース → ワッシャー → PCB → スペーサー の順番に取り付けます.<br/><div><img src="../img/kudox-case.jpg" alt="Kudox case" width="250"/></div>
 - 下部ケースをスペーサーにネジ止めします.
 - スイッチを嵌めて完成です.
 
@@ -144,6 +144,29 @@ $ make kudox/columner:default:flash
 マスター側の Pro Micro にUSBケーブルをつなぎ、左右ともに文字入力可能なことを確認します.　　
 
 以降、キー配列を変更した場合など再びファームを書く場合は、 TRRSケーブルをつないだままマスター側の Pro Micro に書き込みを行うことで、左右に設定が反映されるようになります.　　
+
+### VIA への対応
+
+- [the-via](https://caniusevia.com/): https://caniusevia.com/
+
+VIA に対応したファームウェアを書き込みます.
+
+```sh
+$ cd path/to/qmk_firmware
+$ make kudox/columner:via:flash
+```
+
+下記からVIAをダウンロードしてインストールします.
+- [https://www.github.com/the-via/releases/releases/latest](https://www.github.com/the-via/releases/releases/latest)
+
+キーボードを PC 接続した状態で, VIA の `File` -> `Import Keymap` から 下記のjsonを読み込みます.
+- [kudox_columner_rev1.json](https://github.com/kumaokobo/kudox-keyboard/blob/master/kudox-columner/rev1/kudox_columner_rev1.json)
+
+VIA上でキーマップを変更します.
+
+<p align="center">
+<img src="../img/via-operation.gif" alt="via operation" width="400"/>
+</p>
 
 
 ## レイアウト
