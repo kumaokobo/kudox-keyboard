@@ -8,8 +8,9 @@ Rev 3.0 から ホットスワップ・ソケット / スイッチ直付けの�
 
 <div style="display:block;margin:50px auto;">
 <p align="center">
-<img src="../../img/kudox-rev3-image1.jpg" alt="Kudox rev3 image1" width="300"/>
-<img src="../../img/kudox-rev3-image2.jpg" alt="Kudox rev3 image2" width="300"/>
+<img src="../../img/kudox-rev3-image1.jpg" alt="Kudox rev3 image1" width="280"/>
+<img src="../../img/kudox-rev3-image4.jpg" alt="Kudox rev3 image" width="280"/>
+<img src="../../img/kudox-rev3-image2.jpg" alt="Kudox rev3 image2" width="280"/>
 </p>
 </div>
 
@@ -162,6 +163,30 @@ $ make kudox/rev3:default:flash
 $ cd path/to/qmk_firmware
 $ make kudox/rev3:jis:flash
 ```
+
+
+### VIA を使ったキーマップ変更
+
+- [the-via](https://caniusevia.com/): https://caniusevia.com/
+
+VIA に対応したファームウェアを書き込みます.
+
+```sh
+$ cd path/to/qmk_firmware
+$ make kudox/rev3:via:flash
+```
+
+下記からVIAをダウンロードしてインストールします.
+- [https://www.github.com/the-via/releases/releases/latest](https://www.github.com/the-via/releases/releases/latest)
+
+キーボードを PC 接続した状態で, VIA の `File` -> `Import Keymap` から 下記のjsonを読み込みます.
+- [kudox_rev3.json](https://github.com/kumaokobo/kudox-keyboard/blob/master/kudox/rev3/kudox_rev3.json)
+
+VIA上でキーマップを変更します.
+
+<p align="center">
+<img src="../../img/via-operation.gif" alt="via operation" width="400"/>
+</p>
 
 
 ### オンラインGUIのファームウェア生成ツール
