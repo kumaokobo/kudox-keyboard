@@ -115,7 +115,7 @@ Get VIA and install it.
 - [https://www.github.com/the-via/releases/releases/latest](https://www.github.com/the-via/releases/releases/latest)
 
 Plug the keyboard in your PC, select `File` -> `Import Keymap` on VIA and load the json below:
-- [kudox_game_rev2.json](https://github.com/kumaokobo/kudox-keyboard/blob/master/kudox_game/rev2/kudox_game_rev2.json)
+- [kudox_game_rev2.json](https://github.com/kumaokobo/kudox-keyboard/blob/master/kudox-game/rev2/kudox_game_rev2.json)
 
 Change keymap by VIA.
 
