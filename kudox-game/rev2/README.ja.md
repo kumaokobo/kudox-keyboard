@@ -108,6 +108,30 @@ $ make kudox_game/rev2:default:flash
 キー・コード設定は [Qmk Firmware](https://github.com/qmk/qmk_firmware) の [keycodes](https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md) をご参照くださいませ.  
 
 
+### VIA を使ったキーマップ変更
+
+- [the-via](https://caniusevia.com/): https://caniusevia.com/
+
+VIA に対応したファームウェアを書き込みます.
+
+```sh
+$ cd path/to/qmk_firmware
+$ make kudox_game/rev2:via:flash
+```
+
+下記からVIAをダウンロードしてインストールします.
+- [https://www.github.com/the-via/releases/releases/latest](https://www.github.com/the-via/releases/releases/latest)
+
+キーボードを PC 接続した状態で, VIA の `File` -> `Import Keymap` から 下記のjsonを読み込みます.
+- [kudox_game_rev2.json](https://github.com/kumaokobo/kudox-keyboard/blob/master/kudox-game/rev2/kudox_game_rev2.json)
+
+VIA上でキーマップを変更します.
+
+<p align="center">
+<img src="../../img/via-operation.gif" alt="via operation" width="400"/>
+</p>
+
+
 ### オンラインGUIのファームウェア生成ツール
 
 [Qmk Firmware](https://github.com/qmk/qmk_firmware) はオンラインでQMKのファームウェアを生成することができる [QMK Configurator](https://config.qmk.fm/) というツールを公開しています.  
