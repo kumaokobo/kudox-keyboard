@@ -17,6 +17,7 @@ Also it uses [QMK Firmware](https://github.com/qmk/qmk_firmware) and can be assi
   - [Assembly guide](#assembly-guide)
   - [Assembly LED strips](#assembly-led-strips)
   - [Firmware](#firmware)
+    - [VIA Support](#via-support)
 
 ## Bill of materials
 
@@ -102,7 +103,10 @@ You can see keycodes at [keycodes](https://github.com/qmk/qmk_firmware/blob/mast
 
 ### VIA Support
 
-- [the-via](https://caniusevia.com/): https://caniusevia.com/
+<p align="center">
+<img src="../../img/qmk_via.png" alt="qmk" width="540"/></br>
+<a href="https://caniusevia.com/">the-via: https://caniusevia.com/</a>
+</p>
 
 Burn the firmware compatible with [VIA](https://caniusevia.com/).
 

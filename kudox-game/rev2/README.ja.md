@@ -18,6 +18,7 @@ Kudox Game Rev2.0 は ゲーム・プレイに特化した片手用キーボー�
   - [LEDテープの取り付け](#LEDテープの取り付け)
   - [ファームウェア](#ファームウェア)
     - [コンパイル＆書き込みコマンド](#コンパイル＆書き込みコマンド)
+    - [VIAを使ったキーマップ変更](#VIAを使ったキーマップ変更)
 
 ## 必要な部品
 
@@ -108,9 +109,15 @@ $ make kudox_game/rev2:default:flash
 キー・コード設定は [Qmk Firmware](https://github.com/qmk/qmk_firmware) の [keycodes](https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md) をご参照くださいませ.  
 
 
-### VIA を使ったキーマップ変更
 
-- [the-via](https://caniusevia.com/): https://caniusevia.com/
+### VIAを使ったキーマップ変更
+
+<p align="center">
+<img src="../../img/qmk_via.png" alt="qmk" width="540"/></br>
+<a href="https://caniusevia.com/">the-via: https://caniusevia.com/</a>
+</p>
+
+#### 1. VIA 対応ファームの書き込み
 
 VIA に対応したファームウェアを書き込みます.
 
@@ -119,17 +126,29 @@ $ cd path/to/qmk_firmware
 $ make kudox_game/rev2:via:flash
 ```
 
+#### 2. VIA のインストール
+
 下記からVIAをダウンロードしてインストールします.
 - [https://www.github.com/the-via/releases/releases/latest](https://www.github.com/the-via/releases/releases/latest)
 
+
+#### 3. キーボード設定ファイルの読み込み
+
 キーボードを PC 接続した状態で, VIA の `File` -> `Import Keymap` から 下記のjsonを読み込みます.
 - [kudox_game_rev2.json](https://github.com/kumaokobo/kudox-keyboard/blob/master/kudox-game/rev2/kudox_game_rev2.json)
+
+
+#### 4. キーマップの変更
 
 VIA上でキーマップを変更します.
 
 <p align="center">
 <img src="../../img/via-operation.gif" alt="via operation" width="400"/>
 </p>
+
+> VIA上でキーを選択したりLED設定を変えたりすると即座に変更が反映されます. 保存などは必要ありません.
+
+
 
 
 ### オンラインGUIのファームウェア生成ツール
