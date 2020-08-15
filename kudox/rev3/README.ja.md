@@ -1,8 +1,7 @@
 # Kudox Keyboard Rev.3
 
-Kudox Rev 3.0 は Row-Staggered 配列のスイッチ・ホットスワップ対応左右分離キーボードです.  
-Rev 3.0 から ホットスワップ・ソケット / スイッチ直付けの両方に対応したフットプリントを採用しました.  
-また 右手用と左手用で基板設計を分け, キーのずれ方を *Normal-Staggerrd* に寄せました.  
+Kudox Rev3.0 は Row-Staggered配列のスイッチ・ホットスワップ対応左右分離キーボードです.  
+Rev 3.0 から `ホットスワップ・ソケット` / `スイッチ直付け` の両方に対応したフットプリントを採用しました. また 右手用と左手用で基板設計を分け, キーのずれ方を *Normal-Staggerrd* に寄せました.  
 
 **English Manual is [here](README.md).**
 
@@ -24,6 +23,7 @@ Rev 3.0 から ホットスワップ・ソケット / スイッチ直付けの�
     - [基本書き込みコマンド](#基本書き込みコマンド)
     - [初回書き込み時](#初回書き込み時)
     - [JIS配列を書き込む場合](#JIS配列を書き込む場合)
+    - [VIAを使ったキーマップ変更](#VIAを使ったキーマップ変更)
 
 ## 必要な部品
 
@@ -109,7 +109,7 @@ $ make kudox/rev3:default:flash
 
 ### 初回書き込み時
 
-初回書き込み時には、 左手・右手 両方の Pro Micro にファームを書く必要があります.  
+初回書き込み時には, 左手・右手 両方の Pro Micro にファームを書く必要があります.  
 
 #### 1. 左手側
 
@@ -122,7 +122,7 @@ $ make kudox/rev3:default:flash
 // #define EE_HANDS
 ```
 
-保存したら、 **左手側** の Pro Micro と PC をUSBケーブルで接続し、 [基本書き込みコマンド](#基本書き込みコマンド) を実行します.
+保存したら, **左手側** の Pro Micro と PC をUSBケーブルで接続し, [基本書き込みコマンド](#基本書き込みコマンド) を実行します.
 
 ```sh
 $ cd path/to/qmk_firmware
@@ -140,7 +140,7 @@ $ make kudox/rev3:default:flash
 // #define EE_HANDS
 ```
 
-保存したら、**右手側** の Pro Micro と PC をUSBケーブルで接続し、 [基本書き込みコマンド](#基本書き込みコマンド) を実行します.
+保存したら, **右手側** の Pro Micro と PC をUSBケーブルで接続し, [基本書き込みコマンド](#基本書き込みコマンド) を実行します.
 
 ```sh
 $ cd path/to/qmk_firmware
@@ -149,45 +149,20 @@ $ make kudox/rev3:default:flash
 
 #### 3. 動作確認
 
-一度USBケーブルを外してから、 TRRSケーブルで左右をつなぎます.  
-マスター側の Pro Micro にUSBケーブルをつなぎ、左右ともに文字入力可能なことを確認します.  
+一度USBケーブルを外してから, TRRSケーブルで左右をつなぎます.  
+マスター側の Pro Micro にUSBケーブルをつなぎ, 左右ともに文字入力可能なことを確認します.  
 
-以降、キー配列を変更した場合など再びファームを書く場合は、 TRRSケーブルをつないだままマスター側の Pro Micro に書き込みを行うことで、左右に設定が反映されるようになります.  
+以降, キー配列を変更した場合など再びファームを書く場合は, TRRSケーブルをつないだままマスター側の Pro Micro に書き込みを行うことで, 左右に設定が反映されるようになります.  
 
 
 ### JIS配列を書き込む場合
 
-[qmk_firmware/keyboards/kudox/rev3/keymaps/jis](https://github.com/qmk/qmk_firmware/blob/master/keyboards/kudox/rev3/keymaps/jis/keymap.c) に JIS-like配列を置いていますが、[Qmk Firmware](https://github.com/qmk/qmk_firmware) の [keycodes](https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md) を参考にご自身の使いやすいレイアウトに変更してお使いになられると良いかもしれません.  
+[qmk_firmware/keyboards/kudox/rev3/keymaps/jis](https://github.com/qmk/qmk_firmware/blob/master/keyboards/kudox/rev3/keymaps/jis/keymap.c) に JIS-like配列を置いていますが, [Qmk Firmware](https://github.com/qmk/qmk_firmware) の [keycodes](https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md) を参考にご自身の使いやすいレイアウトに変更してお使いになられると良いかもしれません.  
 
 ```sh
 $ cd path/to/qmk_firmware
 $ make kudox/rev3:jis:flash
 ```
-
-
-### VIA を使ったキーマップ変更
-
-- [the-via](https://caniusevia.com/): https://caniusevia.com/
-
-VIA に対応したファームウェアを書き込みます.
-
-```sh
-$ cd path/to/qmk_firmware
-$ make kudox/rev3:via:flash
-```
-
-下記からVIAをダウンロードしてインストールします.
-- [https://www.github.com/the-via/releases/releases/latest](https://www.github.com/the-via/releases/releases/latest)
-
-キーボードを PC 接続した状態で, VIA の `File` -> `Import Keymap` から 下記のjsonを読み込みます.
-- [kudox_rev3.json](https://github.com/kumaokobo/kudox-keyboard/blob/master/kudox/rev3/kudox_rev3.json)
-
-VIA上でキーマップを変更します.
-
-<p align="center">
-<img src="../../img/via-operation.gif" alt="via operation" width="400"/>
-</p>
-
 
 ### オンラインGUIのファームウェア生成ツール
 
@@ -199,6 +174,45 @@ VIA上でキーマップを変更します.
 
 *QMK Configuratorの詳細な使い方はいろいろなサイトで詳しく解説されているので, そちらをご参照くださいませ.*  
 *残念ながらJIS配列の生成はできないようです.*  
+
+
+### VIAを使ったキーマップ変更
+
+<p align="center">
+<img src="../../img/qmk_via.png" alt="qmk" width="540"/></br>
+<a href="https://caniusevia.com/">the-via: https://caniusevia.com/</a>
+</p>
+
+#### 1. VIA 対応ファームの書き込み
+
+VIA に対応したファームウェアを書き込みます.
+
+```sh
+$ cd path/to/qmk_firmware
+$ make kudox/rev3:via:flash
+```
+
+#### 2. VIA のインストール
+
+下記からVIAをダウンロードしてインストールします.
+- [https://www.github.com/the-via/releases/releases/latest](https://www.github.com/the-via/releases/releases/latest)
+
+
+#### 3. キーボード設定ファイルの読み込み
+
+キーボードを PC 接続した状態で, VIA の `File` -> `Import Keymap` から 下記のjsonを読み込みます.
+- [kudox_rev3.json](https://github.com/kumaokobo/kudox-keyboard/blob/master/kudox/rev3/kudox_rev3.json)
+
+
+#### 4. キーマップの変更
+
+VIA上でキーマップを変更します.
+
+<p align="center">
+<img src="../../img/via-operation.gif" alt="via operation" width="400"/>
+</p>
+
+> VIA上でキーを選択したりLED設定を変えたりすると即座に変更が反映されます. 保存して反映, という手順は必要ありません.
 
 
 ## レイアウト

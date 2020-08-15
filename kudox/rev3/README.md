@@ -22,6 +22,7 @@ For this reason, the key columns become more normal row-staggered.
   - [Firmware](#firmware)
     - [Basic compiling and burning command](#basic-compiling-and-burning-command)
     - [First time burning](#first-time-burning)
+    - [VIA Support](#via-support)
 
 ## Bill of materials
 
@@ -157,7 +158,12 @@ Plug in the Pro Micro (Master) the USB cable.
 
 ### VIA Support
 
-- [the-via](https://caniusevia.com/): https://caniusevia.com/
+<p align="center">
+<img src="../../img/qmk_via.png" alt="qmk" width="540"/></br>
+<a href="https://caniusevia.com/">the-via: https://caniusevia.com/</a>
+</p>
+
+#### 1. Burn VIA compatible firmware
 
 Burn the firmware compatible with [VIA](https://caniusevia.com/).
 
@@ -166,11 +172,17 @@ $ cd path/to/qmk_firmware
 $ make kudox/rev3:via:flash
 ```
 
+#### 2. Install VIA
+
 Get VIA and install it.
 - [https://www.github.com/the-via/releases/releases/latest](https://www.github.com/the-via/releases/releases/latest)
 
+#### 3. Load keyboard specific json
+
 Plug the keyboard in your PC, select `File` -> `Import Keymap` on VIA and load the json below:
 - [kudox_rev3.json](https://github.com/kumaokobo/kudox-keyboard/blob/master/kudox/rev3/kudox_rev3.json)
+
+#### 4. Change keymap on VIA
 
 Change keymap by VIA.
 
