@@ -53,22 +53,21 @@ Kudox は `Row-` staggered キー配列を採用していますが、こちら�
 </p>
 
 
-- PCBに下記をはんだ付けします:
+- PCB には向きがあります. 下記のシルク・プリントが印刷された面にパーツを実装してください.
+  - `Mounting Surface of Left` : 左手側の実装面
+  - `Mounting Surface of Right` : 右手側の実装面
+- PCBに下記のパーツをはんだ付けします:
   1. 1N4148ダイオード (向きがあります. カソードが四角型の穴側にくるように差します)<br/><div><img src="../img/kudox-diode.jpg" alt="Kudox diode" width="250"/></div>
   2. PJ-320Aコネクタ
   3. タクトスイッチ
-  4. 4.7 kΩ 抵抗 (左右どちらかのPCBのみにはんだ付けします)
+  4. 4.7 kΩ 抵抗 (※オプション. 左右どちらかのPCBのみにはんだ付けします)
   5. ホット・スワップ・ソケット<br/>はんだごてではんだ付けする場合:<div><img src="../img/solder-hotswap.jpg" alt="soldering hot swap sockets" width="250"/></div>
   クリームはんだでリフローして頂いてももちろん大丈夫です.
   6. Pro Micro の ピン・ヘッダ
 - パーツの足をカットします.
-- `RIGHT` と書いてある側に部品を実装したPCBへの Pro Micro 実装ですが、 Pro Micro のチップ類がPCB側を向くようにをはんだ付けするため, ホット・スワップ・ソケットが干渉しないよう絶縁テープでガードします.<div>
-  <img src="../img/kudox-seal-1.jpg" alt="seal hotswap socket 1" width="200"/><span>&nbsp;</span>
-  <img src="../img/kudox-seal-2.jpg" alt="seal hotswap socket 2" width="200"/><span>&nbsp;</span>
-  <img src="../img/kudox-seal-3.jpg" alt="seal hotswap socket 3" width="200"/></div>
 - Pro Micro を ピン・ヘッダにはんだ付けします.
-  - `LEFT` と書いてある側: Pro Micro を表向き(チップが見えるように)にはんだ付けします.
-  - `RIGHT` と書いてある側: Pro Micro を裏向き(チップ類がPCBに向くように)にはんだ付けします.<br/><div><img src="../img/kudox-columner-promicro.jpg" alt="Kudox Columner ProMicro" width="250"/></div>
+  - `Mounting Surface of Left`: Pro Micro を裏向き(チップ類がPCBに向くように)にはんだ付けします.
+  - `Mounting Surface of Right`: Pro Micro を表向き(チップが見えるように)にはんだ付けします.<br/><div><img src="../img/kudox-columner-promicro.jpg" alt="Kudox Columner ProMicro" width="300"/></div>
 - PCB に上部ケースを取り付けます.  
   M3ネジ(10mm) → 上部ケース → ワッシャー → PCB → スペーサー の順番に取り付けます.<br/><div><img src="../img/kudox-case.jpg" alt="Kudox case" width="250"/></div>
 - 下部ケースをスペーサーにネジ止めします.
