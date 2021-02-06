@@ -18,7 +18,7 @@ Rev 3.0 から `ホットスワップ・ソケット` / `スイッチ直付け` 
 
   - [必要な部品](#必要な部品)
   - [組み立てガイド](#組み立てガイド)
-  - [LEDテープの取り付け](#LEDテープの取り付け)
+  - [LED Underglowの取り付け](#LED_Underglowの取り付け)
   - [ファームウェア](#ファームウェア)
     - [基本書き込みコマンド](#基本書き込みコマンド)
     - [初回書き込み時](#初回書き込み時)
@@ -67,8 +67,10 @@ Rev 3.0 から `ホットスワップ・ソケット` / `スイッチ直付け` 
   *ダイオードのカソードには線などのマークが入っています*
   2. PJ-320Aコネクタ
   3. タクトスイッチ
-  4. 4.7 kΩ 抵抗 (LED Underglow を取り付ける場合, 不要です)
-  5. ホットスワップ・ソケット (*オプションです)<br/>はんだごてではんだ付けする場合:<div><img src="../../img/solder-hotswap.jpg" alt="soldering hot swap sockets" width="250"/></div>下記の動画で取り付け方を詳しく紹介しています: <br/><div><a href="https://www.youtube.com/watch?v=uHqkW0cQ80I"><img src="https://img.youtube.com/vi/uHqkW0cQ80I/0.jpg" alt="ホットスワップソケットの付け方" width="250"/></a></div>[[YouTube] インケンch: ホットスワップソケットの付け方](https://www.youtube.com/watch?v=uHqkW0cQ80I)<br/>*クリームはんだでリフローして頂いてももちろん大丈夫です*
+  4. 4.7 kΩ 抵抗 (オプション)  
+     LED Underglow 取り付け時は実装不要です.  
+     左右どちらかのPCBのみにはんだ付けします.  
+  5. ホットスワップ・ソケット (オプション)<br/>はんだごてではんだ付けする場合:<div><img src="../../img/solder-hotswap.jpg" alt="soldering hot swap sockets" width="250"/></div>下記の動画で取り付け方を詳しく紹介しています: <br/><div><a href="https://www.youtube.com/watch?v=uHqkW0cQ80I"><img src="https://img.youtube.com/vi/uHqkW0cQ80I/0.jpg" alt="ホットスワップソケットの付け方" width="250"/></a></div>[[YouTube] インケンch: ホットスワップソケットの付け方](https://www.youtube.com/watch?v=uHqkW0cQ80I)<br/>*クリームはんだでリフローして頂いてももちろん大丈夫です*
   6. Pro Micro の ピン・ヘッダ (**Pro Micro 自身のはんだ付けはまだしません**)  
   *Pro Micro のピン・ヘッダをはんだ付けする際には, Pro Microを使って位置合わせをすることをおすすめしております.*  
   7. こんな感じになります:<div><img src="../../img/kudox-rev3-soldered-hotswap.jpg" alt="soldered kudox rev3 hostwap" width="250"/><span style="font-size:70%;">ホットスワップ</span>&nbsp;<img src="../../img/kudox-rev3-soldered-direct.jpg" alt="soldered kudox rev3 direct" width="250"/><span style="font-size:70%;">直付け</span></div>
@@ -87,7 +89,7 @@ Rev 3.0 から `ホットスワップ・ソケット` / `スイッチ直付け` 
   <img src="../../img/kudox-rev2-assembly-case-1.jpg" alt="assembly kudox rev2 case 1" width="250"/><span>&nbsp;&nbsp;</span><img src="../../img/kudox-rev2-assembly-case-2.jpg" alt="assembly kudox rev2 case 2" width="250"/></div>
 - 完成です.
 
-## LEDテープの取り付け
+## LED Underglowの取り付け
 
 ▶ [こちら](LED.ja.md)をご覧ください.
 
@@ -217,24 +219,95 @@ VIA上でキーマップを変更します.
 
 ## レイアウト
 
-### デフォルト
+### VIAデフォルト
 
 <p align="center">
-<img src="../../img/kudox-layout-rev3.png" alt="Kudox rev3.0 layout"/>
+<em>(キーボードをUS配列で設定した場合のキーマップです)</em><br/>
+<img src="../../img/kudox-layout-rev3-via.png" alt="Kudox rev3.0 VIA layout"/>
 </p>
-<p align="center">
+<p align="right">
 <em><a href="http://www.keyboard-layout-editor.com/">http://www.keyboard-layout-editor.com/</a></em>
 </p>
 
-- [KLE Layout permalink](http://www.keyboard-layout-editor.com/##@_name=Kudox%20Keyboard%20Rev%203.0&author=Kumao%20Kobo%3Ckumaokobo%2F@gmail.com%3E%3B&@_fa@:0&:0&:2%3B%3B&=%60%0A%0A~&_f2:2%3B&=1%0AF1%0A!&=2%0AF2%0A%2F@&=3%0AF3%0A%23&=4%0AF4%0A$&=5%0AF5%0A%25&=6%0AF6%0A%5E&_x:3%3B&=7%0AF7%0A%2F&&=8%0AF8%0A%2F&&=9%0AF9%0A(&=0%0AF10%0A)&=-%0AF11%0A%2F_&=%2F=%0AF12%0A+&=%E2%86%90%0ADel%0Aback%3B&@_w:1.5%3B&=Tab&_f:3%3B&=Q%0A%22&_f:3%3B&=W%0A'&_f:3%3B&=E%0A%60&_f:3%3B&=R%0A*&_f:3%3B&=T%0A+&_fa@:2&:0%3B%3B&=ESC%0A%2F=&_x:2&f2=undefined%3B&=Y%0A(&=U%0A)&=I%0A%7C&=O%0A*&=P%0A~&='%0A%5E%0A%22&_w:1.5%3B&=%5C%0A%C2%A5%0A%7C%3B&@_w:1.75%3B&=Ctrl&=A%0A%2F@&=S%0A%2F:&=D%0A%60&=F&=G%0A-&_x:3%3B&=H%0A%5B&=J%0A%5D&=K%0A.&=L%0A%2F%2F&=%2F%3B%0A-%0A%2F:&_w:2.25%3B&=Enter%3B&@_w:2.25%3B&=Shift&=Z&=X&=C&=V&_f:3%3B&=B%0A%2F%2F&_x:3%3B&=N%0A%7B&=M%0A%7D&_fa@:0&:0&=undefined%3B%3B&=,%0A%22%0A%3C&=.%0A'%0A%3E&_f2:0%3B&=%2F%2F%0A%0A%3F&_w:1.75%3B&=Shift%3B&@_fa@:0&:0&:0&:2%3B&w:1.25%3B&=Alt%0A%0A%0AEsc&=%5B%0A%0A%7B&=%5D%0A%0A%7D&_fa@:2%3B%3B&=LANG2&_x:8.5&f2=undefined%3B&=%E2%86%90%0A%3C&=%E2%86%93%0A%2F_&=%E2%86%91%0A%5E&_w:1.25%3B&=%E2%86%92%0A%3E%3B&@_r:15&rx:5&y:4&x:0.75&w:1.25%3B&=Enter&=GUI&_a:7%3B&=%3B&@_r:-15&rx:12&y:4&x:-4%3B&=&_a:4&fa@:0&:0&:0&:2%3B%3B&=GUI%0A%0A%0AEnter&_fa@:2&:0&:0&:2%3B&w:1.25%3B&=LANG1%0A%0A%0ALayer)
+- [KLE Layout permalink](http://www.keyboard-layout-editor.com/##@@_fa@:3&:2&:2%3B%3B&=%60%0A%0A~&_fa@:3&:2&:2%3B%3B&=1%0AF1%0A!&=2%0AF2%0A%2F@&=3%0AF3%0A%23&=4%0AF4%0A$&=5%0AF5%0A%25&=6%0AF6%0A%5E&_x:3%3B&=7%0AF7%0A%2F&&=8%0AF8%0A%2F&&=9%0AF9%0A(&=0%0AF10%0A)&=-%0AF11%0A%2F_&=%2F=%0AF12%0A+&=%E2%86%90%0ADel%0Aback%3B&@_w:1.5%3B&=Tab&=Q%0A%22&=W%0A'&=E%0A%60&=R%0A*&=T%0A+&_fa@:3&:2&:2%3B%3B&=ESC%0A%2F=&_x:2%3B&=Y%0A(&=U%0A)&=I%0A%7C&=O%0A*&=P%0A~&_fa@:3&:2&:2%3B%3B&=%2F%2F%0A%5E%0A%3F&_w:1.5%3B&=%5C%0A%0A%7C%3B&@_w:1.75&fa@:3&:2&:2%3B%3B&=Ctrl&=A%0A%2F@&=S%0A%2F:&=D%0A%60&=F%0A%2F%2F&=G%0A-&_x:3%3B&=H%0A%5B&=J%0A%5D&=K%0A.&=L%0A%2F%2F&=%2F%3B%0A-%0A%2F:&_w:2.25%3B&=Enter%3B&@_w:2.25%3B&=Shift&=Z&=X&=C&=V&=B&_x:3%3B&=N%0A%7B&=M%0A%7D&=,%0A%0A%3C&=.%0A%0A%3E&=%E2%86%91%0A%5E%0A%3F&_w:1.75%3B&=Shift%3B&@_w:1.25%3B&=Alt&_f:3%3B&=%5B%0A%0A%7B&_f:3%3B&=%5D%0A%0A%7D&=Layer1&_x:8.5%3B&=LANG1&=%E2%86%90%0A%3C&=%E2%86%93%0A%2F_&_w:1.25%3B&=%E2%86%92%0A%3E%3B&@_r:15&rx:5&y:4&x:0.75&w:1.25%3B&=Enter&=GUI&_a:7%3B&=%3B&@_r:-15&rx:12&y:4&x:-4%3B&=&_a:4%3B&=GUI&_w:1.25%3B&=Layer2)
 
 ### JIS-like 配列
 
 <p align="center">
 <img src="../../img/kudox-jis-rev3.png" alt="Kudox rev3.0 JIS layout"/>
 </p>
-<p align="center">
+<p align="right">
 <em><a href="http://www.keyboard-layout-editor.com/">http://www.keyboard-layout-editor.com/</a></em>
 </p>
 
 - [KLE Layout permalink](http://www.keyboard-layout-editor.com/##@_name=Kudox%20Keyboard%20Rev3.0%20JIS&author=Kumao%20Kobo%3Ckumaokobo%2F@gmail.com%3E%3B&@_f2:2%3B&=%E5%85%A8%E5%8D%8A%E8%A7%92%0AEsc&=1%0AF1%0A!&=2%0AF2%0A%22&=3%0AF3%0A%23&=4%0AF4%0A$&=5%0AF5%0A%25&=6%0AF6%0A%2F&&_x:3%3B&=7%0AF7%0A'&=8%0AF8%0A(&=9%0AF9%0A)&=0%0AF10&=-%0AF11%0A%2F=&=%5E%0AF12%0A~&=%E2%86%90%0ADel%0Aback%3B&@_w:1.5%3B&=Tab&_f:3%3B&=Q%0A%22&_f:3%3B&=W%0A'&_f:3%3B&=E%0A%60&_f:3%3B&=R%0A*&_f:3%3B&=T%0A+&_fa@:2%3B%3B&=ESC%0A%2F=&_x:2&f:3%3B&=Y%0A(&_f:3%3B&=U%0A)&_f:3%3B&=I%0A%7C&_f:3%3B&=O%0A*&_f:3%3B&=P%0A~&_f:3%3B&=%2F@%0A%5E%0A%60&_f:3&w:1.5%3B&=%2F%2F%0A%C2%A5%0A%3F%3B&@_f:3&w:1.75%3B&=Ctrl&_f:3%3B&=A%0A%2F@&_f:3%3B&=S%0A%2F:&_f:3%3B&=D%0A%60&_f:3%3B&=F&_f:3%3B&=G%0A-&_x:3&f:3%3B&=H%0A%5B&_f:3%3B&=J%0A%5D&_f:3%3B&=K%0A.&_f:3%3B&=L%0A%2F%2F&_f:3%3B&=%2F%3B%0A%2F:%0A+&_f:3&w:2.25%3B&=Enter%3B&@_f:3&w:2.25%3B&=Shift&_f:3%3B&=Z%0A%7B&_f:3%3B&=X%0A%7D&_f:3%3B&=C&_f:3%3B&=V%0A%2F_&_f:3%3B&=B%0A%2F%2F&_x:3&f:3%3B&=N%0A%7B&_f:3%3B&=M%0A%7D&_f:3%3B&=,%0A%2F=%0A%3C&_f:3%3B&=.%0A-%0A%3E&_f2:2%3B&=%E2%86%91%0A%2F_&_w:1.75%3B&=Shift%3B&@_w:1.25%3B&=Alt%0A%0A%0AEsc&_f:3%3B&=%C2%A5%0A%0A%7C&_f:3%3B&=%2F:%0A%0A*&_fa@:2%3B%3B&=LANG2&_x:8.5%3B&=LANG1&_fa@:2&:2%3B%3B&=%E2%86%90%0A%5B&=%E2%86%93%0A%2F_&_w:1.25%3B&=%E2%86%92%0A%5D%3B&@_r:15&rx:5&y:4&x:0.75&w:1.25%3B&=Enter&=GUI&_a:7%3B&=%3B&@_r:-15&rx:12&y:4&x:-4%3B&=&_a:4&fa@:2&:2&:0&:2%3B%3B&=GUI%0A%0A%0AEnter&_w:1.25%3B&=Layer)
+
+
+## VIAでのJIS配列について
+
+<a href="https://caniusevia.com/">VIA</a> はUS配列を前提としているため, <a href="https://caniusevia.com/">VIA</a> でキーマップを設定したキーボードをJIS配列キーボードとして使うと, 設定したはずのキーと異なるキーが入力されます.  
+例えば, 上記の VIAデフォルト・レイアウトはJIS配列キーボードとしてOSに認識させると下記のようなキー配列になります.  
+(`OSに認識させると` と書いていますが, Windowsを日本語設定で使用している場合などは自動的にJIS配列キーボードとして認識されます)
+
+<p align="center">
+<img src="../../img/kudox-layout-rev3-via-jis.png" alt="Kudox rev3.0 VIA layout JIS"/>
+</p>
+<p align="right">
+<em><a href="http://www.keyboard-layout-editor.com/">http://www.keyboard-layout-editor.com/</a></em>
+</p>
+
+- <a href="http://www.keyboard-layout-editor.com/##@@=%E5%85%A8%E8%A7%92%0A%E5%8D%8A%E8%A7%92&_fa@:3&:2&:2%3B%3B&=1%0AF1%0A!&=2%0AF2%0A%22&=3%0AF3%0A%23&=4%0AF4%0A$&=5%0AF5%0A%25&=6%0AF6%0A%2F&&_x:3%3B&=7%0AF7%0A'&=8%0AF8%0A(&=9%0AF9%0A)&=0%0AF10&=-%0AF11%0A%2F=&=%5E%0AF12%0A~&=%E2%86%90%0ADel%0Aback%3B&@_w:1.5&fa@:3&:2&:2%3B%3B&=Tab&=Q%0A%22&=W%0A%7C&=E%0A%E5%85%A8%E5%8D%8A%E8%A7%92&=R%0A(&=T%0A~&=ESC%0A%5E&_x:2%3B&=Y%0A)&=U&=I%0A%5D&=O%0A(&=P&=%2F%2F%0A%2F&%0A%3F&_w:1.5%3B&=%5C%0A%0A%7C%3B&@_w:1.75&fa@:3&:2&:2%3B%3B&=Ctrl&=A%0A%22&=S%0A%2F:&=D%0A%E5%85%A8%E5%8D%8A%E8%A7%92&=F%0A%2F%2F&=G%0A-&_x:3%3B&=H%0A%2F@&=J%0A%5B&=K%0A.&=L%0A%2F%2F&=%2F%3B%0A-%0A%2F:&_w:2.25%3B&=Enter%3B&@_w:2.25&fa@:3&:2&:2%3B%3B&=Shift&=Z&=X&=C&=V&=B&_x:3%3B&=N%0A%60&=M%0A%7B&=,%0A%0A%3C&=.%0A%0A%3E&=%E2%86%91%0A%5E%0A%3F&_w:1.75%3B&=Shift%3B&@_w:1.25&fa@:3&:2&:2%3B%3B&=Alt&=%2F@%0A%0A%60&=%5B%0A%0A%7B&=Layer1&_x:8.5&fa@:2%3B%3B&=LANG1&_fa@:3&:2&:2%3B%3B&=%E2%86%90%0A%3C&=%E2%86%93%0A%2F_&_w:1.25%3B&=%E2%86%92%0A%3E%3B&@_r:15&rx:5&y:4&x:0.75&w:1.25&fa@:3&:2&:2%3B%3B&=Enter&=GUI&_a:7%3B&=%3B&@_r:-15&rx:12&y:4&x:-4%3B&=&_a:4%3B&=GUI&_w:1.25%3B&=Layer2">KLE Layout permalink</a>
+
+記号がぐちゃぐちゃですね💦  
+JIS配列キーボードとしてまともに使おうと思ったら, いくつかの記号を読み替えて設定する必要があります.  
+
+### VIAでの表記(US配列でのキー) を JIS配列用に読み替えるための表
+
+VIAカテゴリ | VIAでの表記 | JISのキー | 同じ or 異なる
+|:----------|:-----------:|:---------:|:-----:|
+BASIC       | _<br/>-     | =<br/>-   | 異なる
+BASIC       | +<br/>=     | ~<br/>^   | 異なる
+BASIC       | ~<br/>`     | 全角<br/>半角 | 異なる
+BASIC       | {<br/>[     | `<br/>@   | 異なる
+BASIC       | }<br/>]     | {<br/>[   | 異なる
+BASIC       | \\<br/>\|   | }<br/>]   | 異なる
+BASIC       | "<br/>'     | *<br/>:   | 異なる
+BASIC       | <<br/>,     | <<br/>,   | 同じ
+BASIC       | ><br/>.     | ><br/>.   | 同じ
+BASIC       | ?<br/>/     | ?<br/>/   | 同じ
+SPECIAL     | !           | !         | 同じ
+SPECIAL     | @           | "         | 異なる
+SPECIAL     | #           | #         | 同じ
+SPECIAL     | $           | $         | 同じ
+SPECIAL     | %           | %         | 同じ
+SPECIAL     | ^           | &         | 異なる
+SPECIAL     | *           | (         | 異なる
+SPECIAL     | (           | )         | 異なる
+SPECIAL     | )           | なし      | 異なる
+SPECIAL     | _           | =         | 異なる
+SPECIAL     | +           | ~         | 異なる
+SPECIAL     | {           | `         | 異なる
+SPECIAL     | }           | {         | 異なる
+SPECIAL     | <           | <         | 同じ
+SPECIAL     | >           | >         | 同じ
+SPECIAL     | :           | +         | 異なる
+SPECIAL     | \|          | }         | 異なる
+SPECIAL     | ?           | ?         | 同じ
+SPECIAL     | "           | *         | 異なる
+SPECIAL     | Ro          | \         | 異なる
+SPECIAL     | ¥           | ¥         | 同じ
+SPECIAL     | 無変換      | 無変換(Win) | 同じ
+SPECIAL     | 変換        | 変換(Win)   | 同じ
+SPECIAL     | かな        | かな(Win)   | 同じ
+SPECIAL     | 漢字        | 英数(Mac)   | 異なる
+SPECIAL     | ハングル文字のキー | かな(Mac) | 異なる
+
+<br/>
+<br/>
+
+読み替えて設定すると下記図のようになります.  
+赤文字がキー押下時に実際に入力されるキーです.
+
+<p align="center">
+<img src="../../img/kudox-via-jis.png" alt="VIA Kudox JIS"/>
+</p>

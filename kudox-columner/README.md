@@ -54,11 +54,19 @@ It is different from Kudox Keyboard that `Column-` staggered and `Row-` staggere
 
 ### Installation steps:
 
+- The PCB has direction.
+  - `Mounting Surface of Left` : Mounting surface on the left hand side.
+  - `Mounting Surface of Right` : Mounting surface on the right hand side.<div><br/>
+<img src="../img/kudox-columner-sides.jpg" alt="Kudox PCBs Mounting Surface" width="250"/>
+</div>
+
 - Solder components:
   1. Solder 1N4148 diodes. Keep the diode legs for the right hand controller installation.<br/><div><img src="../img/kudox-diode.jpg" alt="Kudox diode" width="250"/></div>
   2. Solder PJ-320A connectors.
   3. Solder momentary switches.
-  4. Solder 4.7 kΩ resistors **on one half only**.
+  4. Solder 4.7 kΩ resistors (Optional)  
+     Unnecessary to solder this when implementing LED Underglow.  
+     In case of soldering, **on one half only**.
   5. Solder PCB hot-swap sockets.
   6. Solder the Pro Micro header pins.
 - Cuts legs of parts.
