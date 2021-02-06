@@ -56,9 +56,7 @@ It is different from Kudox Keyboard that `Column-` staggered and `Row-` staggere
 
 - The PCB has direction.
   - `Mounting Surface of Left` : Mounting surface on the left hand side.
-  - `Mounting Surface of Right` : Mounting surface on the right hand side.<div><br/>
-<img src="../img/kudox-columner-sides.jpg" alt="Kudox PCBs Mounting Surface" width="250"/>
-</div>
+  - `Mounting Surface of Right` : Mounting surface on the right hand side.  <div><br/><img src="../img/kudox-columner-sides.jpg" alt="Kudox PCBs Mounting Surface" width="250"/></div>
 
 - Solder components:
   1. Solder 1N4148 diodes. Keep the diode legs for the right hand controller installation.<br/><div><img src="../img/kudox-diode.jpg" alt="Kudox diode" width="250"/></div>

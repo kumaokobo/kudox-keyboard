@@ -55,9 +55,7 @@ Kudox は `Row-` staggered キー配列を採用していますが、こちら�
 
 - PCB には向きがあります. 下記のシルク・プリントが印刷された面にパーツを実装してください.
   - `Mounting Surface of Left` : 左手側の実装面
-  - `Mounting Surface of Right` : 右手側の実装面<div><br/>
-<img src="../img/kudox-columner-sides.jpg" alt="Kudox PCBs Mounting Surface" width="250"/>
-</div>
+  - `Mounting Surface of Right` : 右手側の実装面  <div><br/><img src="../img/kudox-columner-sides.jpg" alt="Kudox PCBs Mounting Surface" width="250"/></div>
 
 - PCBに下記のパーツをはんだ付けします:
   1. 1N4148ダイオード (向きがあります. カソードが四角型の穴側にくるように差します)<br/><div><img src="../img/kudox-diode.jpg" alt="Kudox diode" width="250"/></div>
