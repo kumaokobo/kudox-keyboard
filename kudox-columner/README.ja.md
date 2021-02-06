@@ -55,12 +55,15 @@ Kudox は `Row-` staggered キー配列を採用していますが、こちら�
 
 - PCB には向きがあります. 下記のシルク・プリントが印刷された面にパーツを実装してください.
   - `Mounting Surface of Left` : 左手側の実装面
-  - `Mounting Surface of Right` : 右手側の実装面
+  - `Mounting Surface of Right` : 右手側の実装面  <div><br/><img src="../img/kudox-columner-sides.jpg" alt="Kudox PCBs Mounting Surface" width="250"/></div>
+
 - PCBに下記のパーツをはんだ付けします:
   1. 1N4148ダイオード (向きがあります. カソードが四角型の穴側にくるように差します)<br/><div><img src="../img/kudox-diode.jpg" alt="Kudox diode" width="250"/></div>
   2. PJ-320Aコネクタ
   3. タクトスイッチ
-  4. 4.7 kΩ 抵抗 (※オプション. 左右どちらかのPCBのみにはんだ付けします)
+  4. 4.7 kΩ 抵抗 (オプション)  
+     LED Underglow 取り付け時は実装不要です.  
+     左右どちらかのPCBのみにはんだ付けします.  
   5. ホット・スワップ・ソケット<br/>はんだごてではんだ付けする場合:<div><img src="../img/solder-hotswap.jpg" alt="soldering hot swap sockets" width="250"/></div>
   クリームはんだでリフローして頂いてももちろん大丈夫です.
   6. Pro Micro の ピン・ヘッダ

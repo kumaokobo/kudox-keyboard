@@ -69,7 +69,9 @@ are on sale at [BOOTH](https://kumaokobo.booth.pm/) (**NOT** including switches 
   *Cathode side is marked like a line.*
   2. Solder PJ-320A connectors.
   3. Solder momentary switches.
-  4. Solder 4.7 kΩ resistors (**unnecessary in case of using LED**).
+  4. Solder 4.7 kΩ resistors (Optional)  
+     Unnecessary to solder this when implementing LED Underglow.  
+     In case of soldering, **on one half only**.
   5. Solder PCB hot-swap sockets (**Optional**).<br/>In case of using a soldering iron:<div><img src="../../img/solder-hotswap.jpg" alt="soldering hot swap sockets" width="250"/></div>How to solder hot-swap sockets: <br/><div><a href="https://www.youtube.com/watch?v=uHqkW0cQ80I"><img src="https://img.youtube.com/vi/uHqkW0cQ80I/0.jpg" alt="How to solder hot-swap sockets" width="250"/></a></div>[YouTube:Inken ch:How to solder hot-swap sockets](https://www.youtube.com/watch?v=uHqkW0cQ80I)
   6. Solder the Pro Micro header pins (**do not solder the Pro Micro controllers yet**).  
   *We recommend to adjust the positions of Pin Headers using Pro Micro when soldering.*  
