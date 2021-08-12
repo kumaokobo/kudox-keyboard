@@ -1,13 +1,12 @@
 EESchema Schematic File Version 4
-LIBS:kudox-columner-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Kudox Columner keyboard"
-Date "2019-10-01"
-Rev "1.0"
+Date "2021-07-21"
+Rev "1.2"
 Comp ""
 Comment1 "designed by x1 and inken"
 Comment2 "https://github.com/kumaokobo/kudox-keyboard/"
@@ -42,7 +41,7 @@ U 1 1 5A8088A7
 P 1750 4200
 F 0 "RGB_STRIP1" H 1750 4400 50  0000 C CNN
 F 1 "Conn_01x03" H 1750 4000 50  0000 C CNN
-F 2 "kudox_footprints:Pin_Header_Straight_1x03_Pitch2.54mm" H 1750 4200 50  0001 C CNN
+F 2 "kudox_footprints:RGB-Strip" H 1750 4200 50  0001 C CNN
 F 3 "" H 1750 4200 50  0001 C CNN
 	1    1750 4200
 	1    0    0    -1  
@@ -234,7 +233,7 @@ U 1 1 5A808C37
 P 4900 1500
 F 0 "K0" H 4850 1500 60  0000 C CNN
 F 1 "KEYSW" H 4900 1400 60  0001 C CNN
-F 2 "kudox_footprints:Mx_hotswappable" H 4900 1500 60  0001 C CNN
+F 2 "kudox_footprints:MX_reversible_100" H 4900 1500 60  0001 C CNN
 F 3 "" H 4900 1500 60  0000 C CNN
 	1    4900 1500
 	1    0    0    -1  
@@ -258,7 +257,7 @@ U 1 1 5A809089
 P 5700 1500
 F 0 "K1" H 5650 1500 60  0000 C CNN
 F 1 "KEYSW" H 5700 1400 60  0001 C CNN
-F 2 "kudox_footprints:Mx_hotswappable" H 5700 1500 60  0001 C CNN
+F 2 "kudox_footprints:MX_reversible_100" H 5700 1500 60  0001 C CNN
 F 3 "" H 5700 1500 60  0000 C CNN
 	1    5700 1500
 	1    0    0    -1  
@@ -282,7 +281,7 @@ U 1 1 5A8091F6
 P 6500 1500
 F 0 "K2" H 6450 1500 60  0000 C CNN
 F 1 "KEYSW" H 6500 1400 60  0001 C CNN
-F 2 "kudox_footprints:Mx_hotswappable" H 6500 1500 60  0001 C CNN
+F 2 "kudox_footprints:MX_reversible_100" H 6500 1500 60  0001 C CNN
 F 3 "" H 6500 1500 60  0000 C CNN
 	1    6500 1500
 	1    0    0    -1  
@@ -306,7 +305,7 @@ U 1 1 5A809203
 P 7300 1500
 F 0 "K3" H 7250 1500 60  0000 C CNN
 F 1 "KEYSW" H 7300 1400 60  0001 C CNN
-F 2 "kudox_footprints:Mx_hotswappable" H 7300 1500 60  0001 C CNN
+F 2 "kudox_footprints:MX_reversible_100" H 7300 1500 60  0001 C CNN
 F 3 "" H 7300 1500 60  0000 C CNN
 	1    7300 1500
 	1    0    0    -1  
@@ -330,7 +329,7 @@ U 1 1 5A80948D
 P 8100 1500
 F 0 "K4" H 8050 1500 60  0000 C CNN
 F 1 "KEYSW" H 8100 1400 60  0001 C CNN
-F 2 "kudox_footprints:Mx_hotswappable" H 8100 1500 60  0001 C CNN
+F 2 "kudox_footprints:MX_reversible_100" H 8100 1500 60  0001 C CNN
 F 3 "" H 8100 1500 60  0000 C CNN
 	1    8100 1500
 	1    0    0    -1  
@@ -384,7 +383,7 @@ U 1 1 5A809C1D
 P 4900 2250
 F 0 "K10" H 4850 2250 60  0000 C CNN
 F 1 "KEYSW" H 4900 2150 60  0001 C CNN
-F 2 "kudox_footprints:Mx_hotswappable" H 4900 2250 60  0001 C CNN
+F 2 "kudox_footprints:MX_reversible_100" H 4900 2250 60  0001 C CNN
 F 3 "" H 4900 2250 60  0000 C CNN
 	1    4900 2250
 	1    0    0    -1  
@@ -397,7 +396,7 @@ U 1 1 5A809C2A
 P 5700 2250
 F 0 "K11" H 5650 2250 60  0000 C CNN
 F 1 "KEYSW" H 5700 2150 60  0001 C CNN
-F 2 "kudox_footprints:Mx_hotswappable" H 5700 2250 60  0001 C CNN
+F 2 "kudox_footprints:MX_reversible_100" H 5700 2250 60  0001 C CNN
 F 3 "" H 5700 2250 60  0000 C CNN
 	1    5700 2250
 	1    0    0    -1  
@@ -421,7 +420,7 @@ U 1 1 5A809C37
 P 6500 2250
 F 0 "K12" H 6450 2250 60  0000 C CNN
 F 1 "KEYSW" H 6500 2150 60  0001 C CNN
-F 2 "kudox_footprints:Mx_hotswappable" H 6500 2250 60  0001 C CNN
+F 2 "kudox_footprints:MX_reversible_100" H 6500 2250 60  0001 C CNN
 F 3 "" H 6500 2250 60  0000 C CNN
 	1    6500 2250
 	1    0    0    -1  
@@ -445,7 +444,7 @@ U 1 1 5A809C44
 P 7300 2250
 F 0 "K13" H 7250 2250 60  0000 C CNN
 F 1 "KEYSW" H 7300 2150 60  0001 C CNN
-F 2 "kudox_footprints:Mx_hotswappable" H 7300 2250 60  0001 C CNN
+F 2 "kudox_footprints:MX_reversible_100" H 7300 2250 60  0001 C CNN
 F 3 "" H 7300 2250 60  0000 C CNN
 	1    7300 2250
 	1    0    0    -1  
@@ -469,7 +468,7 @@ U 1 1 5A809C51
 P 8100 2250
 F 0 "K14" H 8050 2250 60  0000 C CNN
 F 1 "KEYSW" H 8100 2150 60  0001 C CNN
-F 2 "kudox_footprints:Mx_hotswappable" H 8100 2250 60  0001 C CNN
+F 2 "kudox_footprints:MX_reversible_100" H 8100 2250 60  0001 C CNN
 F 3 "" H 8100 2250 60  0000 C CNN
 	1    8100 2250
 	1    0    0    -1  
@@ -493,7 +492,7 @@ U 1 1 5A809C5E
 P 8900 2250
 F 0 "K15" H 8850 2250 60  0000 C CNN
 F 1 "KEYSW" H 8900 2150 60  0001 C CNN
-F 2 "kudox_footprints:Mx_hotswappable" H 8900 2250 60  0001 C CNN
+F 2 "kudox_footprints:MX_reversible_100" H 8900 2250 60  0001 C CNN
 F 3 "" H 8900 2250 60  0000 C CNN
 	1    8900 2250
 	1    0    0    -1  
@@ -517,7 +516,7 @@ U 1 1 5A809C6B
 P 9700 2250
 F 0 "K16" H 9650 2250 60  0000 C CNN
 F 1 "KEYSW" H 9700 2150 60  0001 C CNN
-F 2 "kudox_footprints:Mx_hotswappable" H 9700 2250 60  0001 C CNN
+F 2 "kudox_footprints:MX_reversible_100" H 9700 2250 60  0001 C CNN
 F 3 "" H 9700 2250 60  0000 C CNN
 	1    9700 2250
 	1    0    0    -1  
@@ -548,7 +547,7 @@ U 1 1 5A80AB8A
 P 4900 2950
 F 0 "K20" H 4850 2950 60  0000 C CNN
 F 1 "KEYSW" H 4900 2850 60  0001 C CNN
-F 2 "kudox_footprints:Mx_hotswappable" H 4900 2950 60  0001 C CNN
+F 2 "kudox_footprints:MX_reversible_100" H 4900 2950 60  0001 C CNN
 F 3 "" H 4900 2950 60  0000 C CNN
 	1    4900 2950
 	1    0    0    -1  
@@ -572,7 +571,7 @@ U 1 1 5A80AB97
 P 5700 2950
 F 0 "K21" H 5650 2950 60  0000 C CNN
 F 1 "KEYSW" H 5700 2850 60  0001 C CNN
-F 2 "kudox_footprints:Mx_hotswappable" H 5700 2950 60  0001 C CNN
+F 2 "kudox_footprints:MX_reversible_100" H 5700 2950 60  0001 C CNN
 F 3 "" H 5700 2950 60  0000 C CNN
 	1    5700 2950
 	1    0    0    -1  
@@ -596,7 +595,7 @@ U 1 1 5A80ABA4
 P 6500 2950
 F 0 "K22" H 6450 2950 60  0000 C CNN
 F 1 "KEYSW" H 6500 2850 60  0001 C CNN
-F 2 "kudox_footprints:Mx_hotswappable" H 6500 2950 60  0001 C CNN
+F 2 "kudox_footprints:MX_reversible_100" H 6500 2950 60  0001 C CNN
 F 3 "" H 6500 2950 60  0000 C CNN
 	1    6500 2950
 	1    0    0    -1  
@@ -620,7 +619,7 @@ U 1 1 5A80ABB1
 P 7300 2950
 F 0 "K23" H 7250 2950 60  0000 C CNN
 F 1 "KEYSW" H 7300 2850 60  0001 C CNN
-F 2 "kudox_footprints:Mx_hotswappable" H 7300 2950 60  0001 C CNN
+F 2 "kudox_footprints:MX_reversible_100" H 7300 2950 60  0001 C CNN
 F 3 "" H 7300 2950 60  0000 C CNN
 	1    7300 2950
 	1    0    0    -1  
@@ -644,7 +643,7 @@ U 1 1 5A80ABBE
 P 8100 2950
 F 0 "K24" H 8050 2950 60  0000 C CNN
 F 1 "KEYSW" H 8100 2850 60  0001 C CNN
-F 2 "kudox_footprints:Mx_hotswappable" H 8100 2950 60  0001 C CNN
+F 2 "kudox_footprints:MX_reversible_100" H 8100 2950 60  0001 C CNN
 F 3 "" H 8100 2950 60  0000 C CNN
 	1    8100 2950
 	1    0    0    -1  
@@ -668,7 +667,7 @@ U 1 1 5A80ABCB
 P 8900 2950
 F 0 "K25" H 8850 2950 60  0000 C CNN
 F 1 "KEYSW" H 8900 2850 60  0001 C CNN
-F 2 "kudox_footprints:Mx_hotswappable" H 8900 2950 60  0001 C CNN
+F 2 "kudox_footprints:MX_reversible_100" H 8900 2950 60  0001 C CNN
 F 3 "" H 8900 2950 60  0000 C CNN
 	1    8900 2950
 	1    0    0    -1  
@@ -698,7 +697,7 @@ U 1 1 5A80ABEB
 P 4900 3700
 F 0 "K30" H 4850 3700 60  0000 C CNN
 F 1 "KEYSW" H 4900 3600 60  0001 C CNN
-F 2 "kudox_footprints:Mx_hotswappable" H 4900 3700 60  0001 C CNN
+F 2 "kudox_footprints:MX_reversible_100" H 4900 3700 60  0001 C CNN
 F 3 "" H 4900 3700 60  0000 C CNN
 	1    4900 3700
 	1    0    0    -1  
@@ -722,7 +721,7 @@ U 1 1 5A80ABF8
 P 5700 3700
 F 0 "K31" H 5650 3700 60  0000 C CNN
 F 1 "KEYSW" H 5700 3600 60  0001 C CNN
-F 2 "kudox_footprints:Mx_hotswappable" H 5700 3700 60  0001 C CNN
+F 2 "kudox_footprints:MX_reversible_100" H 5700 3700 60  0001 C CNN
 F 3 "" H 5700 3700 60  0000 C CNN
 	1    5700 3700
 	1    0    0    -1  
@@ -746,7 +745,7 @@ U 1 1 5A80AC05
 P 6500 3700
 F 0 "K32" H 6450 3700 60  0000 C CNN
 F 1 "KEYSW" H 6500 3600 60  0001 C CNN
-F 2 "kudox_footprints:Mx_hotswappable" H 6500 3700 60  0001 C CNN
+F 2 "kudox_footprints:MX_reversible_100" H 6500 3700 60  0001 C CNN
 F 3 "" H 6500 3700 60  0000 C CNN
 	1    6500 3700
 	1    0    0    -1  
@@ -770,7 +769,7 @@ U 1 1 5A80AC12
 P 7300 3700
 F 0 "K33" H 7250 3700 60  0000 C CNN
 F 1 "KEYSW" H 7300 3600 60  0001 C CNN
-F 2 "kudox_footprints:Mx_hotswappable" H 7300 3700 60  0001 C CNN
+F 2 "kudox_footprints:MX_reversible_100" H 7300 3700 60  0001 C CNN
 F 3 "" H 7300 3700 60  0000 C CNN
 	1    7300 3700
 	1    0    0    -1  
@@ -794,7 +793,7 @@ U 1 1 5A80AC1F
 P 8100 3700
 F 0 "K34" H 8050 3700 60  0000 C CNN
 F 1 "KEYSW" H 8100 3600 60  0001 C CNN
-F 2 "kudox_footprints:Mx_hotswappable" H 8100 3700 60  0001 C CNN
+F 2 "kudox_footprints:MX_reversible_100" H 8100 3700 60  0001 C CNN
 F 3 "" H 8100 3700 60  0000 C CNN
 	1    8100 3700
 	1    0    0    -1  
@@ -818,7 +817,7 @@ U 1 1 5A80AC2C
 P 8900 3700
 F 0 "K35" H 8850 3700 60  0000 C CNN
 F 1 "KEYSW" H 8900 3600 60  0001 C CNN
-F 2 "kudox_footprints:Mx_hotswappable" H 8900 3700 60  0001 C CNN
+F 2 "kudox_footprints:MX_reversible_100" H 8900 3700 60  0001 C CNN
 F 3 "" H 8900 3700 60  0000 C CNN
 	1    8900 3700
 	1    0    0    -1  
@@ -848,7 +847,7 @@ U 1 1 5A80E493
 P 4900 4500
 F 0 "K40" H 4850 4500 60  0000 C CNN
 F 1 "KEYSW" H 4900 4400 60  0001 C CNN
-F 2 "kudox_footprints:Mx_hotswappable" H 4900 4500 60  0001 C CNN
+F 2 "kudox_footprints:MX_reversible_100" H 4900 4500 60  0001 C CNN
 F 3 "" H 4900 4500 60  0000 C CNN
 	1    4900 4500
 	1    0    0    -1  
@@ -872,7 +871,7 @@ U 1 1 5A80E4A0
 P 5700 4500
 F 0 "K41" H 5650 4500 60  0000 C CNN
 F 1 "KEYSW" H 5700 4400 60  0001 C CNN
-F 2 "kudox_footprints:Mx_hotswappable" H 5700 4500 60  0001 C CNN
+F 2 "kudox_footprints:MX_reversible_100" H 5700 4500 60  0001 C CNN
 F 3 "" H 5700 4500 60  0000 C CNN
 	1    5700 4500
 	1    0    0    -1  
@@ -896,7 +895,7 @@ U 1 1 5A80E4AD
 P 6500 4500
 F 0 "K42" H 6450 4500 60  0000 C CNN
 F 1 "KEYSW" H 6500 4400 60  0001 C CNN
-F 2 "kudox_footprints:Mx_hotswappable" H 6500 4500 60  0001 C CNN
+F 2 "kudox_footprints:MX_reversible_100" H 6500 4500 60  0001 C CNN
 F 3 "" H 6500 4500 60  0000 C CNN
 	1    6500 4500
 	1    0    0    -1  
@@ -920,7 +919,7 @@ U 1 1 5A80E4BA
 P 7300 4500
 F 0 "K43" H 7250 4500 60  0000 C CNN
 F 1 "KEYSW" H 7300 4400 60  0001 C CNN
-F 2 "kudox_footprints:Mx_hotswappable" H 7300 4500 60  0001 C CNN
+F 2 "kudox_footprints:MX_reversible_100" H 7300 4500 60  0001 C CNN
 F 3 "" H 7300 4500 60  0000 C CNN
 	1    7300 4500
 	1    0    0    -1  
@@ -944,7 +943,7 @@ U 1 1 5A80E4C7
 P 8100 4500
 F 0 "K44" H 8050 4500 60  0000 C CNN
 F 1 "KEYSW" H 8100 4400 60  0001 C CNN
-F 2 "kudox_footprints:Mx_hotswappable" H 8100 4500 60  0001 C CNN
+F 2 "kudox_footprints:MX_reversible_100" H 8100 4500 60  0001 C CNN
 F 3 "" H 8100 4500 60  0000 C CNN
 	1    8100 4500
 	1    0    0    -1  
@@ -968,7 +967,7 @@ U 1 1 5A80E4D4
 P 8900 4500
 F 0 "K45" H 8850 4500 60  0000 C CNN
 F 1 "KEYSW" H 8900 4400 60  0001 C CNN
-F 2 "kudox_footprints:Mx_hotswappable" H 8900 4500 60  0001 C CNN
+F 2 "kudox_footprints:MX_reversible_100" H 8900 4500 60  0001 C CNN
 F 3 "" H 8900 4500 60  0000 C CNN
 	1    8900 4500
 	1    0    0    -1  
@@ -992,7 +991,7 @@ U 1 1 5A80E4E1
 P 9700 4500
 F 0 "K46" H 9650 4500 60  0000 C CNN
 F 1 "KEYSW" H 9700 4400 60  0001 C CNN
-F 2 "kudox_footprints:Mx_hotswappable" H 9700 4500 60  0001 C CNN
+F 2 "kudox_footprints:MX_reversible_100" H 9700 4500 60  0001 C CNN
 F 3 "" H 9700 4500 60  0000 C CNN
 	1    9700 4500
 	1    0    0    -1  
@@ -1281,4 +1280,34 @@ Wire Wire Line
 Wire Wire Line
 	8600 1900 9400 1900
 Connection ~ 8600 1900
+$Comp
+L Connector_Generic:Conn_01x01 J1
+U 1 1 60F83C68
+P 3000 3200
+F 0 "J1" H 3080 3242 50  0000 L CNN
+F 1 "RGB" H 3080 3151 50  0000 L CNN
+F 2 "kudox_footprints:pad_1x1" H 3000 3200 50  0001 C CNN
+F 3 "~" H 3000 3200 50  0001 C CNN
+	1    3000 3200
+	1    0    0    -1  
+$EndComp
+Text GLabel 2650 3200 0    60   Input ~ 0
+SDA
+Wire Wire Line
+	2800 3200 2650 3200
+$Comp
+L Connector_Generic:Conn_01x01 J2
+U 1 1 60F96383
+P 3000 3450
+F 0 "J2" H 3080 3492 50  0000 L CNN
+F 1 "RGB" H 3080 3401 50  0000 L CNN
+F 2 "kudox_footprints:pad_1x1" H 3000 3450 50  0001 C CNN
+F 3 "~" H 3000 3450 50  0001 C CNN
+	1    3000 3450
+	1    0    0    -1  
+$EndComp
+Text GLabel 2650 3450 0    60   Input ~ 0
+SDA
+Wire Wire Line
+	2800 3450 2650 3450
 $EndSCHEMATC
