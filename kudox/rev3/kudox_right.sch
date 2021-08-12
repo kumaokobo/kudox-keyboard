@@ -1,13 +1,12 @@
 EESchema Schematic File Version 4
-LIBS:kudox_right-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Kudox keyboard"
-Date "2020-01-30"
-Rev "3.0"
+Date "2021-05-01"
+Rev "3.1"
 Comp "Kumao Kobo"
 Comment1 "designed by x1 and inken"
 Comment2 "https://github.com/kumaokobo/kudox-keyboard/"
@@ -39,23 +38,23 @@ $EndComp
 $Comp
 L kudox-parts:Conn_01x03 RGB_STRIP1
 U 1 1 5A8088A7
-P 1750 4200
-F 0 "RGB_STRIP1" H 1750 4400 50  0000 C CNN
-F 1 "Conn_01x03" H 1750 4000 50  0000 C CNN
-F 2 "kudox_footprints:Pin_Header_Straight_1x03_Pitch2.54mm" H 1750 4200 50  0001 C CNN
-F 3 "" H 1750 4200 50  0001 C CNN
-	1    1750 4200
+P 1800 5000
+F 0 "RGB_STRIP1" H 1800 5200 50  0000 C CNN
+F 1 "Conn_01x03" H 1800 4800 50  0000 C CNN
+F 2 "kudox_footprints:Pin_Header_Straight_1x03_Pitch2.54mm" H 1800 5000 50  0001 C CNN
+F 3 "" H 1800 5000 50  0001 C CNN
+	1    1800 5000
 	1    0    0    -1  
 $EndComp
 $Comp
 L kudox-parts:SW_PUSH RST_SW1
 U 1 1 5A808917
-P 1450 4750
-F 0 "RST_SW1" H 1600 4860 50  0000 C CNN
-F 1 "SW_PUSH" H 1450 4670 50  0000 C CNN
-F 2 "kudox_footprints:SW_PUSH_6mm_h4.3mm" H 1450 4750 60  0001 C CNN
-F 3 "" H 1450 4750 60  0000 C CNN
-	1    1450 4750
+P 1400 4200
+F 0 "RST_SW1" H 1550 4310 50  0000 C CNN
+F 1 "SW_PUSH" H 1400 4120 50  0000 C CNN
+F 2 "kudox_footprints:SW_PUSH_6mm_h4.3mm" H 1400 4200 60  0001 C CNN
+F 3 "" H 1400 4200 60  0000 C CNN
+	1    1400 4200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -166,40 +165,40 @@ SCL
 $Comp
 L kudox-parts:GND #PWR04
 U 1 1 5A808EA3
-P 1550 4300
-F 0 "#PWR04" H 1550 4050 50  0001 C CNN
-F 1 "GND" H 1550 4150 50  0000 C CNN
-F 2 "" H 1550 4300 50  0001 C CNN
-F 3 "" H 1550 4300 50  0001 C CNN
-	1    1550 4300
+P 1600 5100
+F 0 "#PWR04" H 1600 4850 50  0001 C CNN
+F 1 "GND" H 1600 4950 50  0000 C CNN
+F 2 "" H 1600 5100 50  0001 C CNN
+F 3 "" H 1600 5100 50  0001 C CNN
+	1    1600 5100
 	0    1    1    0   
 $EndComp
 $Comp
 L kudox-parts:VCC #PWR05
 U 1 1 5A808EBA
-P 1550 4100
-F 0 "#PWR05" H 1550 3950 50  0001 C CNN
-F 1 "VCC" H 1550 4250 50  0000 C CNN
-F 2 "" H 1550 4100 50  0001 C CNN
-F 3 "" H 1550 4100 50  0001 C CNN
-	1    1550 4100
+P 1600 4900
+F 0 "#PWR05" H 1600 4750 50  0001 C CNN
+F 1 "VCC" H 1600 5050 50  0000 C CNN
+F 2 "" H 1600 4900 50  0001 C CNN
+F 3 "" H 1600 4900 50  0001 C CNN
+	1    1600 4900
 	0    -1   -1   0   
 $EndComp
-Text GLabel 1300 4200 0    60   Input ~ 0
+Text GLabel 1350 5000 0    60   Input ~ 0
 rgb_data
 Wire Wire Line
-	1300 4200 1550 4200
-Text GLabel 1150 4750 0    60   Input ~ 0
+	1350 5000 1600 5000
+Text GLabel 1100 4200 0    60   Input ~ 0
 RST
 $Comp
 L kudox-parts:GND #PWR06
 U 1 1 5A80901B
-P 1750 4750
-F 0 "#PWR06" H 1750 4500 50  0001 C CNN
-F 1 "GND" H 1750 4600 50  0000 C CNN
-F 2 "" H 1750 4750 50  0001 C CNN
-F 3 "" H 1750 4750 50  0001 C CNN
-	1    1750 4750
+P 1700 4200
+F 0 "#PWR06" H 1700 3950 50  0001 C CNN
+F 1 "GND" H 1700 4050 50  0000 C CNN
+F 2 "" H 1700 4200 50  0001 C CNN
+F 3 "" H 1700 4200 50  0001 C CNN
+	1    1700 4200
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -1245,4 +1244,78 @@ Wire Wire Line
 	1300 3200 1850 3200
 Wire Wire Line
 	1300 3600 1900 3600
+$Comp
+L Connector_Generic:Conn_01x01 J1
+U 1 1 60A433F9
+P 2450 4100
+F 0 "J1" H 2368 3875 50  0000 C CNN
+F 1 "Conn_01x01" H 2368 3966 50  0000 C CNN
+F 2 "kudox_footprints:Pin_Header_Straight_1x01_Pitch2.54mm" H 2450 4100 50  0001 C CNN
+F 3 "~" H 2450 4100 50  0001 C CNN
+	1    2450 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J2
+U 1 1 60A442CC
+P 2450 4400
+F 0 "J2" H 2368 4175 50  0000 C CNN
+F 1 "Conn_01x01" H 2368 4266 50  0000 C CNN
+F 2 "kudox_footprints:rgb_pad" H 2450 4400 50  0001 C CNN
+F 3 "~" H 2450 4400 50  0001 C CNN
+	1    2450 4400
+	-1   0    0    1   
+$EndComp
+Text GLabel 3000 4100 2    60   Input ~ 0
+SDA
+Text GLabel 3000 4400 2    60   Input ~ 0
+SDA
+Wire Wire Line
+	2650 4100 3000 4100
+Wire Wire Line
+	2650 4400 3000 4400
+$Comp
+L Connector_Generic:Conn_01x01 J3
+U 1 1 60F53776
+P 3050 4900
+F 0 "J3" H 3130 4942 50  0000 L CNN
+F 1 "VCC" H 3130 4851 50  0000 L CNN
+F 2 "kudox_footprints:pad_1x1" H 3050 4900 50  0001 C CNN
+F 3 "~" H 3050 4900 50  0001 C CNN
+	1    3050 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J4
+U 1 1 60F53CD5
+P 3050 5150
+F 0 "J4" H 3130 5192 50  0000 L CNN
+F 1 "GND" H 3130 5101 50  0000 L CNN
+F 2 "kudox_footprints:pad_1x1" H 3050 5150 50  0001 C CNN
+F 3 "~" H 3050 5150 50  0001 C CNN
+	1    3050 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L kudox-parts:VCC #PWR0101
+U 1 1 60F541F1
+P 2850 4900
+F 0 "#PWR0101" H 2850 4750 50  0001 C CNN
+F 1 "VCC" H 2850 5050 50  0000 C CNN
+F 2 "" H 2850 4900 50  0001 C CNN
+F 3 "" H 2850 4900 50  0001 C CNN
+	1    2850 4900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L kudox-parts:GND #PWR0102
+U 1 1 60F54E71
+P 2850 5150
+F 0 "#PWR0102" H 2850 4900 50  0001 C CNN
+F 1 "GND" H 2850 5000 50  0000 C CNN
+F 2 "" H 2850 5150 50  0001 C CNN
+F 3 "" H 2850 5150 50  0001 C CNN
+	1    2850 5150
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
