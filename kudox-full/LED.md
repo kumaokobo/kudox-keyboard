@@ -9,7 +9,7 @@
 ## Parts
 
 - WS2812B LEDs 7 x 2
-- Lead Wires x 6 (*Recommend: with connector*)
+- Jumper Wires x 3
 - Angle-3 Pin Headers x 2
 - Insulation tape
 - Soldered PCB
@@ -18,7 +18,8 @@
 
 ## 1. Solder LED strips lead wires.
 
-Solder each `5V` , `DIN` , `GND` on LEDs lead wires.  
+Cut jumper wires.  
+Solder each `5V` , `DIN` , `GND` on LEDs with each wires.  
 
 > Please consider using soldering flux. Often it is difficult to solder LED strip.
 
@@ -28,7 +29,7 @@ Solder each `5V` , `DIN` , `GND` on LEDs lead wires.
 
 Solder Angle-3 Pin Headers at point of `RGB_Strpip` .  
 
-## 3. Connect Lead Wires to Pin Headers.
+## 3. Connect Wires to Pin Headers.
 
 LED |    | PCB silks
 --- | -- | -----------
