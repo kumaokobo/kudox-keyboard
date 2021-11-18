@@ -67,12 +67,12 @@ are on sale at [BOOTH](https://kumaokobo.booth.pm/) (**NOT** including switches 
 ### Installation steps:
 
 - Solder components on the side of `Mounting Surface`:
-  1. Solder 1N4148 diodes. Put the cathode in the square hole.<br/><div><img src="../img/kudox-diode.jpg" alt="kudox diode" width="300"/></div>
+  1. Solder 1N4148 diodes. Put the cathode in the square hole.<br/><div><img src="../img/kudox-diode.jpg" alt="kudox diode" width="360"/></div>
   *Cathode side is marked like a line.*
   2. Solder MJ-4PP-9 connectors.
   3. Solder momentary switches.
-  4. Solder PCB hot-swap sockets (**Optional**).<br/>Orient the socket to match the silk.<div><img src="../img/kudox-full-hotswap.jpg" alt="angle hot swap sockets" width="300"/></div>How to solder hot-swap sockets:<br/><div><img src="../img/solder-hotswap.jpg" alt="soldering hot swap sockets" width="300"/></div>Video guide: <br/><div><a href="https://www.youtube.com/watch?v=uHqkW0cQ80I"><img src="https://img.youtube.com/vi/uHqkW0cQ80I/0.jpg" alt="How to solder hot-swap sockets" width="300"/></a></div>[YouTube:Inken ch:How to solder hot-swap sockets](https://www.youtube.com/watch?v=uHqkW0cQ80I)
-  5. Because the shift key of left side interferes with the pin header, need to use [Pin Socket Connector](https://www.digikey.jp/product-detail/ja/mill-max-manufacturing-corp/7305-0-15-15-47-27-10-0/ED1039-ND/1765737) (**Optional**).<br/><div><img src="../img/solder-socket-conn.jpg" alt="solder socket connerctors" width="300"/></div>Fit the switch with a pin socket conn, insert the switch from the surface of the PCB and solder it to the mounting surface.
+  4. Solder PCB hot-swap sockets (**Optional**).<br/>Orient the socket to match the silk.<div><img src="../img/kudox-full-hotswap.jpg" alt="angle hot swap sockets" width="360"/></div>How to solder hot-swap sockets:<br/><div><img src="../img/solder-hotswap.jpg" alt="soldering hot swap sockets" width="360"/></div>Video guide: <br/><div><a href="https://www.youtube.com/watch?v=uHqkW0cQ80I"><img src="https://img.youtube.com/vi/uHqkW0cQ80I/0.jpg" alt="How to solder hot-swap sockets" width="360"/></a></div>[YouTube:Inken ch:How to solder hot-swap sockets](https://www.youtube.com/watch?v=uHqkW0cQ80I)
+  5. Because the shift key of left side interferes with the pin header, need to use [Pin Socket Connector](https://www.digikey.jp/product-detail/ja/mill-max-manufacturing-corp/7305-0-15-15-47-27-10-0/ED1039-ND/1765737) (**Optional**).<br/><div><img src="../img/solder-socket-conn.jpg" alt="solder socket connerctors" width="360"/></div>Fit the switch with a pin socket conn, insert the switch from the surface of the PCB and solder it to the mounting surface.
   6. Solder the Pro Micro header pins (**do not solder the Pro Micro controllers yet**).  
   *We recommend to adjust the positions of Pin Headers using Pro Micro when soldering.*  
   7. Current state:<div><img src="../img/kudox-full-soldered-hotswap.jpg" alt="soldered kudox full hostwap" width="420"/></div>
@@ -80,8 +80,8 @@ are on sale at [BOOTH](https://kumaokobo.booth.pm/) (**NOT** including switches 
 - **In case of using OLED:*  
   You can use OLED SSD1306 128x32 0.91 inch on the right side.  
   If you use OLED, solder it now.  
-  1. Solder jumper the four JPs near the right hand side Pro Micro footprint.<br/><div><img src="../img/jumper-oled.jpg" alt="jumpering JPs" width="300"/></div>
-  2. Solder OLED pins on the mounting surface.<br/><div><img src="../img/solder-oled.jpg" alt="soldering OLED" width="290"/></div>
+  1. Solder jumper the four JPs near the right hand side Pro Micro footprint.<br/><div><img src="../img/jumper-oled.jpg" alt="jumpering JPs" width="360"/></div>
+  2. Solder OLED pins on the mounting surface.<br/><div><img src="../img/solder-oled.jpg" alt="soldering OLED" width="350"/></div>
 - Solder Pro Micros controllers to the header pins.  
   Pro Micro **face down** on both of sides.<div><img src="../img/kudox-full-promicro.jpg" alt="kudox full ProMicro" width="400"/></div>
 - Install upper cases to PCBs.  

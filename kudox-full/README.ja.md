@@ -64,12 +64,12 @@ Kudox Full Rev1.0 は ロープロファイル66%左右分離キーボードで�
 
 - PCB の `Mounting Surface` と記載のある面に下記をはんだ付けします:  
   (ホットスワップソケットを使用しない場合はⅳ, ⅴを読み飛ばしてください)
-  1. 1N4148ダイオード (向きがあります. カソードが四角型の穴側にくるように差します)<br/><div><img src="../img/kudox-diode.jpg" alt="kudox diode" width="300"/></div>
+  1. 1N4148ダイオード (向きがあります. カソードが四角型の穴側にくるように差します)<br/><div><img src="../img/kudox-diode.jpg" alt="kudox diode" width="360"/></div>
   *ダイオードのカソードには線などのマークが入っています*
   2. MJ-4PP-9 TRRSコネクタ
   3. タクトスイッチ
-  4. ホットスワップ・ソケット (オプション)<br/>Kailh用ホットスワップ・ソケットには向きがあります.<br/>シルクの形状とソケットの形状を合わせてはんだ付けしてください.<div><img src="../img/kudox-full-hotswap.jpg" alt="angle hot swap sockets" width="300"/></div>はんだ付けのやり方: <br/><div><img src="../img/solder-hotswap.jpg" alt="soldering hot swap sockets" width="300"/></div>下記の動画で取り付け方を詳しく紹介しています: <br/><div><a href="https://www.youtube.com/watch?v=uHqkW0cQ80I"><img src="https://img.youtube.com/vi/uHqkW0cQ80I/0.jpg" alt="ホットスワップソケットの付け方" width="300"/></a></div>[[YouTube] インケンch: ホットスワップソケットの付け方](https://www.youtube.com/watch?v=uHqkW0cQ80I)
-  5. 左手のSHIFTキー位置のスイッチはPro Microのピンヘッダと干渉するため, ホットスワップ・ソケットではなく[ベリリウム銅ソケット](https://www.digikey.jp/product-detail/ja/mill-max-manufacturing-corp/7305-0-15-15-47-27-10-0/ED1039-ND/1765737)を取り付けます (オプション)<br/><div><img src="../img/solder-socket-conn.jpg" alt="solder socket connerctors" width="300"/></div>スイッチにベリリウム銅ソケットをはめ, PCBの表面からスイッチを差して実装面にはんだ付けします.
+  4. ホットスワップ・ソケット (オプション)<br/>Kailh用ホットスワップ・ソケットには向きがあります.<br/>シルクの形状とソケットの形状を合わせてはんだ付けしてください.<div><img src="../img/kudox-full-hotswap.jpg" alt="angle hot swap sockets" width="360"/></div>はんだ付けのやり方: <br/><div><img src="../img/solder-hotswap.jpg" alt="soldering hot swap sockets" width="360"/></div>下記の動画で取り付け方を詳しく紹介しています: <br/><div><a href="https://www.youtube.com/watch?v=uHqkW0cQ80I"><img src="https://img.youtube.com/vi/uHqkW0cQ80I/0.jpg" alt="ホットスワップソケットの付け方" width="360"/></a></div>[[YouTube] インケンch: ホットスワップソケットの付け方](https://www.youtube.com/watch?v=uHqkW0cQ80I)
+  5. 左手のSHIFTキー位置のスイッチはPro Microのピンヘッダと干渉するため, ホットスワップ・ソケットではなく[ベリリウム銅ソケット](https://www.digikey.jp/product-detail/ja/mill-max-manufacturing-corp/7305-0-15-15-47-27-10-0/ED1039-ND/1765737)を取り付けます (オプション)<br/><div><img src="../img/solder-socket-conn.jpg" alt="solder socket connerctors" width="360"/></div>スイッチにベリリウム銅ソケットをはめ, PCBの表面からスイッチを差して実装面にはんだ付けします.
   6. Pro Micro の ピンヘッダ (**Pro Micro 自身のはんだ付けはまだしません**)  
   *Pro Micro のピンヘッダをはんだ付けする際には Pro Microを使って位置合わせをすると楽にはんだ付けできます.*  
   7. こんな感じになります:<div><img src="../img/kudox-full-soldered-hotswap.jpg" alt="soldered kudox full hostwap" width="420"/></div>
@@ -77,8 +77,8 @@ Kudox Full Rev1.0 は ロープロファイル66%左右分離キーボードで�
 - **OLEDを使用する場合:*  
   右手側には0.91インチのOLEDを取り付けることができます.  
   OLEDを使用する場合は, この時点で取り付けを行ってください.  
-  1. 右手側 Pro Micro フットプリントの近くにある4つのJPをはんだでジャンパします.<br/><div><img src="../img/jumper-oled.jpg" alt="jumpering JPs" width="300"/></div>
-  2. 表面からOLEDを差し, 実装面にはんだ付けします.<br/><div><img src="../img/solder-oled.jpg" alt="soldering OLED" width="290"/></div>
+  1. 右手側 Pro Micro フットプリントの近くにある4つのJPをはんだでジャンパします.<br/><div><img src="../img/jumper-oled.jpg" alt="jumpering JPs" width="360"/></div>
+  2. 表面からOLEDを差し, 実装面にはんだ付けします.<br/><div><img src="../img/solder-oled.jpg" alt="soldering OLED" width="350"/></div>
 - Pro Micro を ピンヘッダにはんだ付けします.  
   左右とも **裏向き(チップが隠れるように)** にはんだ付けします.<div>&nbsp;&nbsp;&nbsp;<img src="../img/kudox-full-promicro.jpg" alt="kudox full ProMicro" width="400"/></div>
 - **上部ケースを取り付ける場合:*  
