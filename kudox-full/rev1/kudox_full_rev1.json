@@ -1,7 +1,7 @@
 {
   "name": "kudox-full-keyboard",
   "vendorId": "0xABBA",
-  "productId": "0x9692",
+  "productId": "0x9693",
   "lighting": "qmk_rgblight",
   "matrix": { "rows": 10, "cols": 9 },
   "layouts": {
