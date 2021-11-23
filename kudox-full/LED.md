@@ -8,18 +8,19 @@
 
 ## Parts
 
+<div><img src="../img/kudox-full-led-parts.jpg" alt="led parts" width="250"/></div>
+
 - WS2812B LEDs 7 x 2
 - Jumper Wires x 3
 - Angle-3 Pin Headers x 2
-- Insulation tape
 - Soldered PCB
-
-**The resisters on Kudox PCB should be removed if you install LED strips.**
 
 ## 1. Solder LED strips lead wires.
 
 Cut jumper wires.  
 Solder each `5V` , `DIN` , `GND` on LEDs with each wires.  
+
+<div><img src="../img/kudox-full-led-soldered.jpg" alt="led soldered" width="250"/></div>
 
 > Please consider using soldering flux. Often it is difficult to solder LED strip.
 
@@ -29,6 +30,8 @@ Solder each `5V` , `DIN` , `GND` on LEDs with each wires.
 
 Solder Angle-3 Pin Headers at point of `RGB_Strpip` .  
 
+<div><img src="../img/kudox-full-3pin.jpg" alt="solder 3 pin" width="250"/></div>
+
 ## 3. Connect Wires to Pin Headers.
 
 LED |    | PCB silks
@@ -36,3 +39,10 @@ LED |    | PCB silks
 +5V | => | VCC
 DIN | => | DIN
 GND | => | GND
+
+## Remarks
+
+LED strips can be soldered directly to the PCB.  
+In this case, please use the following pads.  
+
+<div><img src="../img/kudox-full-led-pads.jpg" alt="LED 3 pad" width="250"/></div>
