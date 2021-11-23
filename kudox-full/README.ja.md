@@ -3,7 +3,7 @@
 Kudox Full Rev1.0 は ロープロファイル66%左右分離キーボードです.  
 テンキーとファンクションキーをカットし, 矢印キーと親指用キーを配置しました.  
 [Kailh Choc V1](http://www.kailh.com/en/Products/Ks/CS/321.html), [Kailh Choc V2](http://www.kailh.com/en/Products/Ks/CS/755.html) と Kailh Choc用 ホットスワップソケット に対応しています.  
-※ Cherry MX互換性はありませんが, [Kailh Choc V2](http://www.kailh.com/en/Products/Ks/CS/755.html)はCherry MX用キーキャップに対応しています.  
+※ Cherry MXスイッチとの互換性はありませんが, [Kailh Choc V2](http://www.kailh.com/en/Products/Ks/CS/755.html)はCherry MX用キーキャップに対応しています.  
 
 **English Manual is [here](README.md).**
 
@@ -62,8 +62,9 @@ Kudox Full Rev1.0 は ロープロファイル66%左右分離キーボードで�
 </p>
 
 
-- PCB の `Mounting Surface` と記載のある面に下記をはんだ付けします:  
-  (ホットスワップソケットを使用しない場合はⅳ, ⅴを読み飛ばしてください)
+- PCB の `Mounting Surface` と記載のある面に下記パーツをはんだ付けします:  
+  (ホットスワップソケットを使用しない場合はⅳ, ⅴを読み飛ばしてください)  
+  <span>&nbsp;</span>
   1. 1N4148ダイオード (向きがあります. カソードが四角型の穴側にくるように差します)<br/><div><img src="../img/kudox-diode.jpg" alt="kudox diode" width="360"/></div>
   *ダイオードのカソードには線などのマークが入っています*
   2. MJ-4PP-9 TRRSコネクタ
@@ -101,7 +102,7 @@ Kudox Full Rev1.0 は ロープロファイル66%左右分離キーボードで�
 <img src="../img/qmk-badge-light.png" alt="qmk" width="250"/>
 </p>
 
-Kudox Keyboard は [QMK Firmware](https://github.com/qmk/qmk_firmware) を利用しています.  
+Kudox Full Keyboard は [QMK Firmware](https://github.com/qmk/qmk_firmware) を利用しています.  
 **QMK Firmware のインストールは [こちら](https://docs.qmk.fm/#/newbs_getting_started)** をご覧ください.  
 
 ### 基本書き込みコマンド
@@ -123,7 +124,6 @@ $ make kudox_full/rev1:default:flash
 /* Select hand configuration */
 #define MASTER_LEFT
 // #define MASTER_RIGHT
-// #define EE_HANDS
 ```
 
 [qmk_firmware/keyboards/kudox_full/rev1/rules.mk](https://github.com/qmk/qmk_firmware/blob/master/keyboards/kudox_full/rev1/rules.mk) を編集して `OLED_ENABLE = no` にします.  
