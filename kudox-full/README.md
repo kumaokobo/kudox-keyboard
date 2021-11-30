@@ -2,7 +2,6 @@
 
 Kudox Full Rev1.0 is a low-profile 66% split keyboard.  
 This does not include numpad and function keys, but has arrow keys and thumb keys.  
-Rev 3.0 supports both hot swap sockets and direct switch mounting.  
 Compatible with [Kailh Choc V1](http://www.kailh.com/en/Products/Ks/CS/321.html), [Kailh Choc V2](http://www.kailh.com/en/Products/Ks/CS/755.html) and hotswapping sockets for Kailh Choc.  
 * Although it is not Cherry MX compatible, [Kailh Choc V2](http://www.kailh.com/en/Products/Ks/CS/755.html) is compatible with Cherry MX keycaps.  
 
