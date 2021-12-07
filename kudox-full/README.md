@@ -9,8 +9,9 @@ Compatible with [Kailh Choc V1](http://www.kailh.com/en/Products/Ks/CS/321.html)
 
 <div style="display:block;margin:50px auto;">
 <p align="center">
-<img src="../img/kudox-full-image2.jpg" alt="Kudox Full image2" width="300"/>
-<img src="../img/kudox-full-image1.jpg" alt="Kudox Full image1" width="300"/>
+<img src="../img/kudox-full-image2.jpg" alt="Kudox Full image2" width="250"/>
+<img src="../img/kudox-full-image1.jpg" alt="Kudox Full image1" width="250"/>
+<img src="../img/kudox-full-image3.jpg" alt="Kudox Full image1" width="250"/>
 </p>
 </div>
 
@@ -89,7 +90,8 @@ are on sale at [BOOTH](https://kumaokobo.booth.pm/) (**NOT** including switches 
 
 - **Install switches**
   - *In case of directry soldering switches*: Solder switces.<em>(fit the legs of the switch to small holes)</em><div><img src="../img/kudox-full-direct.jpg" alt="kudox full direct switch" width="300"/></div>
-  - *In case of hot-swap sockets*: Insert switches to hot-swap sockets.<br/><div><img src="../img/kudox-full-switch1.jpg" alt="kudox full switches1" width="300"/>&nbsp;&nbsp;<img src="../img/kudox-full-switch2.jpg" alt="kudox full switches2" width="300"/></div>
+  - *In case of hot-swap sockets*: Insert switches to hot-swap sockets.<br/><div><img src="../img/kudox-full-switch1.jpg" alt="kudox full switches1" width="300"/>&nbsp;&nbsp;<img src="../img/kudox-full-switch2.jpg" alt="kudox full switches2" width="300"/></div><span style="font-size:80%;"><em>In case of using [Kailh Choc V2](http://www.kailh.com/en/Products/Ks/CS/755.html), take care not touch the through hole and it's 3rd leg.<br/>Touching the leg ands the hole causes multiple
+  inputs when press a key.</em></span>
 - Install lower cases.<br/><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../img/kudox-full-image2.jpg" alt="Kudox Full image2" width="400"/></div>
 
 ## Assembly LED strips
