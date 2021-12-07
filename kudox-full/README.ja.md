@@ -8,11 +8,9 @@ Kudox Full Rev1.0 は ロープロファイル66%左右分離キーボードで�
 **English Manual is [here](README.md).**
 
 <div style="display:block;margin:50px auto;">
-<p align="center">
-<img src="../img/kudox-full-image2.jpg" alt="Kudox Full image2" width="250"/>
-<img src="../img/kudox-full-image1.jpg" alt="Kudox Full image1" width="250"/>
-<img src="../img/kudox-full-image3.jpg" alt="Kudox Full image1" width="250"/>
-</p>
+<img src="../img/kudox-full-image2.jpg" alt="Kudox Full image2" width="220"/>
+<img src="../img/kudox-full-image1.jpg" alt="Kudox Full image1" width="220"/>
+<img src="../img/kudox-full-image3.jpg" alt="Kudox Full image3" width="220"/>
 </div>
 
 
@@ -89,9 +87,9 @@ Kudox Full Rev1.0 は ロープロファイル66%左右分離キーボードで�
   *上部ケースを取り付ける場合コンスルー(スプリング・ピンヘッダ)を用いてのPro Micro取り付けができません.(コンスルーのピンがケースに干渉します)*
 - **スイッチの取り付け**
   - *スイッチを直付する場合*: スイッチを嵌め, PCBにはんだ付けします.<br/><em>(小さいピン・ホールに足が刺さるようにします)</em><div><img src="../img/kudox-full-direct.jpg" alt="kudox full direct switch" width="300"/></div>
-  - *ホットスワップ・ソケットの場合*: スイッチをホットスワップ・ソケットに差し込みます.<br/><div><img src="../img/kudox-full-switch1.jpg" alt="kudox full switches1" width="300"/>&nbsp;&nbsp;<img src="../img/kudox-full-switch2.jpg" alt="kudox full switches2" width="300"/></div><span style="font-size:80%;"><em>※ [Kailh Choc V2](http://www.kailh.com/en/Products/Ks/CS/755.html)をご利用になる場合, 3番目の足(LED穴側の足)がスルーホールに接触しないようお気をつけください.<br/>足がスルーホールに接触してしまうと, 1キー押下時に複数キーが入力される現象などが発生します.</em></span>
+  - *ホットスワップ・ソケットの場合*: スイッチをホットスワップ・ソケットに差し込みます.<br/><div><img src="../img/kudox-full-switch1.jpg" alt="kudox full switches1" width="300"/>&nbsp;&nbsp;<img src="../img/kudox-full-switch2.jpg" alt="kudox full switches2" width="300"/></div><span style="font-size:75%;"><em>※ [Kailh Choc V2](http://www.kailh.com/en/Products/Ks/CS/755.html)をご利用になる場合, 3番目の足(LED穴側の足)がスルーホールに接触しないようお気をつけください.<br/>足がスルーホールに接触してしまうと, 1キー押下時に複数キーが入力されるなどの現象が発生します.</em></span>
 - 下部ケースをスペーサーにネジ止めします.
-- 完成です.<br/><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../img/kudox-full-image2.jpg" alt="Kudox Full image2" width="400"/></div>
+- 完成です.<br/><div>&nbsp;&nbsp;&nbsp;&nbsp;<img src="../img/kudox-full-image2.jpg" alt="Kudox Full image2" width="360"/></div>
 
 ## LED Underglowの取り付け
 
