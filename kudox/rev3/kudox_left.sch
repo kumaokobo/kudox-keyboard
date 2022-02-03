@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Kudox keyboard"
-Date "2021-05-01"
-Rev "3.1"
+Date "2022-01-01"
+Rev "3.2"
 Comp "Kumao Kobo"
 Comment1 "designed by x1 and inken"
 Comment2 "https://github.com/kumaokobo/kudox-keyboard/"
