@@ -129,7 +129,8 @@ $ qmk flash -kb kudox/rev3 -km default
 
 ```sh
 $ cd path/to/qmk_firmware
-$ make kudox/rev3:default:flash
+$ qmk compile -kb kudox/rev3 -km default
+$ qmk flash -kb kudox/rev3 -km default
 ```
 
 #### 2. 右手側

@@ -130,11 +130,13 @@ $ qmk compile -kb kudox_game/rev2 -km via
 $ qmk flash -kb kudox_game/rev2 -km via
 ```
 
-Goto VIA by your browser.
+Go to VIA by your browser.
 - [https://usevia.app/](https://usevia.app/)
 
-Plug the keyboard in your PC, select `DESIGN` -> `Load Draft Definition` on VIA and load the json below:
+Select `DESIGN` -> `Load Draft Definition` on VIA and load the json below:
 - [kudox_game_rev2.json](https://github.com/kumaokobo/kudox-keyboard/blob/master/kudox-game/rev2/kudox_game_rev2.json)
+
+Plug the keyboard in your PC, and `CONFIGURE` -> `Authorize device`.
 
 Change keymap by VIA.
 
