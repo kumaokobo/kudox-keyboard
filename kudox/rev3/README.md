@@ -106,7 +106,8 @@ Follow the QMK installation instructions [here](https://docs.qmk.fm/#/newbs_gett
 
 ```sh
 $ cd path/to/qmk_firmware
-$ make kudox/rev3:default:flash
+$ qmk compile -kb kudox/rev3 -km default
+$ qmk flash -kb kudox/rev3 -km default
 ```
 
 ### First time burning
@@ -130,7 +131,8 @@ Compile and burn the firmware by running [Basic compiling and burning command](#
 
 ```sh
 $ cd path/to/qmk_firmware
-$ make kudox/rev3:default:flash
+$ qmk compile -kb kudox/rev3 -km default
+$ qmk flash -kb kudox/rev3 -km default
 ```
 
 #### 2. Right hand side
@@ -149,7 +151,8 @@ Compile and burn the firmware by running [Basic compiling and burning command](#
 
 ```sh
 $ cd path/to/qmk_firmware
-$ make kudox/rev3:default:flash
+$ qmk compile -kb kudox/rev3 -km default
+$ qmk flash -kb kudox/rev3 -km default
 ```
 
 #### 3. Confirmation
@@ -169,20 +172,36 @@ Plug in the Pro Micro (Master) the USB cable.
 
 Burn the firmware compatible with [VIA](https://caniusevia.com/).
 
+Write kudox/rev3/rule.mk `VIA_ENABLE = yes`
 ```sh
+$ vi qmk_firmware/keyboards/kumaokobo/kudox/rev3/rules.mk
+~
+VIA_ENABLE = yes
+~
+```
+
+Compile and flash firmware.
+
+```sh
+$ git clone https://github.com/qmk/qmk_userspace.git
+$ qmk config user.overlay_dir="$(realpath qmk_userspace)"
 $ cd path/to/qmk_firmware
-$ make kudox/rev3:via:flash
+$ qmk userspace-add -kb kudox/rev3 -km via
+$ qmk compile -kb kudox/rev3 -km via
+$ qmk flash -kb kudox/rev3 -km via
 ```
 
 #### 2. Install VIA
 
-Get VIA and install it.
-- [https://www.github.com/the-via/releases/releases/latest](https://www.github.com/the-via/releases/releases/latest)
+Go to VIA by your browser.
+- [https://usevia.app/](https://usevia.app/)
 
 #### 3. Load keyboard specific json
 
 Plug the keyboard in your PC, select `File` -> `Import Keymap` on VIA and load the json below:
 - [kudox_rev3.json](https://github.com/kumaokobo/kudox-keyboard/blob/master/kudox/rev3/kudox_rev3.json)
+
+Plug the keyboard in your PC, and `CONFIGURE` -> `Authorize device`.
 
 #### 4. Change keymap on VIA
 
