@@ -100,7 +100,8 @@ ProMicro と PC をUSBケーブルで接続し、下記コマンド を実行し
 
 ```sh
 $ cd path/to/qmk_firmware
-$ make kudox_game/rev2:default:flash
+$ qmk compile -kb kudox_game/rev2 -km default
+$ qmk flash -kb kudox_game/rev2 -km default
 ```
 
 文字入力可能なことを確認します.  
@@ -119,22 +120,36 @@ $ make kudox_game/rev2:default:flash
 
 #### 1. VIA 対応ファームの書き込み
 
+kudox_game/rev2/rule.mk を作成し `VIA_ENABLE = yes` を記述します.
+
+```sh
+$ vi qmk_firmware/keyboards/kumaokobo/kudox_game/rev2/rules.mk
+~
+VIA_ENABLE = yes
+~
+```
+
 VIA に対応したファームウェアを書き込みます.
 
 ```sh
+$ git clone https://github.com/qmk/qmk_userspace.git
+$ qmk config user.overlay_dir="$(realpath qmk_userspace)"
 $ cd path/to/qmk_firmware
-$ make kudox_game/rev2:via:flash
+$ qmk userspace-add -kb kudox_game/rev2 -km via
+$ qmk compile -kb kudox_game/rev2 -km via
+$ qmk flash -kb kudox_game/rev2 -km via
 ```
 
 #### 2. VIA のインストール
 
-下記からVIAをダウンロードしてインストールします.
-- [https://www.github.com/the-via/releases/releases/latest](https://www.github.com/the-via/releases/releases/latest)
+ブラウザで VIA を開きます.
+- [https://usevia.app/](https://usevia.app/)
 
 
 #### 3. キーボード設定ファイルの読み込み
 
-キーボードを PC 接続した状態で, VIA の `File` -> `Import Keymap` から 下記のjsonを読み込みます.
+VIA の `DESIGN` -> `Load Draft Definition` から 下記のjsonを読み込みます.  
+キーボードを PC に接続し, `CONFIGURE` -> `Authorize device` を行います.
 - [kudox_game_rev2.json](https://github.com/kumaokobo/kudox-keyboard/blob/master/kudox-game/rev2/kudox_game_rev2.json)
 
 

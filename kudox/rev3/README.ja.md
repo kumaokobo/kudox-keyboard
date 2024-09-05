@@ -106,7 +106,8 @@ Kudox Keyboard は [QMK Firmware](https://github.com/qmk/qmk_firmware) を利用
 
 ```sh
 $ cd path/to/qmk_firmware
-$ make kudox/rev3:default:flash
+$ qmk compile -kb kudox/rev3 -km default
+$ qmk flash -kb kudox/rev3 -km default
 ```
 
 ### 初回書き込み時
@@ -146,7 +147,8 @@ $ make kudox/rev3:default:flash
 
 ```sh
 $ cd path/to/qmk_firmware
-$ make kudox/rev3:default:flash
+$ qmk compile -kb kudox/rev3 -km default
+$ qmk flash -kb kudox/rev3 -km default
 ```
 
 #### 3. 動作確認
@@ -162,8 +164,12 @@ $ make kudox/rev3:default:flash
 [qmk_firmware/keyboards/kudox/rev3/keymaps/jis](https://github.com/qmk/qmk_firmware/blob/master/keyboards/kudox/rev3/keymaps/jis/keymap.c) に JIS-like配列を置いていますが, [Qmk Firmware](https://github.com/qmk/qmk_firmware) の [keycodes](https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md) を参考にご自身の使いやすいレイアウトに変更してお使いになられると良いかもしれません.  
 
 ```sh
+$ git clone https://github.com/qmk/qmk_userspace.git
+$ qmk config user.overlay_dir="$(realpath qmk_userspace)"
 $ cd path/to/qmk_firmware
-$ make kudox/rev3:jis:flash
+$ qmk userspace-add -kb kudox/rev3 -km jis
+$ qmk compile -kb kudox/rev3 -km jis
+$ qmk flash -kb kudox/rev3 -km jis
 ```
 
 ### オンラインGUIのファームウェア生成ツール
@@ -187,22 +193,37 @@ $ make kudox/rev3:jis:flash
 
 #### 1. VIA 対応ファームの書き込み
 
+kudox/rev3/rule.mk を作成し `VIA_ENABLE = yes` を記述します.
+
+```sh
+$ vi qmk_firmware/keyboards/kumaokobo/kudox/rev3/rules.mk
+~
+VIA_ENABLE = yes
+~
+```
+
 VIA に対応したファームウェアを書き込みます.
 
 ```sh
+$ git clone https://github.com/qmk/qmk_userspace.git
+$ qmk config user.overlay_dir="$(realpath qmk_userspace)"
 $ cd path/to/qmk_firmware
-$ make kudox/rev3:via:flash
+$ qmk userspace-add -kb kudox/rev3 -km via
+$ qmk compile -kb kudox/rev3 -km via
+$ qmk flash -kb kudox/rev3 -km via
 ```
+
 
 #### 2. VIA のインストール
 
-下記からVIAをダウンロードしてインストールします.
-- [https://www.github.com/the-via/releases/releases/latest](https://www.github.com/the-via/releases/releases/latest)
+ブラウザで VIA を開きます.
+- [https://usevia.app/](https://usevia.app/)
 
 
 #### 3. キーボード設定ファイルの読み込み
 
-キーボードを PC 接続した状態で, VIA の `File` -> `Import Keymap` から 下記のjsonを読み込みます.
+VIA の `DESIGN` -> `Load Draft Definition` から 下記のjsonを読み込みます.  
+キーボードを PC に接続し, `CONFIGURE` -> `Authorize device` を行います.
 - [kudox_rev3.json](https://github.com/kumaokobo/kudox-keyboard/blob/master/kudox/rev3/kudox_rev3.json)
 
 

@@ -92,7 +92,8 @@ Follow the QMK installation instructions [here](https://docs.qmk.fm/#/newbs_gett
 
 ```sh
 $ cd path/to/qmk_firmware
-$ make kudox_game/rev2:default:flash
+$ qmk compile -kb kudox_game/rev2 -km default
+$ qmk flash -kb kudox_game/rev2 -km default
 ```
 
 Confirm to be able to input chars.  
@@ -110,15 +111,29 @@ You can see keycodes at [keycodes](https://github.com/qmk/qmk_firmware/blob/mast
 
 Burn the firmware compatible with [VIA](https://caniusevia.com/).
 
+Write kudox_game/rev2/rule.mk `VIA_ENABLE = yes`
 ```sh
-$ cd path/to/qmk_firmware
-$ make kudox_game/rev2:via:flash
+$ vi qmk_firmware/keyboards/kumaokobo/kudox_game/rev2/rules.mk
+~
+VIA_ENABLE = yes
+~
 ```
 
-Get VIA and install it.
-- [https://www.github.com/the-via/releases/releases/latest](https://www.github.com/the-via/releases/releases/latest)
+Compile and flash firmware.
 
-Plug the keyboard in your PC, select `File` -> `Import Keymap` on VIA and load the json below:
+```sh
+$ git clone https://github.com/qmk/qmk_userspace.git
+$ qmk config user.overlay_dir="$(realpath qmk_userspace)"
+$ cd path/to/qmk_firmware
+$ qmk userspace-add -kb kudox_game/rev2 -km via
+$ qmk compile -kb kudox_game/rev2 -km via
+$ qmk flash -kb kudox_game/rev2 -km via
+```
+
+Goto VIA by your browser.
+- [https://usevia.app/](https://usevia.app/)
+
+Plug the keyboard in your PC, select `DESIGN` -> `Load Draft Definition` on VIA and load the json below:
 - [kudox_game_rev2.json](https://github.com/kumaokobo/kudox-keyboard/blob/master/kudox-game/rev2/kudox_game_rev2.json)
 
 Change keymap by VIA.
